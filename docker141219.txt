@@ -1,0 +1,41 @@
+root@ip-172-31-23-161:/opt/docker-demo/flask-demo# history
+    1  apt-get update -y
+    2  sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+    3  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    4  sudo apt-key fingerprint 0EBFCD88
+    5  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    6  sudo apt-get update
+    7  sudo apt-get install docker-ce
+    8  docker info
+    9  docker images
+   10  docker run fedora
+   11  docker images
+   12  docker ps
+   13  docker ps -a
+   14  docker run ubuntu:14.04 /bin/echo 'Hello world'
+   15  docker images
+   16  docker ps
+   17  docker ps -a
+   18  docker run -t -i ubuntu:14.04 /bin/bash
+   19  docker ps -a
+   20  docker run -d ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"
+   21  docker ps
+   22  docker exec -it e02e3b9ce177 /bin/bash
+   23  docker ps
+   24  docker logs e02e3b9ce177
+   25  docker top
+   26  docker top e02e3b9ce177
+   27  docker inspect e02e3b9ce177
+   28  docker rm $(docker ps -aq --filter "status=exited")
+   29  docker images
+   30  docker rmi f0858ad3febd
+   31  mkdir -p /opt/docker-demo/flask-demo
+   32  cd /opt/docker-demo/flask-demo
+   33  vi Dockerfle
+   34  vi app.py
+   35  vi requirements.txt
+   36  docker build . -t pythondemo:latest
+   37  mv Dockerfle Dockerfile
+   38  docker build . -t pythondemo:latest
+   39  docker images
+   40  history

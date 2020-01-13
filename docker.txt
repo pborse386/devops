@@ -1,0 +1,95 @@
+﻿
+
+
+-----------------------Docker Installation----------------------
+---------------Docker Installation---------------------------
+
+apt-get update -y
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+sudo apt-get install docker-ce
+
+
+1) The run command is used to mention that we want to create an instance of an image, which is then called a container.
+2) sudo docker run -it centos /bin/bash
+    We are using the sudo command to ensure that it runs with root access.
+
+   Here, centos is the name of the image we want to download from Docker Hub and install on our Ubuntu machine.
+
+   ─it is used to mention that we want to run in interactive mode.
+
+   /bin/bash is used to run the bash shell once CentOS is up and running.
+
+3) An image is a combination of a file system and parameters
+
+4)docker images 
+	-This command is used to display all the images currently installed on the system.
+
+5)docker inspect
+This command is used see the details of an image or container.
+6)docker info
+docker ps -a
+
+docker run ubuntu
+
+1. Foreground
+
+docker run ubuntu:14.04 /bin/echo 'Hello world'
+docker images
+docker ps 
+docker ps -a
+
+
+2. interactive
+
+docker run -t -i ubuntu:14.04 /bin/bash
+
+3.Daemon Mode
+
+docker run -d ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"
+
+docker exec -it containerid /bin/bash
+docker logs containerid
+
+
+
+docker rm $(docker ps -aq --filter "status=exited")
+
+mkdir -p /opt/docker-demo/flask-demo
+cd /opt/docker-demo/flask-demo
+
+--------Docker File Python Flask -------------------------
+FROM python:2.7
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+EXPOSE 5000
+CMD [ "python", "app.py" ]
+
+--------------------app.py---------------------------------
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello World!"
+
+if __name__ == "__main__":
+    app.run()
+    
+---------------------requirements.txt-----------------
+Flask
+
+
+docker build . -t pythondemo:latest
+docker images
+docker run --name test-python -d d33aa60d44ff ImageId
+docker exec -it container_id /bin/bash
+
+
+
+
+

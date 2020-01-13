@@ -1,0 +1,122 @@
+https://zoom.us/j/951144838?pwd=M3VWZXY1ejdyVUkwOEJIbDBEVWdYUT09
+
+
+yum update -y
+yum install wget -y
+wget -q https://releases.hashicorp.com/terraform/0.12.9/terraform_0.12.9_linux_amd64.zip
+yum install unzip -y
+unzip -o terraform_0.12.9_linux_amd64.zip -d /usr/local/bin
+rm terraform_0.12.9_linux_amd64.zip
+
+
+https://classroom.google.com/c/NDc0NTA5MTQxNzVa
+
+
+xx
+
+[default]
+aws_access_key_id =
+aws_secret_access_key =
+
+
+
+
+
+-------------------------
+
+
+
+provider "aws" {
+  region = "us-east-2"
+}
+
+# Resource configuration 
+resource "aws_instance" "hello-instance" {
+  ami           = "ami-0b1e356e"
+  instance_type = "t2.micro"
+}
+
+
+
+---------------------------------Demo-1-------------------
+
+cd /opt/terraform-demo/
+
+yum install git -y
+
+
+
+cd terraform-course
+
+git checkout terraform-0.12
+
+cd demo-1
+
+vi terraform.tfvars
+
+
+
+
+
+https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html
+
+
+terraform {
+   backend "s3" {
+     bucket = "terraform-state-dp123"
+     key      = "terraform/mystate" #directory in bucket
+     region = "us-east-2"
+}
+}
+
+
+
+
+
+
+
+
+
+https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html
+vpc_security_group_ids = ["sg-08b94622d5da5c52c"]
+
+
+
+cd /opt/terraform-demo/
+
+yum install git -y
+
+git clone https://github.com/maheshkharwadkar/terraform-course.git
+
+cd terraform-course
+
+git checkout terraform-0.12
+
+
+
+
+
+
+git checkout terraform-0.12
+   16  pip3 --version
+   17  python --version
+   18  python3 --version
+   19  yum install python3 -y
+   20  python3 --version
+   21  pip3 --version
+   22  curl -O https://bootstrap.pypa.io/get-pip.py
+   23  python get-pip.py --user
+   24  python3 get-pip.py --user
+   25  cd..
+   26  cd /
+   27  cd
+   28  python3 get-pip.py --user
+   29  curl -O https://bootstrap.pypa.io/get-pip.py
+   30  python3 get-pip.py --user
+   31  ls -a ~
+   32  export PATH=~/.local/bin:$PATH
+   33  source ~/.bash_profile
+   34  pip3 --version
+   35  pip3 install awscli --upgrade --user
+   36  aws --version
+

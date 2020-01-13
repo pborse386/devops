@@ -1,0 +1,770 @@
+[root@ip-172-31-21-183 eks-demo]# history
+    1  cd /opt/terraform-demo/
+    2  cd opt
+    3  mkdir opt
+    4  cd opt
+    5  mkdir terraform-demo
+    6  cd terraform-demo
+    7  cd opt/terraform-demo/
+    8  cd..
+    9  cd opt
+   10  pwd
+   11  yum -install
+   12  yum update -y
+   13  yum install wget -y
+   14  wget -q https://releases.hashicorp.com/terraform/0.12.9/terraform_0.12.9_linux_amd64.zip
+   15  yum install unzip -y
+   16  unzip -o terraform_0.12.9_linux_amd64.zip -d /usr/local/bin
+   17  rm terraform_0.12.9_linux_amd64.zip
+   18  cd demo-16
+   19  yum install git -y
+   20  git clone https://github.com/maheshkharwadkar/terraform-course.git
+   21  cd terraform-course
+   22  git checkout terraform-0.12
+   23  ls
+   24  cd demo-16
+   25  ls
+   26  ls -ltr
+   27  vi autoscaling.tf
+   28  vikey.tf
+   29  vi key.tf
+   30  vi elb.tf
+   31  vi vars.tf
+   32  vi vpc
+   33  vi vpc.tf
+   34  ssh keygen -f mykey
+   35  terraform init
+   36  terraform plan
+   37  $ pip3 --version
+   38  yum install python
+   39  yum install python3
+   40  $ pip3 --version
+   41  $ pip --version
+   42  pip3 --version
+   43  python3 --version
+   44  curl -O https://bootstrap.pypa.io/get-pip.py
+   45  python get-pip.py --user
+   46  python3 get-pip.py --user
+   47  ls -a ~
+   48  export PATH=~/.local/bin:$PATH
+   49  source ~/.bash_profile
+   50  pip3 --version
+   51  pip3 install awscli --upgrade --user
+   52   aws --version
+   53  pip3 list -o
+   54  pip3 install --upgrade --user awscli
+   55  which aws
+   56  which python
+   57  ls -al /usr/local/bin/python
+   58  ls -al /usr/local/bin/python3
+   59  which python3
+   60  ls -al /usr/local/bin/python3
+   61  ls -al /usr/local/bin/python
+   62  terraform init
+   63  terraform plan
+   64  which python3
+   65  ls -al /usr/local/bin/python
+   66  ln -s /usr/bin/python3 /usr/bin/python
+   67  which python3
+   68  which python
+   69  ls -al /usr/local/bin/python
+   70  ls -al /usr/bin/python
+   71  terraform plan
+   72  cd
+   73  ls -al
+   74  mkdir .aws
+   75  vi credentials
+   76  terraform plan
+   77  terraform init
+   78  cd demo-16
+   79  cd /opt/
+   80  ll
+   81  cd
+   82  ll
+   83  cd opt/
+   84  ll
+   85  cd terraform-demo
+   86  ls
+   87   cd terraform-course/
+   88  ll
+   89  cd demo-16
+   90  terraform init
+   91  terraform plan
+   92  cat provider.tf
+   93  cat vars.tf
+   94  terraform plan
+   95  cat cedentials
+   96  aws configue
+   97  aws configure
+   98  terraform plan
+   99  ssh-keygen -f mykey
+  100  terraform plan
+  101  terraform init
+  102  terraform plan
+  103  terraform apply
+  104  vi vpc.tf
+  105  cd..
+  106  cd../demo-18b
+  107  cd demo-18b
+  108  terraform plan
+  109  terraform apply
+  110  cd..
+  111  terraform apply
+  112  ll
+  113  terraform init
+  114  terraform plan
+  115  terraform apply
+  116  terraform destroy
+  117  history
+  118  cd demo-18
+  119  cd..
+  120  cd ..
+  121  cd demo-18b
+  122  ll
+  123  cd prod
+  124  ll
+  125  vi prod.tf
+  126  vi vars.tf
+  127  terraform init
+  128  terraform get
+  129  terraform plan
+  130  ll
+  131  cd ..
+  132  ll
+  133  cd modules
+  134  ll
+  135  vi instances.tf
+  136  cd prod
+  137  cd ..
+  138  ssh keygen -f mykey
+  139  cd prod
+  140  ssh keygen -f mykey
+  141  ll
+  142  vi vars.tf
+  143  ssh keygen -f mykey
+  144  ssh-keygen -f mykey
+  145  terraform init
+  146  terraform get
+  147  terraform plan
+  148  terraform apply
+  149  terraform destroy
+  150  cd /opt/terraform-demo/
+  151  cd opt
+  152  cd terraform-demo
+  153  ll
+  154  cd terraform-course
+  155  ll
+  156  cd demo-16
+  157  ll
+  158  vi autoscaling.tf
+  159  vi vars.tf
+  160  vi vpc.tf
+  161  terraform init
+  162  terraform init
+  163  ssh-keygen -f mykey
+  164  terraform init
+  165  aws configure
+  166  yum update -y
+  167  yum install wget -y
+  168  wget -q https://releases.hashicorp.com/terraform/0.12.9/terraform_0.12.9_linux_amd64.zip
+  169  yum install unzip -y
+  170  unzip -o terraform_0.12.9_linux_amd64.zip -d /usr/local/bin
+  171  rm terraform_0.12.9_linux_amd64.zip
+  172  aws configure
+  173  aws config
+  174  cd /opt/terraform-demo/
+  175  cd opt
+  176  cd terraform-demo
+  177  ll
+  178  cd terraform-course
+  179  ll
+  180  cd demo-16
+  181  ls -alt
+  182  vi vpc.tf
+  183  terraform init
+  184  yum install git -y
+  185  git clone https://github.com/maheshkharwadkar/terraform-course.git
+  186  cd ..
+  187  git checkout terraform-0.12
+  188  pip3 --version
+  189  pip3 --version
+  190   yum install python3
+  191  pip3 --version
+  192      python3 --version
+  193  curl -O https://bootstrap.pypa.io/get-pip.py
+  194  pip --version
+  195  pip3 --version
+  196      python get-pip.py --user
+  197  python3 get-pip.py --user
+  198  pip3 --version
+  199  sudo -s
+  200    pwd
+  201  yum -install
+  202  yum update -y
+  203   yum install wget -y
+  204  wget -q https://releases.hashicorp.com/terraform/0.12.9/terraform_0.12.9_linux_amd64.zip
+  205  yum install unzip -y
+  206  unzip -o terraform_0.12.9_linux_amd64.zip -d /usr/local/bin
+  207   rm terraform_0.12.9_linux_amd64.zip
+  208  yum install git -y
+  209  git clone https://github.com/maheshkharwadkar/terraform-course.git
+  210  cd opt
+  211  cd terraform-demo
+  212  cd terraform-course/
+  213  ll
+  214  vi vars.tf
+  215  cd demo-16
+  216  ls -ltr
+  217  vi vars.tf
+  218  terraform init
+  219  cd ..
+  220  cd ..
+  221  cd ..
+  222  cd ..
+  223  terraform init
+  224  cd demo-16
+  225  cd terraform-course/
+  226  cd demo-16
+  227  ssh-keygen -f mykey
+  228  terraform init
+  229  export PATH=~/.local/bin:$PATH
+  230  source ~/.bash_profile
+  231  pip3 --version
+  232  pip3 install awscli --upgrade --user
+  233   aws --version
+  234  pip3 list -o
+  235  pip3 install --upgrade --user awscli
+  236  which aws
+  237  which python
+  238  ls -al /usr/local/bin/python
+  239  ls -al /bin/python
+  240  ls -al /usr/bin/python3
+  241  which python3
+  242  ls -al /bin/python3
+  243  ls -al /bin/python
+  244  terraform init
+  245  terraform init
+  246  export PATH=$PATH:/usr/local/bin
+  247  terraform init
+  248  terraform plan
+  249  terraform apply
+  250  terraform output
+  251  terraform destroy
+  252  cd opt
+  253  cd terraform-demo/
+  254  cd terraform-course/
+  255  cd demo-18b
+  256  ls -alt
+  257  cd prod
+  258  ll
+  259  vi vars.tf
+  260  vi prod.tf
+  261  vi provider.tf
+  262  terraform init
+  263  aws --version
+  264  yum update -y
+  265  yum install wget -y
+  266  yum install git -y
+  267  git clone https://github.com/maheshkharwadkar/terraform-course.git
+  268  git checkout terraform-0.12
+  269  pip3 --version
+  270  python3 --version
+  271  curl -O https://bootstrap.pypa.io/get-pip.py
+  272   python get-pip.py --user
+  273  ls -a ~
+  274  export PATH=~/.local/bin:$PATH
+  275  terraform init
+  276  export PATH=$PATH:/usr/local/bin
+  277  terraform init
+  278  terraform get
+  279  terraform plan
+  280  ls
+  281  cd ..
+  282  ls
+  283  cd modules
+  284  ls
+  285  vi instances.tf
+  286  vi instances
+  287  cd instances
+  288  ll
+  289  vi instance.tf
+  290  terraform init
+  291  cd ..
+  292  cd ..
+  293  ll
+  294  cd prod
+  295  terraform init
+  296  ssh-keygen -f mykey
+  297  terraform plan
+  298  cd ..
+  299  cd modules
+  300  cd instances
+  301  vi instance.tf
+  302  vi instance.tf
+  303  cd ..
+  304  cd ..
+  305  cd prod
+  306  cd opt
+  307  cd terraform-demo/
+  308  cd
+  309  cd opt
+  310  cd terraform-demo/
+  311  ll
+  312  cd terraform-course/
+  313  ll
+  314  cd demo-16
+  315  ll
+  316  vi vars.tf
+  317  terraform init
+  318   ssh keygen -f mykey
+  319   ssh-keygen -f mykey
+  320  export PATH=$PATH:/usr/local/bin
+  321  terraform init
+  322  terraform plan
+  323  terraform apply
+  324  terraform destroy
+  325  cd ..
+  326  ll
+  327  cd demo-16
+  328  ll
+  329  vi vars.tf
+  330  cd opt
+  331  cd terraform-demo/
+  332  cd terraform-course/
+  333  cd demo-10
+  334  -1lt
+  335  ll
+  336  vi cloudinit.tf
+  337  vi instance.tf
+  338  vi key.tf
+  339  vi provider.tf
+  340  vi vars.tf
+  341  vi vpc.tf
+  342  terraform init
+  343  export PATH=$PATH:/usr/local/bin
+  344  terraform init
+  345  terraform plan
+  346  vi cloudinit.tf
+  347  terraform version
+  348  yum update -y
+  349  yum install wget -y
+  350  wget -q https://releases.hashicorp.com/terraform/0.12.9/terraform_0.12.9_linux_amd64.zip
+  351  yum install unzip -y
+  352  cd /opt/terraform-demo/
+  353  ll
+  354  cd terraform-course
+  355  ll
+  356  terraform --version
+  357  export PATH=$PATH:/usr/local/bin
+  358  terraform --version
+  359  cd eks-demo
+  360  -alt
+  361  ls -alt
+  362  git status
+  363  cd ..
+  364  git status
+  365  cd eks-demo
+  366  ls
+  367  vi eks-worker.tf
+  368  vi eks-workers.tf
+  369  ls -alt
+  370  terraform init
+  371  terraform plan
+  372  terraform apply
+  373  terraform output kubeconfig
+  374  mkdir -p ~/.kube
+  375  vi ~/.kube/config
+  376  vi ~/.kube/config
+  377  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  378  chmod +x kubectl
+  379  sudo mv kubectl /usr/local/bin
+  380  kubectl get nodes
+  381  wget https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.3.0/heptio-authenticator-aws_0.3.0_linux_amd64
+  382  chmod +x heptio-authenticator-aws_0.3.0_linux_amd64
+  383  sudo mv heptio-authenticator-aws_0.3.0_linux_amd64 /usr/local/bin/heptio-authenticator-aws
+  384  kubectl get nodes
+  385  cd opt
+  386  ll
+  387  cd terraform-demo
+  388  cd eks-demo
+  389  ls
+  390  cd terraform-course
+  391  cd eks-demo
+  392  ls
+  393  terraform output
+  394  export PATH=$PATH:/usr/local/bin
+  395  terraform output
+  396  terraform output
+  397  terraform output
+  398  ls
+  399  history
+  400  kubectl get nodes
+  401  terraform output kubeconfig
+  402  terraform destroy
+  403  git status
+  404  git checkout terraform-0.12
+  405  terraform destroy
+  406  git stash
+  407  git status
+  408  git stash
+  409  git checkout terraform_0.12
+  410  branch
+  411  terraform --version
+  412  terraform version
+  413  cd /opt/terraform-demo/
+  414  yum update -y
+  415  yum install wget -y
+  416  wget -q https://releases.hashicorp.com/terraform/0.12.9/terraform_0.12.9_linux_amd64.zip
+  417  yum install unzip -y
+  418  cd /opt/terraform-demo/
+  419  export PATH=~/.local/bin:$PATH
+  420  cd /opt/terraform-demo/
+  421  terraform version
+  422   pip3 --version
+  423   python --version
+  424   python3 --version
+  425    aws --version
+  426  mkdir opt
+  427  cd opt
+  428  cd terraform-demo
+  429  yum install git -y
+  430  git clone https://github.com/maheshkharwadkar/terraform-course.git
+  431  cd terraform-course
+  432  git checkout terraform-0.12
+  433  terraform --version
+  434  ls
+  435  cd eks-demo
+  436  ls
+  437  export PATH=$PATH:/usr/local/bin
+  438   terraform version
+  439  kubectl get nodes
+  440  terraform version
+  441  export PATH=$PATH:/usr/local/bin
+  442  terraform version
+  443  cd /opt/terraform-demo/
+  444  cd opt
+  445  cd terraform-demo/
+  446  cd terraform-course/
+  447  cd
+  448  cd opt
+  449  cd terraform-demo/
+  450  cd terraform-course/
+  451  ls
+  452  cd eks-demo
+  453  vi ls
+  454  ls
+  455  vi providers.tf
+  456  vi providers.tf
+  457  vi vpc.tf
+  458  vi eks-workers.tf
+  459  cd opt
+  460  cd terraform-demo/
+  461  cd terraform-course/
+  462  cd eks-demo
+  463  ls
+  464  vi providers.tf
+  465  vi eks-workers.tf
+  466  export PATH=$PATH:/usr/local/bin
+  467  terraform init
+  468  terraform plan
+  469  terraform apply
+  470  ls
+  471  vi iam.tf
+  472  vi iamworkers.tf
+  473  vi iam-workers.tf
+  474  terraform init
+  475  terraform plan
+  476  terraform apply
+  477  vi iam-workers.tf
+  478  terraform plan
+  479  terraform apply
+  480  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  481  chmod +x kubectl
+  482  sudo mv kubectl /usr/local/bin
+  483  wget https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.3.0/heptio-authenticator-aws_0.3.0_linux_amd64
+  484  chmod +x heptio-authenticator-aws_0.3.0_linux_amd64
+  485  sudo mv heptio-authenticator-aws_0.3.0_linux_amd64 /usr/local/bin/heptio-authenticator-aws
+  486  terraform output kubeconfig
+  487  mkdir -p ~/.kube
+  488  vi ~/.kube/config
+  489  vi ~/.kube/config
+  490  terraform output config-map-aws-auth
+  491  vi congig-map-aws-auth.yaml
+  492  kubectl apply -f config-map-aws-auth.yaml
+  493  terraform destroy
+  494  terraform init
+  495  ls
+  496  vi eks-workers.tf
+  497  export PATH=$PATH:/usr/local/bin
+  498  terraform init
+  499  terraform plan
+  500  terraform apply
+  501  kubectl getnodes
+  502  kubectl get nodes
+  503  terraform output kubeconfig
+  504  mkdir -p ~/.kube
+  505  vi ~/.kube/config
+  506  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  507  chmod +x kubectl
+  508  sudo mv kubectl /usr/local/bin
+  509  wget https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.3.0/heptio-authenticator-aws_0.3.0_linux_amd64
+  510  chmod +x heptio-authenticator-aws_0.3.0_linux_amd64
+  511  sudo mv heptio-authenticator-aws_0.3.0_linux_amd64 /usr/local/bin/heptio-authenticator-aws
+  512  kubectl get nodes
+  513  terraform output kubeconfig
+  514  vi ~/.kube/config
+  515  terraform create output
+  516  terraform output kubeconfig
+  517  terraform output
+  518  terraform output config-map-aws-auth
+  519  vi congig-map-aws-auth.yaml
+  520  kubectl create -f  config-map-aws-auth.yaml
+  521  ls
+  522  kubectl create -f  congig-map-aws-auth.yaml
+  523  kubectl get nodes
+  524  kubectl get nodes
+  525  history
+
+ 455  vi providers.tf
+  456  vi providers.tf
+  457  vi vpc.tf
+  458  vi eks-workers.tf
+  459  cd opt
+  460  cd terraform-demo/
+  461  cd terraform-course/
+  462  cd eks-demo
+  463  ls
+  464  vi providers.tf
+  465  vi eks-workers.tf
+  466  export PATH=$PATH:/usr/local/bin
+  467  terraform init
+  468  terraform plan
+  469  terraform apply
+  470  ls
+  471  vi iam.tf
+  472  vi iamworkers.tf
+  473  vi iam-workers.tf
+  474  terraform init
+  475  terraform plan
+  476  terraform apply
+  477  vi iam-workers.tf
+  478  terraform plan
+  479  terraform apply
+  480  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  481  chmod +x kubectl
+  482  sudo mv kubectl /usr/local/bin
+  483  wget https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.3.0/heptio-authenticator-aws_0.3.0_linux_amd64
+  484  chmod +x heptio-authenticator-aws_0.3.0_linux_amd64
+  485  sudo mv heptio-authenticator-aws_0.3.0_linux_amd64 /usr/local/bin/heptio-authenticator-aws
+  486  terraform output kubeconfig
+  487  mkdir -p ~/.kube
+  488  vi ~/.kube/config
+  489  vi ~/.kube/config
+  490  terraform output config-map-aws-auth
+  491  vi congig-map-aws-auth.yaml
+  492  kubectl apply -f config-map-aws-auth.yaml
+  493  terraform destroy
+  494  terraform init
+  495  ls
+  496  vi eks-workers.tf
+  497  export PATH=$PATH:/usr/local/bin
+  498  terraform init
+  499  terraform plan
+  500  terraform apply
+  501  kubectl getnodes
+  502  kubectl get nodes
+  503  terraform output kubeconfig
+  504  mkdir -p ~/.kube
+  505  vi ~/.kube/config
+  506  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  507  chmod +x kubectl
+  508  sudo mv kubectl /usr/local/bin
+  509  wget https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.3.0/heptio-authenticator-aws_0.3.0_linux_amd64
+  510  chmod +x heptio-authenticator-aws_0.3.0_linux_amd64
+  511  sudo mv heptio-authenticator-aws_0.3.0_linux_amd64 /usr/local/bin/heptio-authenticator-aws
+  512  kubectl get nodes
+  513  terraform output kubeconfig
+  514  vi ~/.kube/config
+  515  terraform create output
+  516  terraform output kubeconfig
+  517  terraform output
+  518  terraform output config-map-aws-auth
+  519  vi congig-map-aws-auth.yaml
+  520  kubectl create -f  config-map-aws-auth.yaml
+  521  ls
+  522  kubectl create -f  congig-map-aws-auth.yaml
+  523  kubectl get nodes
+  524  kubectl get nodes
+  525  history
+  526  kubectl get pods --namespace=kube-system
+  527  vi redis.yml
+  528  kubectl create -f redis.yml
+  529  vi redis.yml
+  530  kubectl get pods
+  531  kubectl edit pod redis
+  532  kubectl get pods
+  533  kubectl edit pod redis
+  534  kubectl get pods
+  535  kubectl describe pod redis
+  536  kubectl get pods
+  537  kubectl get pods -o wide
+  538  kubectl delete pod redis
+  539  vi my-first-pod.yml
+  540  kubectl create -f my-first-pod.yml
+  541  kubectl get pods
+  542  kubectl logs my-first-pod -c my-centos --tail=30
+  543  kubectl exec -it  my-first-pod -c my-nginx /bin/bash
+  544  kubectl exec -it  my-first-pod -c my-centos /bin/bash
+  545  kubectl delete pod my-first-pod
+  546  vi nginx-rc.yml
+  547  kubectl create -f nginx-rc.yml
+  548  kubectl get rc
+  549  kubectl get pods
+  550  kubectl get pods -o wide
+  551  curl 10.0.103.130
+  552  curl 10.0.103.130
+  553  kubectl exec -it nginx-2b4kl /bin/bash
+  554  kubectl get pods
+  555  kubectl describe pod nginx-2b4kl
+  556  kubectl get pods
+  557  kubectl delete pod nginx-thlps
+  558  watch kubectl get pods
+helloworld-deployment-574879f9f4-bsf9r
+
+
+ 538  kubectl delete pod redis
+  539  vi my-first-pod.yml
+  540  kubectl create -f my-first-pod.yml
+  541  kubectl get pods
+  542  kubectl logs my-first-pod -c my-centos --tail=30
+  543  kubectl exec -it  my-first-pod -c my-nginx /bin/bash
+  544  kubectl exec -it  my-first-pod -c my-centos /bin/bash
+  545  kubectl delete pod my-first-pod
+  546  vi nginx-rc.yml
+  547  kubectl create -f nginx-rc.yml
+  548  kubectl get rc
+  549  kubectl get pods
+  550  kubectl get pods -o wide
+  551  curl 10.0.103.130
+  552  curl 10.0.103.130
+  553  kubectl exec -it nginx-2b4kl /bin/bash
+  554  kubectl get pods
+  555  kubectl describe pod nginx-2b4kl
+  556  kubectl get pods
+  557  kubectl delete pod nginx-thlps
+  558  watch kubectl get pods
+  559  histroy
+  560  history
+  561  vi elb.yml
+  562  kubectl create -f elb.yml
+  563  kubectl get pods
+  564  kubectl get svc
+  565  telnet ab9d822dc2ee711ea905606ac397320c-136978591.us-east-2.elb.amazonaws.com 80
+  566  yum install telnet
+  567  telnet ab9d822dc2ee711ea905606ac397320c-136978591.us-east-2.elb.amazonaws.com 80
+  568  telnet ab9d822dc2ee711ea905606ac397320c-136978591.us-east-2.elb.amazonaws.com 80
+  569  kubectl get pods
+  570  kubectl get svc
+  571  kubectl delete
+  572  [root@ip-172-31-21-183 eks-demo]# kubectl get svc
+  573  NAME                 TYPE           CLUSTER-IP      EXTERNAL-IP                                                              PORT(S)        AGE
+  574  helloworld-service   LoadBalancer   172.20.179.72   ab9d822dc2ee711ea905606ac397320c-136978591.us-east-2.elb.amazonaws.com   80:32410/TCP   12m
+  575  kubectl svc [root@ip-172-31-21-183 eks-demo]# helloworld-service   LoadBalancer   172.20.179.72   ab9d822dc2ee711ea905606ac397320c-136978591.us-east-2.elb.amazonaws.com   80:32410/TCP   12m^Cc397320c-136978591.us-east-2.elb.amazonaws.com   8[root@ip-172-31-21-183 eks-demo]#
+  576  kubectl get svc
+  577  kubectl delete svc helloworld-service
+  578  kubectl delete pods
+  579  kubectl get pods
+  580  kubectl delete pod nodehelloworld.example.com
+  581  vi backend.yml
+  582  vi backend.yml
+  583  vi frontend.yml
+  584  kubectl create -f backend.yml
+  585  kubectl create -f frontend.yml
+  586  kubectl get pods
+  587  kubectl get svc
+  588  kubectl get pods -o wide
+  589  kubectl get svc -o wide
+  590  terraform destroy
+  591  cd opt
+  592  cd terraform-demo/
+  593  cd terraform-course/
+  594  cd eks-demo
+  595  terraform --version
+  596  export PATH=$PATH:/usr/local/bin
+  597  terraform --version
+  598  terraform init
+  599  terraform plan
+  600  terraform apply
+  601  terraform output config-map-aws-auth
+  602  vi congig-map-aws-auth.yaml
+  603  vi congig-map-aws-auth.yaml
+  604  kubectl create -f  config-map-aws-auth.yaml
+  605  kubectl create -f  config-map-aws-auth.yaml
+  606  terraform output kubeconfig
+  607  vi ~/.kube/config
+  608  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  609  chmod +x kubectl
+  610  sudo mv kubectl /usr/local/bin
+  611  wget https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.3.0/heptio-authenticator-aws_0.3.0_linux_amd64
+  612  chmod +x heptio-authenticator-aws_0.3.0_linux_amd64
+  613  sudo mv heptio-authenticator-aws_0.3.0_linux_amd64 /usr/local/bin/heptio-authenticator-aws
+  614  kubectl get nodes
+  615  terraform output config-map-aws-auth
+  616  vi congig-map-aws-auth.yaml
+  617  kubectl create -f  config-map-aws-auth.yaml
+  618  kubectl create -f  congig-map-aws-auth.yaml
+  619  kubectl get nodes
+  620  kubectl get nodes
+  621  vi dep.yml
+  622  kubectl create -f dep.yml
+  623  kubectl get deployments
+  624  kubectl get rs
+  625  kubectl get pods
+  626  kubectl get pods --show-labels
+  627  kubectl get nodes
+  628  kubectl get pods
+  629  kubectl get pods --show-labels
+  630  kubectl rollout status deployment/helloworld-deployment
+  631  kubectl set image deployment/helloworld-deployment k8s-demo=wardviaene/k8s-demo:2
+  632  kubectl get deployments
+  633  kubectl get pods --show-labels
+  634  kubectl get rs
+  635  kubectl get pods --show-labels
+  636  vi lifecycle.yaml
+  637  kubectl create -f lifecycle.yaml
+  638  watch -n1 kubectl get pods
+  639  watch -n1 kubectl get pods
+  640  kubectl exec -it helloworld-deployment-574879f9f4-bsf9r /bin/sh
+  641  watch -n1 kubectl get pods
+  642  kubectl exec -it helloworld-deployment-574879f9f4-bsf9r /bin/sh cat /timing
+  643  kubectl exec -it helloworld-deployment-574879f9f4-bsf9r /bin/sh
+  644  kubectl get pods
+  645  kubectl exec -it lifecycle-79888fbd6b-qvmwj  /bin/sh
+  646  kubectl exec -it lifecycle-79888fbd6b-qvmwj /bin/sh
+  647  kubectl get pods
+  648  kubectl get pods
+  649  kubectl get pods
+  650  kubectl get pods
+  651  kubectl get pods
+  652  kubectl exec -it lifecycle-79888fbd6b-qvmwj /bin/sh
+  653  kubectl get pods
+  654  kubectl exec -it lifecycle-79888fbd6b-qvmwj /bin/sh
+  655  kubectl get storage class
+  656  kubectl get storageclass
+  657  vi statefulsets.yaml
+  658  kubectl apply -f statefulsets.yml
+  659  kubectl apply -f statefulsets.yaml
+  660  kubectl create -f statefulsets.yml
+  661  kubectl create -f statefulsets.yaml
+  662  vi statefulsets.yaml
+  663  kubectl create -f statefulsets.yaml
+  664  kubectl apply -f statefulsets.yaml
+  665  kubectl get pv
+  666  kubectl get pvc
+  667  kubectl get pods
+  668  kubectl get statefullset
+  669  kubectl get statefulset
+  670  kubectl run --rm -it --image alpine test
+  671  history
+
+

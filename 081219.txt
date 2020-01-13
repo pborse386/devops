@@ -1,0 +1,123 @@
+sudo -s
+[root@ip-172-31-21-183 demo-16]# history
+    1  cd /opt/terraform-demo/
+    2  cd opt
+    3  mkdir opt
+    4  cd opt
+    5  mkdir terraform-demo
+    6  cd terraform-demo
+    7  cd opt/terraform-demo/
+    8  cd..
+    9  cd opt
+   10  pwd
+   11  yum -install
+   12  yum update -y
+   13  yum install wget -y
+   14  wget -q https://releases.hashicorp.com/terraform/0.12.9/terraform_0.12.9_linux_amd64.zip
+   15  yum install unzip -y
+   16  unzip -o terraform_0.12.9_linux_amd64.zip -d /usr/local/bin
+   17  rm terraform_0.12.9_linux_amd64.zip
+   18  cd demo-16
+   19  yum install git -y
+   20  git clone https://github.com/maheshkharwadkar/terraform-course.git
+   21  cd terraform-course
+   22  git checkout terraform-0.12
+   23  ls
+   24  cd demo-16
+   25  ls
+   26  ls -ltr
+   27  vi autoscaling.tf
+   28  vikey.tf
+   29  vi key.tf
+   30  vi elb.tf
+   31  vi vars.tf
+   32  vi vpc
+   33  vi vpc.tf
+   34  ssh-keygen -f mykey
+   35  terraform init
+   36  terraform plan
+   37  $ pip3 --version
+   38  yum install python
+   39  yum install python3
+   40  $ pip3 --version
+   41  $ pip --version
+   42  pip3 --version
+   43  python3 --version
+   44  curl -O https://bootstrap.pypa.io/get-pip.py
+   45  python get-pip.py --user
+   46  python3 get-pip.py --user
+   47  ls -a ~
+   48  export PATH=~/.local/bin:$PATH
+       export PATH=$PATH:/usr/local/bin
+   49  source ~/.bash_profile
+   50  pip3 --version
+   51  pip3 install awscli --upgrade --user
+   52  aws --version
+   53  pip3 list -o
+   54  pip3 install --upgrade --user awscli
+   55  which aws
+   56  which python
+   57  ls -al /usr/local/bin/python
+   58  ls -al /usr/local/bin/python3
+   59  which python3
+   60  ls -al /usr/local/bin/python3
+   61  ls -al /usr/local/bin/python
+   62  terraform init
+   63  terraform plan
+   64  which python3
+   65  ls -al /usr/local/bin/python
+   66  ln -s /usr/bin/python3 /usr/bin/python
+   67  which python3
+   68  which python
+   69  ls -al /usr/local/bin/python
+   70  ls -al /usr/bin/python
+   71  terraform plan
+   72  cd
+   73  ls -al
+   74  mkdir .aws
+   75  vi credentials
+   76  terraform plan
+   77  terraform init
+   78  cd demo-16
+   79  cd /opt/
+   80  ll
+   81  cd
+   82  ll
+   83  cd opt/
+   84  ll
+   85  cd terraform-demo
+   86  ls
+   87   cd terraform-course/
+   88  ll
+   89  cd demo-16
+   90  terraform init
+   91  terraform plan
+   92  cat provider.tf
+   93  cat vars.tf
+   94  terraform plan
+   95  cat cedentials
+   96  aws configue
+   97  aws configure
+   98  terraform plan
+   99  ssh-keygen -f mykey
+  100  terraform plan
+  101  terraform init
+  102  terraform plan
+  103  terraform apply
+  104  vi vpc.tf
+  105  cd..
+  106  cd../demo-18b
+  107  cd demo-18b
+  108  terraform plan
+  109  terraform apply
+  110  cd..
+  111  terraform apply
+  112  ll
+  113  terraform init
+  114  terraform plan
+  115  terraform apply
+  116  terraform destroy
+  117  history
+us-east-2a
+us-east-2b
+us-east-2c

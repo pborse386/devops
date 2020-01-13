@@ -1,0 +1,109 @@
+
+
+ssh-keygen -t rsa -C "mahesh.s.kharwadkar@gmail.com"
+cat ~/.ssh/id_rsa.pub
+copy ssh key to git hub -> settings -> New SSH key
+
+
+ssh-keygen -t rsa -C "mahesh.s.kharwadkar@gmail.com"
+cat ~/.ssh/id_rsa.pub
+copy ssh key to git hub -> settings -> New SSH key
+
+
+git remote set-url origin git@github.com:maheshkharwadkar/gitdemo.git
+
+
+git remote set-url origin git@github.com:pborse386/devops.git 
+git@github.com:pborse386/devops.git
+
+
+ 1  cd opt
+    2  cd git-demo/
+    3  git status
+    4  vi sample.txt
+    5  git ls
+    6  ls
+    7  git status
+    8  git add sample.txt
+    9  git status
+   10  git commit "second"
+   11  git commit -m "second"
+   12  git status
+   13  pwd
+   14  git log
+   15  git remote add origin https://github.com/pborse386/devops.git
+   16  git push
+   17  git push --set-upstream origin master
+   18  git checkout -b pborse386/myfeature
+   19  git branch
+   20  git checkout master
+   21  git checkout myfeature
+   22  git checkout pborse386/myfeature
+   23  git branch
+   24  vi new.txt
+   25  vi new1.txt
+   26  vi new2.txt
+   27  vi new3.txt
+   28  vi new4.txt
+   29  vi new5.txt
+   30  git status
+   31  ls
+   32  git add .
+   33  git commit -m"myfirstfeature"
+   34  git push
+   35  git push --set-upstream origin pborse386/myfeature
+   36  history
+   37  checkout -b pborse386/myfeature1
+   38  git remote add origin https://github.com/pborse386/devops.git
+   39  git status
+   40  git branch
+   41  git checkout -b mybranch
+   42  vi new10.txt
+   43  git add .
+   44  git status
+   45  git commit -m"10"
+   46  git push
+   47  git push --set-upstream origin mybranch
+   48  ssh-keygen -t rsa -C "pborse386@gmail.com"
+   49  cat ~/.ssh/id_rsa.pub
+   50  git remote set-url origin git@github.com:pborse386/devops.git
+   51  git config
+   52  git config -l
+   53  git branch
+   54  git checkout master
+   55  vi add.txt
+   56  git status
+   57  git add.
+   58  git add add.txt
+   59  git commit -m"add"
+   60  git push
+   61  branch
+   62  git status
+   63  git push
+   64  git pull
+   65  git push
+   66  history
+   67  cd ..
+   68  sudo apt update -y
+   69  sudo apt-get update -y
+   70  wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+   71  sudo apt-get install jenkins
+   72  service jenkins status
+   73  netstat -tulpn |grep -i java
+   74  cat /var/lib/jenkins/secrets/initialAdminPassword
+   75  history
+
+
+
+
+--------------------------Jenkins Installation------------------------------------------
+    1  cd /opt
+    2  sudo apt update -y
+    3  sudo apt-get update -y
+    4  sudo apt-get install openjdk-8-jdk
+    5  wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+    6  echo "deb http://pkg.jenkins-ci.org/debian binary/" | sudo tee -a /etc/apt/sources.list.d/jenkins.list
+    7  sudo apt-get update
+    8  sudo apt-get install jenkins
+    9  service jenkins status
+    apt-get install openjdk-8-jdk

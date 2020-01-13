@@ -1,0 +1,131 @@
+---------------Docker File Demo Nginx ----------------------
+FROM fedora
+MAINTAINER scollier <scollier@redhat.com>
+
+RUN yum -y update
+RUN yum -y install nginx
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+RUN echo "nginx on Fedora" > /usr/share/nginx/html/index.html
+
+EXPOSE 80
+
+CMD [ "/usr/sbin/nginx" ]
+
+-------------------------------------
+docker build . -t nginxdemo:latest
+docker run --name mynginx -p 5000:80 -d 5435e7421112
+docker run --name mynginx --net=host -d 5435e7421112
+curl localhost:5000
+
+
+histroy
+
+root@ip-172-31-23-161:/opt/docker-demo/nginx-demo# history
+    1  apt-get update -y
+    2  sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+    3  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    4  sudo apt-key fingerprint 0EBFCD88
+    5  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    6  sudo apt-get update
+    7  sudo apt-get install docker-ce
+    8  docker info
+    9  docker images
+   10  docker run fedora
+   11  docker images
+   12  docker ps
+   13  docker ps -a
+   14  docker run ubuntu:14.04 /bin/echo 'Hello world'
+   15  docker images
+   16  docker ps
+   17  docker ps -a
+   18  docker run -t -i ubuntu:14.04 /bin/bash
+   19  docker ps -a
+   20  docker run -d ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"
+   21  docker ps
+   22  docker exec -it e02e3b9ce177 /bin/bash
+   23  docker ps
+   24  docker logs e02e3b9ce177
+   25  docker top
+   26  docker top e02e3b9ce177
+   27  docker inspect e02e3b9ce177
+   28  docker rm $(docker ps -aq --filter "status=exited")
+   29  docker images
+   30  docker rmi f0858ad3febd
+   31  mkdir -p /opt/docker-demo/flask-demo
+   32  cd /opt/docker-demo/flask-demo
+   33  vi Dockerfle
+   34  vi app.py
+   35  vi requirements.txt
+   36  docker build . -t pythondemo:latest
+   37  mv Dockerfle Dockerfile
+   38  docker build . -t pythondemo:latest
+   39  docker images
+   40  history
+   41  docker images
+   42  docker run --name test-python -d d33aa60d44ff
+   43  cd /opt/docker-demo/flask-demo
+   44  ll
+   45  docker build . -t pythondemo:latest
+   46  docker images
+   47  docker run --name test-python -d d33aa60d44ff
+   48  docker exec -it d33aa60d44ff /bin/bash
+   49  ll
+   50  vi app.py
+   51  vi Dockerfile
+   52  vi requirements.txt
+   53  docker images
+   54  docker ps
+   55  docker ps -a
+   56  docker run --name test-python -d d33aa60d44ff
+   57  docker run --name test-python -d 8bd90b8d17a2
+   58  docker exec -it 8bd90b8d17a2 /bin/bash
+   59  docker ps -a
+   60  docker run --name test-python -d 8bd90b8d17a2
+   61  doxkw
+   62  docker ps
+   63  docker ps -a
+   64  docker images
+   65  docker kill 8bd90b8d17a2
+   66  docker rmi 8bd90b8d17a2
+   67  docker run --name test-python2 -d d33aa60d44ff
+   68  docker ps -a
+   69  docker exec -it cf09def123d0 /bin/bash
+   70  docker status
+   71  docker stats
+   72  ls -alt
+   73  docker stats
+   74  docker images
+   75  docker ps -a
+   76  docker run --name test-python3 -d d33aa60d44ff
+   77  docker ps
+   78  docker exec -it f40852131b2b /bin/bash
+   79  cd ..
+   80  cd /opt/docker-demo
+   81  mkdir nginx-demo
+   82  cd nginx-demo
+   83  vi Dockerfile
+   84  docker build . -t nginxdemo:latest
+   85  docker images
+   86  docker ps -a
+   87  docker images -a
+   88  docker images
+   89  docker run --name myingnxdemo -p 5000:80 -d 3382a31e228d
+   90  docker ps
+   91  docker run --name myingnx1 -d e6329efd425f
+   92  docker images
+   93  docker run --name myingnx1 -d  3382a31e228d
+   94  docker ps
+   95  netstat -tulpn
+   96  docker images
+   97  docker ps
+   98  docker images
+   99  docker run --name mynginx2 -p --net=host -d 3382a31e228d
+  100  docker run --name mynginx2 --net=host -d 3382a31e228d
+  101  docker ps
+  102  netstat -tulpn
+  103  docker logs
+  104  docker logs e65018fa443f
+  105  docker inspect e65018fa443f
+  106  history
+
+

@@ -1,0 +1,36 @@
+ 1  cd opt
+    2  cd git-demo/
+    3  git status
+    4  vi sample.txt
+    5  git ls
+    6  ls
+    7  git status
+    8  git add sample.txt
+    9  git status
+   10  git commit "second"
+   11  git commit -m "second"
+   12  git status
+   13  pwd
+   14  git log
+   15  git remote add origin https://github.com/pborse386/devops.git
+   16  git push
+   17  git push --set-upstream origin master
+   18  git checkout -b pborse386/myfeature
+   19  git branch
+   20  git checkout master
+   21  git checkout myfeature
+   22  git checkout pborse386/myfeature
+   23  git branch
+   24  vi new.txt
+   25  vi new1.txt
+   26  vi new2.txt
+   27  vi new3.txt
+   28  vi new4.txt
+   29  vi new5.txt
+   30  git status
+   31  ls
+   32  git add .
+   33  git commit -m"myfirstfeature"
+   34  git push
+   35  git push --set-upstream origin pborse386/myfeature
+   36  history
