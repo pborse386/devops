@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ResourceAuthorization">
+    <test name= "ResourceAuthorization">
+        <classes>
+            <class name="ConfigurationTest.UserManagmentTest.ResourceAuthorizationTest"/>
+            <class name="ElementsTest.ResourceAuthorizationElementsTest"/>
+        </classes>
+    </test>
+</suite>

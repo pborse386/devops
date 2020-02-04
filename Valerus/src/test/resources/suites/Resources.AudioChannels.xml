@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="VideoChannels">
+    <!--<listeners>-->
+    <!--<listener class-name="Utilities.GenerateExtentReport" />-->
+    <!--</listeners>-->
+    <test name= "AudioChannels">
+        <classes>
+            <class name="ConfigurationTest.ResourcesTests.AudioChannelsTests.AudioChannelsTest"/>
+            <class name="ElementsTest.AudioChannelsElementsTest"/>
+        </classes>
+    </test>
+</suite>

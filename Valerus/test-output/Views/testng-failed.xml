@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Views]">
+  <test thread-count="5" name="Views(failed)">
+    <classes>
+      <class name="testcases.ViewsTest">
+        <methods>
+          <include name="AddNewViewWithoutLayoutTest"/>
+          <include name="ChangeLayoutTest"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="AddNewViewTest"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="GoToViewPage"/>
+        </methods>
+      </class> <!-- testcases.ViewsTest -->
+    </classes>
+  </test> <!-- Views(failed) -->
+</suite> <!-- Failed suite [Views] -->

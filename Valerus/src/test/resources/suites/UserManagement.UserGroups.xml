@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UserGroups">
+    <!--<listeners>-->
+    <!--<listener class-name="Utilities.GenerateExtentReport" />-->
+    <!--</listeners>-->
+    <test name= "UserGroups">
+        <classes>
+            <class name="ConfigurationTest.UserManagmentTest.UserGroupsTest"/>
+            <class name="ElementsTest.UserGroupsElementsTest"/>
+        </classes>
+    </test>
+</suite>

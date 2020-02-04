@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="VideoChannels">
+<!--<listeners>-->
+<!--<listener class-name="Utilities.GenerateExtentReport" />-->
+<!--</listeners>-->
+<test name= "VideoChannels">
+    <parameter name="browser" value="chrome" />
+
+    <classes>
+         <class name="ConfigurationTest.ResourcesTests.VideoChannelsTests.VideoChannelPropertiesTest"/>
+         <class name="ElementsTest.VideoChannelPropertiesElementTest"/>
+
+         <class name="ConfigurationTest.ResourcesTests.VideoChannelsTests.VideoStreamsTest"/>
+         <class name="ElementsTest.VideoStreamsElementsTest"/>
+
+         <class name="ConfigurationTest.ResourcesTests.VideoChannelsTests.VideoRecordingTest"/>
+         <class name="ElementsTest.VideoRecordingElementsTest"/>
+
+         <class name="ConfigurationTest.ResourcesTests.VideoChannelsTests.VideoPictureSettingsTest"/>
+         <class name="ElementsTest.VideoPictureSettingsElementsTest"/>
+
+        <!--<class name="ConfigurationTest.ResourcesTests.VideoChannelsTest"/>-->
+        <!--<class name="ElementsTest.VideoChannelsElementsTest"/>-->
+
+    </classes>
+</test>
+</suite>

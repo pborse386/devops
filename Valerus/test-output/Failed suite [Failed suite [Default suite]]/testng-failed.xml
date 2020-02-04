@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [Default suite]]]">
+  <test thread-count="5" name="Default test(failed)(failed)(failed)">
+    <classes>
+      <class name="testcases.NVRsElementsTest">
+        <methods>
+          <include name="ChangeIPAdressExitPressSaveUnsavedChangesTest"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="IncreasePortExitPressDontSaveUnsavedChangesTest"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="uDecreasePortExitPressSaveUnsavedChangesTest"/>
+          <include name="DecreasePortExitCancelUnsavedChangesTest"/>
+          <include name="ChangeIPAdressExitCancelUnsavedChangesTest"/>
+          <include name="IncreasePortAndPressCancel"/>
+          <include name="gotoNVRPage"/>
+        </methods>
+      </class> <!-- testcases.NVRsElementsTest -->
+      <class name="testcases.NVRsTest">
+        <methods>
+          <include name="ChangeIPAdressAndCheckStatusTest"/>
+          <include name="AddNVRWithSecuredPortTest"/>
+          <include name="endReport"/>
+          <include name="AddNVRAndCheckStatusVTest"/>
+          <include name="gotoNVRPage"/>
+          <include name="AddNVRManuallyWithSecuredPortTest"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="ChangeSecuredAndCheckStatusTest"/>
+          <include name="AddNVRAndPressApplyTest"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- testcases.NVRsTest -->
+    </classes>
+  </test> <!-- Default test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Default suite]]] -->

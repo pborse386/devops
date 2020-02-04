@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NVRs" >
+    <!--<listeners>-->
+        <!--<listener class-name="Utilities.GenerateExtentReport" />-->
+    <!--</listeners>-->
+    <test name= "NVRs">
+        <classes>
+            <class name="ConfigurationTest.NetworkDevicesTests.NVRsTest"/>
+            <class name="ElementsTest.NVRsElementsTest"/>
+        </classes>
+    </test>
+</suite>

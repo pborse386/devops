@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 16 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Failed_suite__Default_suite_">
+              <span class="suite-name border-failed">Failed suite [Default suite]</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Failed_suite__Default_suite_">
+                    <span>E:\NVR_Scripts\Valerus\test-output\testng-failed.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Failed_suite__Default_suite_">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Failed_suite__Default_suite_">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Failed_suite__Default_suite_">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Failed_suite__Default_suite_">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Failed_suite__Default_suite_">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Failed_suite__Default_suite_">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 16 failed,  1 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Failed_suite__Default_suite_" class="hide-methods failed suite-Failed_suite__Default_suite_"> (hide)</a> <!-- hide-methods failed suite-Failed_suite__Default_suite_ -->
+                      <a href="#" panel-name="suite-Failed_suite__Default_suite_" class="show-methods failed suite-Failed_suite__Default_suite_"> (show)</a> <!-- show-methods failed suite-Failed_suite__Default_suite_ -->
+                    </span>
+                    <div class="method-list-content failed suite-Failed_suite__Default_suite_">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsTest" hash-for-method="AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest">AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsTest" hash-for-method="AddNVRManuallyWithSecuredPortTest">AddNVRManuallyWithSecuredPortTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.ViewsTest" hash-for-method="AddNewViewTest">AddNewViewTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.ViewsTest" hash-for-method="AddNewViewWithoutLayoutTest">AddNewViewWithoutLayoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.WebPagesElementsTest" hash-for-method="AddNewWebPageExitAndSaveTest">AddNewWebPageExitAndSaveTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsTest" hash-for-method="ChangeIPAdressAndCheckStatusTest">ChangeIPAdressAndCheckStatusTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="ChangeIPAdressExitCancelUnsavedChangesTest">ChangeIPAdressExitCancelUnsavedChangesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="ChangeIPAdressExitPressSaveUnsavedChangesTest">ChangeIPAdressExitPressSaveUnsavedChangesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="ChangePortExitPressDontSaveUnsavedChangesTest">ChangePortExitPressDontSaveUnsavedChangesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsTest" hash-for-method="ChangeSecuredAndCheckStatusTest">ChangeSecuredAndCheckStatusTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="ChangeUserNameExitPressSaveUnsavedChangesTest">ChangeUserNameExitPressSaveUnsavedChangesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="DecreasePortExitCancelUnsavedChangesTest">DecreasePortExitCancelUnsavedChangesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="IncreasePortAndPressCancel">IncreasePortAndPressCancel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="IncreasePortExitPressDontSaveUnsavedChangesTest">IncreasePortExitPressDontSaveUnsavedChangesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.ViewsTest" hash-for-method="ResourceFilterTest">ResourceFilterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="uDecreasePortExitPressSaveUnsavedChangesTest">uDecreasePortExitPressSaveUnsavedChangesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Failed_suite__Default_suite_ -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Failed_suite__Default_suite_" class="hide-methods skipped suite-Failed_suite__Default_suite_"> (hide)</a> <!-- hide-methods skipped suite-Failed_suite__Default_suite_ -->
+                      <a href="#" panel-name="suite-Failed_suite__Default_suite_" class="show-methods skipped suite-Failed_suite__Default_suite_"> (show)</a> <!-- show-methods skipped suite-Failed_suite__Default_suite_ -->
+                    </span>
+                    <div class="method-list-content skipped suite-Failed_suite__Default_suite_">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.GroupsHierarchyTest" hash-for-method="RenameGroupAndCheckInMonitoringTest">RenameGroupAndCheckInMonitoringTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Failed_suite__Default_suite_ -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Failed_suite__Default_suite_" class="hide-methods passed suite-Failed_suite__Default_suite_"> (hide)</a> <!-- hide-methods passed suite-Failed_suite__Default_suite_ -->
+                      <a href="#" panel-name="suite-Failed_suite__Default_suite_" class="show-methods passed suite-Failed_suite__Default_suite_"> (show)</a> <!-- show-methods passed suite-Failed_suite__Default_suite_ -->
+                    </span>
+                    <div class="method-list-content passed suite-Failed_suite__Default_suite_">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="ChangeIPAdressExitPressDontSaveUnsavedChangesTest">ChangeIPAdressExitPressDontSaveUnsavedChangesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="ChangePortPressCancelTest">ChangePortPressCancelTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsTest" hash-for-method="ChangeUserNameToInvalidAndCheckStatusTest">ChangeUserNameToInvalidAndCheckStatusTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.ToursTest" hash-for-method="ChangeViewTimeTest">ChangeViewTimeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="CheckPropertiesAfterChangeIPAdressTest">CheckPropertiesAfterChangeIPAdressTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="CheckPropertiesAfterChangePasswordTest">CheckPropertiesAfterChangePasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsElementsTest" hash-for-method="CheckPropertiesAfterChangeUserNameTest">CheckPropertiesAfterChangeUserNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Default_suite_" title="testcases.NVRsTest" hash-for-method="MultipleNVRsAdditingTest">MultipleNVRsAdditingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Failed_suite__Default_suite_ -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Failed_suite__Default_suite_" class="panel Failed_suite__Default_suite_">
+          <div class="suite-Failed_suite__Default_suite_-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.ViewsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddNewViewTest">
+                  </a> <!-- AddNewViewTest -->
+                  <span class="method-name">AddNewViewTest</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy14.get(Unknown Source)
+	at pageObjects.ViewsPage.GetResourcesIDByIndex(ViewsPage.java:319)
+	at testcases.ViewsTest.AddNewViewTest(ViewsTest.java:173)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddNewViewWithoutLayoutTest">
+                  </a> <!-- AddNewViewWithoutLayoutTest -->
+                  <span class="method-name">AddNewViewWithoutLayoutTest</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy14.get(Unknown Source)
+	at pageObjects.ViewsPage.GetResourcesIDByIndex(ViewsPage.java:319)
+	at testcases.ViewsTest.AddNewViewWithoutLayoutTest(ViewsTest.java:613)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ResourceFilterTest">
+                  </a> <!-- ResourceFilterTest -->
+                  <span class="method-name">ResourceFilterTest</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy14.get(Unknown Source)
+	at pageObjects.ViewsPage.GetResourcesNameByIndex(ViewsPage.java:328)
+	at testcases.ViewsTest.ResourceFilterTest(ViewsTest.java:461)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__Default_suite_-class-failed -->
+          <div class="suite-Failed_suite__Default_suite_-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.WebPagesElementsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddNewWebPageExitAndSaveTest">
+                  </a> <!-- AddNewWebPageExitAndSaveTest -->
+                  <span class="method-name">AddNewWebPageExitAndSaveTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at testcases.WebPagesElementsTest.AddNewWebPageExitAndSaveTest(WebPagesElementsTest.java:171)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__Default_suite_-class-failed -->
+          <div class="suite-Failed_suite__Default_suite_-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.NVRsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest">
+                  </a> <!-- AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest -->
+                  <span class="method-name">AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [V] but found [Offline]
+	at testcases.NVRsTest.AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest(NVRsTest.java:884)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddNVRManuallyWithSecuredPortTest">
+                  </a> <!-- AddNVRManuallyWithSecuredPortTest -->
+                  <span class="method-name">AddNVRManuallyWithSecuredPortTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Communication Failure] but found [Connecting...]
+	at testcases.NVRsTest.AddNVRManuallyWithSecuredPortTest(NVRsTest.java:812)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangeIPAdressAndCheckStatusTest">
+                  </a> <!-- ChangeIPAdressAndCheckStatusTest -->
+                  <span class="method-name">ChangeIPAdressAndCheckStatusTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [172.20.1.46IP] but found [IP]
+	at testcases.NVRsTest.ChangeIPAdressAndCheckStatusTest(NVRsTest.java:1356)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangeSecuredAndCheckStatusTest">
+                  </a> <!-- ChangeSecuredAndCheckStatusTest -->
+                  <span class="method-name">ChangeSecuredAndCheckStatusTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]
+	at testcases.NVRsTest.ChangeSecuredAndCheckStatusTest(NVRsTest.java:1533)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__Default_suite_-class-failed -->
+          <div class="suite-Failed_suite__Default_suite_-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.NVRsElementsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangeIPAdressExitCancelUnsavedChangesTest">
+                  </a> <!-- ChangeIPAdressExitCancelUnsavedChangesTest -->
+                  <span class="method-name">ChangeIPAdressExitCancelUnsavedChangesTest</span>
+                  <div class="stack-trace">org.openqa.selenium.JavascriptException: JavaScript error (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;BORSE-PC&apos;, ip: &apos;172.20.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:46204/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: be075a3a-851a-4d32-8e01-0a1a92bda747
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:537)
+	at Utilities.Page.JavaScriptClick(Page.java:757)
+	at pageObjects.NVRsPage.AddDiscoveredNVRs(NVRsPage.java:934)
+	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:955)
+	at testcases.NVRsElementsTest.ChangeIPAdressExitCancelUnsavedChangesTest(NVRsElementsTest.java:353)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangeIPAdressExitPressSaveUnsavedChangesTest">
+                  </a> <!-- ChangeIPAdressExitPressSaveUnsavedChangesTest -->
+                  <span class="method-name">ChangeIPAdressExitPressSaveUnsavedChangesTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at testcases.NVRsElementsTest.ChangeIPAdressExitPressSaveUnsavedChangesTest(NVRsElementsTest.java:472)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangePortExitPressDontSaveUnsavedChangesTest">
+                  </a> <!-- ChangePortExitPressDontSaveUnsavedChangesTest -->
+                  <span class="method-name">ChangePortExitPressDontSaveUnsavedChangesTest</span>
+                  <div class="stack-trace">org.openqa.selenium.JavascriptException: JavaScript error (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;BORSE-PC&apos;, ip: &apos;172.20.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:23263/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 31b5dae6-3c8d-4796-a949-6a56508e7cf6
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:537)
+	at Utilities.Page.JavaScriptClick(Page.java:757)
+	at pageObjects.NVRsPage.AddDiscoveredNVRs(NVRsPage.java:934)
+	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:955)
+	at testcases.NVRsElementsTest.ChangePortExitPressDontSaveUnsavedChangesTest(NVRsElementsTest.java:616)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangeUserNameExitPressSaveUnsavedChangesTest">
+                  </a> <!-- ChangeUserNameExitPressSaveUnsavedChangesTest -->
+                  <span class="method-name">ChangeUserNameExitPressSaveUnsavedChangesTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:956)
+	at testcases.NVRsElementsTest.ChangeUserNameExitPressSaveUnsavedChangesTest(NVRsElementsTest.java:1056)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DecreasePortExitCancelUnsavedChangesTest">
+                  </a> <!-- DecreasePortExitCancelUnsavedChangesTest -->
+                  <span class="method-name">DecreasePortExitCancelUnsavedChangesTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
+	at testcases.NVRsElementsTest.DecreasePortExitCancelUnsavedChangesTest(NVRsElementsTest.java:811)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="IncreasePortAndPressCancel">
+                  </a> <!-- IncreasePortAndPressCancel -->
+                  <span class="method-name">IncreasePortAndPressCancel</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain &quot;false&quot;. Current value: &quot;null&quot; (tried for 15 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;BORSE-PC&apos;, ip: &apos;172.20.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:38387/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 4063a5dd-8017-4b96-a007-ef3a3ae0c0ba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageObjects.NVRsPage.CancelChangesButton(NVRsPage.java:432)
+	at testcases.NVRsElementsTest.IncreasePortAndPressCancel(NVRsElementsTest.java:776)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="IncreasePortExitPressDontSaveUnsavedChangesTest">
+                  </a> <!-- IncreasePortExitPressDontSaveUnsavedChangesTest -->
+                  <span class="method-name">IncreasePortExitPressDontSaveUnsavedChangesTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
+	at testcases.NVRsElementsTest.IncreasePortExitPressDontSaveUnsavedChangesTest(NVRsElementsTest.java:851)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uDecreasePortExitPressSaveUnsavedChangesTest">
+                  </a> <!-- uDecreasePortExitPressSaveUnsavedChangesTest -->
+                  <span class="method-name">uDecreasePortExitPressSaveUnsavedChangesTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
+	at testcases.NVRsElementsTest.uDecreasePortExitPressSaveUnsavedChangesTest(NVRsElementsTest.java:901)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__Default_suite_-class-failed -->
+          <div class="suite-Failed_suite__Default_suite_-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.GroupsHierarchyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RenameGroupAndCheckInMonitoringTest">
+                  </a> <!-- RenameGroupAndCheckInMonitoringTest -->
+                  <span class="method-name">RenameGroupAndCheckInMonitoringTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //span[@class=&apos;item-text ng-binding&apos;][@title=&apos;Groups Hierarchy&apos;] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;BORSE-PC&apos;, ip: &apos;172.20.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:20171/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: a75f9ec3-3cbb-414c-8ca2-2c91394cbb12
+*** Element info: {Using=xpath, value=//span[@class=&apos;item-text ng-binding&apos;][@title=&apos;Groups Hierarchy&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
+	at com.google.common.collect.Iterators$6.transform(Iterators.java:788)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.Iterators.addAll(Iterators.java:358)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:155)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:535)
+	at Utilities.Page.JavaScriptClick(Page.java:757)
+	at pageObjects.GroupsHierarchyPage.ClickOnGroupsHierarchyButtonOnLandingPage(GroupsHierarchyPage.java:145)
+	at pageObjects.GroupsHierarchyPage.GoToGroupsHierarchyPageFromLandingPage(GroupsHierarchyPage.java:102)
+	at testcases.GroupsHierarchyTest.GoToGroupsHierarchyPage(GroupsHierarchyTest.java:148)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__Default_suite_-class-skipped -->
+          <div class="suite-Failed_suite__Default_suite_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.NVRsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangeUserNameToInvalidAndCheckStatusTest">
+                  </a> <!-- ChangeUserNameToInvalidAndCheckStatusTest -->
+                  <span class="method-name">ChangeUserNameToInvalidAndCheckStatusTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MultipleNVRsAdditingTest">
+                  </a> <!-- MultipleNVRsAdditingTest -->
+                  <span class="method-name">MultipleNVRsAdditingTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__Default_suite_-class-passed -->
+          <div class="suite-Failed_suite__Default_suite_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.NVRsElementsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangeIPAdressExitPressDontSaveUnsavedChangesTest">
+                  </a> <!-- ChangeIPAdressExitPressDontSaveUnsavedChangesTest -->
+                  <span class="method-name">ChangeIPAdressExitPressDontSaveUnsavedChangesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangePortPressCancelTest">
+                  </a> <!-- ChangePortPressCancelTest -->
+                  <span class="method-name">ChangePortPressCancelTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckPropertiesAfterChangeIPAdressTest">
+                  </a> <!-- CheckPropertiesAfterChangeIPAdressTest -->
+                  <span class="method-name">CheckPropertiesAfterChangeIPAdressTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckPropertiesAfterChangePasswordTest">
+                  </a> <!-- CheckPropertiesAfterChangePasswordTest -->
+                  <span class="method-name">CheckPropertiesAfterChangePasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckPropertiesAfterChangeUserNameTest">
+                  </a> <!-- CheckPropertiesAfterChangeUserNameTest -->
+                  <span class="method-name">CheckPropertiesAfterChangeUserNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__Default_suite_-class-passed -->
+          <div class="suite-Failed_suite__Default_suite_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.ToursTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangeViewTimeTest">
+                  </a> <!-- ChangeViewTimeTest -->
+                  <span class="method-name">ChangeViewTimeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__Default_suite_-class-passed -->
+        </div> <!-- panel Failed_suite__Default_suite_ -->
+        <div panel-name="test-xml-Failed_suite__Default_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\NVR_Scripts\Valerus\test-output\testng-failed.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Failed suite [Default suite]&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.WebPagesElementsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;setup&quot;/&gt;
+          &lt;include name=&quot;afterMethod&quot;/&gt;
+          &lt;include name=&quot;startReport&quot;/&gt;
+          &lt;include name=&quot;endReport&quot;/&gt;
+          &lt;include name=&quot;GoToGroupsHierarchyPage&quot;/&gt;
+          &lt;include name=&quot;AddNewWebPageExitAndSaveTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.WebPagesElementsTest --&gt;
+      &lt;class name=&quot;testcases.NVRsElementsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;ChangeIPAdressExitPressSaveUnsavedChangesTest&quot;/&gt;
+          &lt;include name=&quot;setup&quot;/&gt;
+          &lt;include name=&quot;CheckPropertiesAfterChangeUserNameTest&quot;/&gt;
+          &lt;include name=&quot;IncreasePortExitPressDontSaveUnsavedChangesTest&quot;/&gt;
+          &lt;include name=&quot;ChangeUserNameExitPressSaveUnsavedChangesTest&quot;/&gt;
+          &lt;include name=&quot;uDecreasePortExitPressSaveUnsavedChangesTest&quot;/&gt;
+          &lt;include name=&quot;ChangePortExitPressDontSaveUnsavedChangesTest&quot;/&gt;
+          &lt;include name=&quot;ChangeIPAdressExitPressDontSaveUnsavedChangesTest&quot;/&gt;
+          &lt;include name=&quot;afterMethod&quot;/&gt;
+          &lt;include name=&quot;startReport&quot;/&gt;
+          &lt;include name=&quot;endReport&quot;/&gt;
+          &lt;include name=&quot;CheckPropertiesAfterChangePasswordTest&quot;/&gt;
+          &lt;include name=&quot;CheckPropertiesAfterChangeIPAdressTest&quot;/&gt;
+          &lt;include name=&quot;ChangePortPressCancelTest&quot;/&gt;
+          &lt;include name=&quot;DecreasePortExitCancelUnsavedChangesTest&quot;/&gt;
+          &lt;include name=&quot;ChangeIPAdressExitCancelUnsavedChangesTest&quot;/&gt;
+          &lt;include name=&quot;IncreasePortAndPressCancel&quot;/&gt;
+          &lt;include name=&quot;gotoNVRPage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.NVRsElementsTest --&gt;
+      &lt;class name=&quot;testcases.NVRsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;ChangeIPAdressAndCheckStatusTest&quot;/&gt;
+          &lt;include name=&quot;endReport&quot;/&gt;
+          &lt;include name=&quot;gotoNVRPage&quot;/&gt;
+          &lt;include name=&quot;ChangeUserNameToInvalidAndCheckStatusTest&quot;/&gt;
+          &lt;include name=&quot;AddNVRManuallyWithSecuredPortTest&quot;/&gt;
+          &lt;include name=&quot;MultipleNVRsAdditingTest&quot;/&gt;
+          &lt;include name=&quot;setup&quot;/&gt;
+          &lt;include name=&quot;afterMethod&quot;/&gt;
+          &lt;include name=&quot;ChangeSecuredAndCheckStatusTest&quot;/&gt;
+          &lt;include name=&quot;AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest&quot;/&gt;
+          &lt;include name=&quot;startReport&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.NVRsTest --&gt;
+      &lt;class name=&quot;testcases.ToursTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;ChangeViewTimeTest&quot;/&gt;
+          &lt;include name=&quot;endReport&quot;/&gt;
+          &lt;include name=&quot;setup&quot;/&gt;
+          &lt;include name=&quot;afterMethod&quot;/&gt;
+          &lt;include name=&quot;GoToToursPage&quot;/&gt;
+          &lt;include name=&quot;startReport&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.ToursTest --&gt;
+      &lt;class name=&quot;testcases.ViewsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;AddNewViewWithoutLayoutTest&quot;/&gt;
+          &lt;include name=&quot;afterMethod&quot;/&gt;
+          &lt;include name=&quot;setup&quot;/&gt;
+          &lt;include name=&quot;AddNewViewTest&quot;/&gt;
+          &lt;include name=&quot;startReport&quot;/&gt;
+          &lt;include name=&quot;endReport&quot;/&gt;
+          &lt;include name=&quot;ResourceFilterTest&quot;/&gt;
+          &lt;include name=&quot;GoToViewPage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.ViewsTest --&gt;
+      &lt;class name=&quot;testcases.GroupsHierarchyTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;startReport&quot;/&gt;
+          &lt;include name=&quot;endReport&quot;/&gt;
+          &lt;include name=&quot;afterMethod&quot;/&gt;
+          &lt;include name=&quot;setup&quot;/&gt;
+          &lt;include name=&quot;RenameGroupAndCheckInMonitoringTest&quot;/&gt;
+          &lt;include name=&quot;GoToGroupsHierarchyPage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.GroupsHierarchyTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Failed suite [Default suite] --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Failed_suite__Default_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Failed suite [Default suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test(failed) (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Failed_suite__Default_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Failed suite [Default suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Failed_suite__Default_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Failed suite [Default suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Failed_suite__Default_suite_');
+function tableData_Failed_suite__Default_suite_() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ChangeSecuredAndCheckStatusTest')
+data.setCell(0, 2, 'testcases.NVRsTest')
+data.setCell(0, 3, 241477);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ChangeIPAdressExitPressDontSaveUnsavedChangesTest')
+data.setCell(1, 2, 'testcases.NVRsElementsTest')
+data.setCell(1, 3, 227505);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'AddNVRManuallyWithSecuredPortTest')
+data.setCell(2, 2, 'testcases.NVRsTest')
+data.setCell(2, 3, 197520);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ChangeIPAdressAndCheckStatusTest')
+data.setCell(3, 2, 'testcases.NVRsTest')
+data.setCell(3, 3, 190083);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'uDecreasePortExitPressSaveUnsavedChangesTest')
+data.setCell(4, 2, 'testcases.NVRsElementsTest')
+data.setCell(4, 3, 185738);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'IncreasePortExitPressDontSaveUnsavedChangesTest')
+data.setCell(5, 2, 'testcases.NVRsElementsTest')
+data.setCell(5, 3, 183095);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'ChangeUserNameToInvalidAndCheckStatusTest')
+data.setCell(6, 2, 'testcases.NVRsTest')
+data.setCell(6, 3, 179740);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'CheckPropertiesAfterChangeUserNameTest')
+data.setCell(7, 2, 'testcases.NVRsElementsTest')
+data.setCell(7, 3, 159597);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'IncreasePortAndPressCancel')
+data.setCell(8, 2, 'testcases.NVRsElementsTest')
+data.setCell(8, 3, 127191);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ChangeIPAdressExitPressSaveUnsavedChangesTest')
+data.setCell(9, 2, 'testcases.NVRsElementsTest')
+data.setCell(9, 3, 100559);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'ChangeIPAdressExitCancelUnsavedChangesTest')
+data.setCell(10, 2, 'testcases.NVRsElementsTest')
+data.setCell(10, 3, 83961);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'MultipleNVRsAdditingTest')
+data.setCell(11, 2, 'testcases.NVRsTest')
+data.setCell(11, 3, 69545);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest')
+data.setCell(12, 2, 'testcases.NVRsTest')
+data.setCell(12, 3, 67559);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'ChangePortExitPressDontSaveUnsavedChangesTest')
+data.setCell(13, 2, 'testcases.NVRsElementsTest')
+data.setCell(13, 3, 58265);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'CheckPropertiesAfterChangePasswordTest')
+data.setCell(14, 2, 'testcases.NVRsElementsTest')
+data.setCell(14, 3, 55336);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'CheckPropertiesAfterChangeIPAdressTest')
+data.setCell(15, 2, 'testcases.NVRsElementsTest')
+data.setCell(15, 3, 48681);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'ChangeUserNameExitPressSaveUnsavedChangesTest')
+data.setCell(16, 2, 'testcases.NVRsElementsTest')
+data.setCell(16, 3, 45656);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'DecreasePortExitCancelUnsavedChangesTest')
+data.setCell(17, 2, 'testcases.NVRsElementsTest')
+data.setCell(17, 3, 42156);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'ChangeViewTimeTest')
+data.setCell(18, 2, 'testcases.ToursTest')
+data.setCell(18, 3, 27440);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'ChangePortPressCancelTest')
+data.setCell(19, 2, 'testcases.NVRsElementsTest')
+data.setCell(19, 3, 19133);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'AddNewViewTest')
+data.setCell(20, 2, 'testcases.ViewsTest')
+data.setCell(20, 3, 13222);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'AddNewWebPageExitAndSaveTest')
+data.setCell(21, 2, 'testcases.WebPagesElementsTest')
+data.setCell(21, 3, 13177);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'AddNewViewWithoutLayoutTest')
+data.setCell(22, 2, 'testcases.ViewsTest')
+data.setCell(22, 3, 11952);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'ResourceFilterTest')
+data.setCell(23, 2, 'testcases.ViewsTest')
+data.setCell(23, 3, 10714);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'RenameGroupAndCheckInMonitoringTest')
+data.setCell(24, 2, 'testcases.GroupsHierarchyTest')
+data.setCell(24, 3, 0);
+window.suiteTableData['Failed_suite__Default_suite_']= { tableData: data, tableDiv: 'times-div-Failed_suite__Default_suite_'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 39 minutes</span>
+              <div id="times-div-Failed_suite__Default_suite_">
+              </div> <!-- times-div-Failed_suite__Default_suite_ -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Failed_suite__Default_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Failed suite [Default suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Failed_suite__Default_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">138 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.ViewsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ChangeLayoutTest</span>
+                <br/>
+                <span class="ignored-method-name">CancelDeletingViewByButton</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRemarksTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeNameTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteViewByIconTest</span>
+                <br/>
+                <span class="ignored-method-name">ClearViewTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeVisibilityStatusTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteCameraAndCheckInViewTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteViewByButtonTest</span>
+                <br/>
+                <span class="ignored-method-name">ViewsFilterTest</span>
+                <br/>
+                <span class="ignored-method-name">CancelRemovingViewByIconTest</span>
+                <br/>
+                <span class="ignored-method-name">ClearViewAndDragResourceTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.WebPagesElementsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ChangeRefreshTimeValueAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeNameExitAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeVisibilityStatusExitAndDoNotSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeNameAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRefreshTimeStatusExitAndSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteURLExitAndSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRemarksAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeNameExitAndSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeVisibilityStatusExitAndSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRefreshTimeValueBySpinnerExitAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRemarksExitAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRefreshTimeValueExitAndDoNotSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteURLAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNewWebPageInputURLExitAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeURLExitAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRefreshTimeValueBySpinnerAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeURLExitAndDoNotSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteURLExitAndDoNotSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRefreshTimeStatusAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNewWebPageExitAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNewWebPageExitAndDoNotSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRefreshTimeValueBySpinnerAndSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRemarksExitAndSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRefreshTimeValueExitAndSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRefreshTimeValueExitAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNewWebPageInputURLExitAndSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNewWebPageAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRefreshTimeStatusExitAndDoNoTSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeVisibilityStatusExitAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeNameExitAndDoNotSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRefreshTimeStatusExitAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeVisibilityStatusAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRefreshTimeValueBySpinnerExitAndDoNotSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNewWebPageInputURLAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteURLExitAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRemarksExitAndDoNotSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeURLAndCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNewWebPageInputURLExitAndDoNotSaveTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeURLExitAndSaveTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.NVRsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">SortingNVRsByNameTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNVRWithSecuredPortTest</span>
+                <br/>
+                <span class="ignored-method-name">SwitchStorageDefinitionsTest</span>
+                <br/>
+                <span class="ignored-method-name">IncreasePortInAddNVRManualyWindowTest</span>
+                <br/>
+                <span class="ignored-method-name">CancelRemovalNVRsByIconTest</span>
+                <br/>
+                <span class="ignored-method-name">CancelRemovalNVRsByButtonTest</span>
+                <br/>
+                <span class="ignored-method-name">RemoveNVRsByButtonTest</span>
+                <br/>
+                <span class="ignored-method-name">InputInvalidUserNameInAddNVRManualyTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNVRManuallyAndSwitchONSecuredTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeNameTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangePortToSecuredAndCheckStatusTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNVRWithSecuredPortAndSwitchOffSecuredStatusTest</span>
+                <br/>
+                <span class="ignored-method-name">AddAlreadyUsedNVRManuallyTest</span>
+                <br/>
+                <span class="ignored-method-name">RemoveNVRsByIconTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNVRAndCheckStatusVTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeUserNameToValidAndCheckStatusTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNVRManuallyAndPressApplyTest</span>
+                <br/>
+                <span class="ignored-method-name">FilterDiscoveredNVRsTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangePasswordToInvalidAndCheckStatusTest</span>
+                <br/>
+                <span class="ignored-method-name">FilterNVRsTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangePortAndCheckStatusTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNVRManuallyAndPressCloseTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNVRManuallyCheckStatusTest</span>
+                <br/>
+                <span class="ignored-method-name">InputInvalidPasswordInAddNVRManualyTest</span>
+                <br/>
+                <span class="ignored-method-name">SwitchOffStorageDefinitionsTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangePortBySpinnersTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNVRAndPressApplyTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteOneNVRClickOnAnotherNVRAndCheckPropertiesPanelTest</span>
+                <br/>
+                <span class="ignored-method-name">DecreasePortInAddNVRManualyWindowTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangePortToValidAndCheckStatusTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteOneNVRAndCheckPropertiesPanelTest</span>
+                <br/>
+                <span class="ignored-method-name">InputInvalidIPAdressInAddNVRManualyTest</span>
+                <br/>
+                <span class="ignored-method-name">SwitchOffStorageDefinitionsAndPressNoTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeStorageDefinitionsTest</span>
+                <br/>
+                <span class="ignored-method-name">SortingNVRsByVersionTest</span>
+                <br/>
+                <span class="ignored-method-name">SelectNVRandPressCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">SortingDiscoveredNVRsTest</span>
+                <br/>
+                <span class="ignored-method-name">SortingNVRsByIPAdressTest</span>
+                <br/>
+                <span class="ignored-method-name">InputInvalidPortInAddNVRManualyTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.NVRsElementsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ChangePortExitPressSaveUnsavedChangesTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeStorageDefinitionsAndPressCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeNameExitPressSaveUnsavedChangesTest</span>
+                <br/>
+                <span class="ignored-method-name">CheckPropertiesAfterChangePortTest</span>
+                <br/>
+                <span class="ignored-method-name">SwitchStorageDefinitionsExitAndPressDontSaveButtonTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeUserNameExitCancelUnsavedChangesTest</span>
+                <br/>
+                <span class="ignored-method-name">SwitchStorageDefinitionsExitAndPressCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeUserNameExitPressDontSaveUnsavedChangesTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeIPAdressPressCancelExitTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeNamePressCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">SwitchStorageDefinitionsAndPressCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeUserNameAndPressCancel</span>
+                <br/>
+                <span class="ignored-method-name">ChangeNameExitCancelUnsavedChangesExitCancelTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeNameExitPressDontSaveUnsavedChangesTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeStorageDefinitionsExitCancelUnsavedChangesTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangePortExitCancelUnsavedChangesTest</span>
+                <br/>
+                <span class="ignored-method-name">CheckPropertiesAfterChangeNameTest</span>
+                <br/>
+                <span class="ignored-method-name">SwitchStorageDefinitionsExitAndPressSaveButtonTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.ToursTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ChangeViewTimeToLessThanMinValueTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteTourByButtonAndPressNoTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeViewTimeToMoreThanMaxValueTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteAllViewsTest</span>
+                <br/>
+                <span class="ignored-method-name">FilterToursTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteTourByButtonTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteTourByIconAndPressNoTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteTourByIconTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeNameTest</span>
+                <br/>
+                <span class="ignored-method-name">NewTourWithEmptyViewTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeVisibilityStatusTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNewTourWithAllParametersTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteViewFromViewsPageTest</span>
+                <br/>
+                <span class="ignored-method-name">AddViewTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeViewTimeBySpinnersTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeOrderForViewTest</span>
+                <br/>
+                <span class="ignored-method-name">ChangeRemarksTest</span>
+                <br/>
+                <span class="ignored-method-name">FilterViewsTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteViewTest</span>
+                <br/>
+                <span class="ignored-method-name">AddNewTourTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.GroupsHierarchyTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">DeleteGroupAndCheckInMonitoringTest</span>
+                <br/>
+                <span class="ignored-method-name">DragResourceToGroupTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteGroupAndPressNoTest</span>
+                <br/>
+                <span class="ignored-method-name">AddGroupAndCheckInMonitoringTest</span>
+                <br/>
+                <span class="ignored-method-name">DragGroupToGroupTest</span>
+                <br/>
+                <span class="ignored-method-name">AddSubGroupTest</span>
+                <br/>
+                <span class="ignored-method-name">ResourcesFilterTest</span>
+                <br/>
+                <span class="ignored-method-name">RenameGroupAndClickCancelIconTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteResourceByButtonAndCancelRemovingTest</span>
+                <br/>
+                <span class="ignored-method-name">DeleteResourceByButtonAndCheckInMonitoringTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Failed_suite__Default_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.GroupsHierarchyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.NVRsElementsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">84 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.NVRsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ToursTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ViewsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.WebPagesElementsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">122 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">GoToGroupsHierarchyPage</span>
+                <span class="method-start">122 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddNewWebPageExitAndSaveTest</span>
+                <span class="method-start">146208 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AddNewWebPageExitAndSaveTest status=FAILURE method=WebPagesElementsTest.AddNewWebPa...)</span>
+                <span class="method-start">159409 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">160866 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.NVRsElementsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(ie)</span>
+                <span class="method-start">161171 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">161175 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ChangeIPAdressExitPressSaveUnsavedChangesTest</span>
+                <span class="method-start">223411 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ChangeIPAdressExitPressSaveUnsavedChangesTest status=FAILURE method=NVRsElementsTes...)</span>
+                <span class="method-start">323970 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">324674 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckPropertiesAfterChangeUserNameTest</span>
+                <span class="method-start">386667 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=CheckPropertiesAfterChangeUserNameTest status=SUCCESS method=NVRsElementsTest.Check...)</span>
+                <span class="method-start">546264 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">547101 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">IncreasePortExitPressDontSaveUnsavedChangesTest</span>
+                <span class="method-start">604483 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=IncreasePortExitPressDontSaveUnsavedChangesTest status=FAILURE method=NVRsElementsT...)</span>
+                <span class="method-start">787578 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">788521 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ChangeUserNameExitPressSaveUnsavedChangesTest</span>
+                <span class="method-start">850483 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ChangeUserNameExitPressSaveUnsavedChangesTest status=FAILURE method=NVRsElementsTes...)</span>
+                <span class="method-start">896139 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">897268 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">uDecreasePortExitPressSaveUnsavedChangesTest</span>
+                <span class="method-start">952244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=uDecreasePortExitPressSaveUnsavedChangesTest status=FAILURE method=NVRsElementsTest...)</span>
+                <span class="method-start">1137982 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">1138786 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ChangePortExitPressDontSaveUnsavedChangesTest</span>
+                <span class="method-start">1195622 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ChangePortExitPressDontSaveUnsavedChangesTest status=FAILURE method=NVRsElementsTes...)</span>
+                <span class="method-start">1253887 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">1257757 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ChangeIPAdressExitPressDontSaveUnsavedChangesTest</span>
+                <span class="method-start">1312054 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ChangeIPAdressExitPressDontSaveUnsavedChangesTest status=SUCCESS method=NVRsElement...)</span>
+                <span class="method-start">1539559 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">1540548 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckPropertiesAfterChangePasswordTest</span>
+                <span class="method-start">1597729 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=CheckPropertiesAfterChangePasswordTest status=SUCCESS method=NVRsElementsTest.Check...)</span>
+                <span class="method-start">1653065 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">1653881 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckPropertiesAfterChangeIPAdressTest</span>
+                <span class="method-start">1710575 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=CheckPropertiesAfterChangeIPAdressTest status=SUCCESS method=NVRsElementsTest.Check...)</span>
+                <span class="method-start">1759256 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">1759806 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ChangePortPressCancelTest</span>
+                <span class="method-start">1815681 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ChangePortPressCancelTest status=SUCCESS method=NVRsElementsTest.ChangePortPressCan...)</span>
+                <span class="method-start">1834814 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">1835790 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DecreasePortExitCancelUnsavedChangesTest</span>
+                <span class="method-start">1896011 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=DecreasePortExitCancelUnsavedChangesTest status=FAILURE method=NVRsElementsTest.Dec...)</span>
+                <span class="method-start">1938167 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">1940330 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ChangeIPAdressExitCancelUnsavedChangesTest</span>
+                <span class="method-start">2013759 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ChangeIPAdressExitCancelUnsavedChangesTest status=FAILURE method=NVRsElementsTest.C...)</span>
+                <span class="method-start">2097720 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">2101299 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">IncreasePortAndPressCancel</span>
+                <span class="method-start">2162573 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=IncreasePortAndPressCancel status=FAILURE method=NVRsElementsTest.IncreasePortAndPr...)</span>
+                <span class="method-start">2289764 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">2290801 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.NVRsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(ie)</span>
+                <span class="method-start">2290916 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">2290916 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ChangeIPAdressAndCheckStatusTest</span>
+                <span class="method-start">2348800 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ChangeIPAdressAndCheckStatusTest status=FAILURE method=NVRsTest.ChangeIPAdressAndCh...)</span>
+                <span class="method-start">2538883 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">2540069 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ChangeUserNameToInvalidAndCheckStatusTest</span>
+                <span class="method-start">2617392 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ChangeUserNameToInvalidAndCheckStatusTest status=SUCCESS method=NVRsTest.ChangeUser...)</span>
+                <span class="method-start">2797132 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">2797675 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddNVRManuallyWithSecuredPortTest</span>
+                <span class="method-start">2855739 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AddNVRManuallyWithSecuredPortTest status=FAILURE method=NVRsTest.AddNVRManuallyWith...)</span>
+                <span class="method-start">3053259 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">3054266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MultipleNVRsAdditingTest</span>
+                <span class="method-start">3107781 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MultipleNVRsAdditingTest status=SUCCESS method=NVRsTest.MultipleNVRsAdditingTest()[...)</span>
+                <span class="method-start">3177326 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">3177898 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ChangeSecuredAndCheckStatusTest</span>
+                <span class="method-start">3233722 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ChangeSecuredAndCheckStatusTest status=FAILURE method=NVRsTest.ChangeSecuredAndChec...)</span>
+                <span class="method-start">3475199 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">gotoNVRPage</span>
+                <span class="method-start">3476190 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest</span>
+                <span class="method-start">3528513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest status=FAILURE method=NVRsTest....)</span>
+                <span class="method-start">3596072 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">3597014 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ToursTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(ie)</span>
+                <span class="method-start">3597114 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">GoToToursPage</span>
+                <span class="method-start">3597114 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ChangeViewTimeTest</span>
+                <span class="method-start">3732729 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ChangeViewTimeTest status=SUCCESS method=ToursTest.ChangeViewTimeTest()[pri:0, inst...)</span>
+                <span class="method-start">3760169 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">3761194 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ViewsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(ie)</span>
+                <span class="method-start">3761241 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">GoToViewPage</span>
+                <span class="method-start">3761241 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddNewViewWithoutLayoutTest</span>
+                <span class="method-start">3891589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AddNewViewWithoutLayoutTest status=FAILURE method=ViewsTest.AddNewViewWithoutLayout...)</span>
+                <span class="method-start">3903542 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">GoToViewPage</span>
+                <span class="method-start">3904568 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddNewViewTest</span>
+                <span class="method-start">4021900 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AddNewViewTest status=FAILURE method=ViewsTest.AddNewViewTest()[pri:0, instance:tes...)</span>
+                <span class="method-start">4035122 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">GoToViewPage</span>
+                <span class="method-start">4036013 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ResourceFilterTest</span>
+                <span class="method-start">4158341 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ResourceFilterTest status=FAILURE method=ViewsTest.ResourceFilterTest()[pri:0, inst...)</span>
+                <span class="method-start">4169056 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">4169907 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.GroupsHierarchyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(ie)</span>
+                <span class="method-start">4170029 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">GoToGroupsHierarchyPage</span>
+                <span class="method-start">4170030 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RenameGroupAndCheckInMonitoringTest</span>
+                <span class="method-start">4288654 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">4288654 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">4288654 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

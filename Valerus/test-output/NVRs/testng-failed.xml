@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NVRs]">
+  <test thread-count="5" name="NVRs(failed)">
+    <classes>
+      <class name="testcases.NVRsTest">
+        <methods>
+          <include name="CancelRemovalNVRsByIconTest"/>
+          <include name="ChangePasswordToInvalidAndCheckStatusTest"/>
+          <include name="IncreasePortInAddNVRManualyWindowTest"/>
+          <include name="ChangePortAndCheckStatusTest"/>
+          <include name="ChangeUserNameToInvalidAndCheckStatusTest"/>
+          <include name="AddNVRManuallyWithSecuredPortTest"/>
+          <include name="SwitchOffStorageDefinitionsTest"/>
+          <include name="setup"/>
+          <include name="ChangeNameTest"/>
+          <include name="ChangePortBySpinnersTest"/>
+          <include name="DecreasePortInAddNVRManualyWindowTest"/>
+          <include name="AddNVRWithSecuredPortAndSwitchOffSecuredStatusTest"/>
+          <include name="ChangePortToSecuredAndCheckStatusTest"/>
+          <include name="RemoveNVRsByIconTest"/>
+          <include name="endReport"/>
+          <include name="gotoNVRPage"/>
+          <include name="DeleteOneNVRAndCheckPropertiesPanelTest"/>
+          <include name="afterMethod"/>
+          <include name="ChangeSecuredAndCheckStatusTest"/>
+          <include name="InputInvalidPortInAddNVRManualyTest"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- testcases.NVRsTest -->
+    </classes>
+  </test> <!-- NVRs(failed) -->
+</suite> <!-- Failed suite [NVRs] -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GlobalSuite">
+    <!--<listeners>-->
+        <!--<listener class-name="reporter.CustomReporter" />-->
+    <!--</listeners>-->
+    <test name="Global">
+        <classes>
+            <class name="ConfigurationTest.NetworkDevicesTests.NVRsTest"/>
+            <class name="ConfigurationTest.NetworkDevicesTests.CamerasAndEncodersTest"/>
+            <class name="ConfigurationTest.ResourcesTests.VideoChannelsTest"/>
+        </classes>
+    </test>
+</suite>
