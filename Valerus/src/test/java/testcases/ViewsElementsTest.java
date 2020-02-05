@@ -1577,8 +1577,7 @@ public class ViewsElementsTest {
             logger.log(LogStatus.FAIL, "Screenshot is below:"+logger.addScreenCapture("./"+result.getName()+".png"));
         }
         report.endTest(logger);
-//        driver.close();
-//        driver.quit();
+
         driver.close();
         driver.quit();
     }

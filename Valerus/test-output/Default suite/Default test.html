@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>170/25/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>161/34/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 03 19:45:32 IST 2020</td>
+<td>Started on:</td><td>Tue Feb 04 19:25:34 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>25776 seconds (25776767 ms)</td>
+<tr><td>Total time:</td><td>28046 seconds (28046659 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,8 +75,160 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='testcases.NVRsTest.AddNVRAndCheckStatusVTest()'><b>AddNVRAndCheckStatusVTest</b><br>Test class: testcases.NVRsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at testcases.NVRsTest.AddNVRAndCheckStatusVTest(NVRsTest.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2121199924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2121199924'><pre>java.lang.AssertionError: expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at testcases.NVRsTest.AddNVRAndCheckStatusVTest(NVRsTest.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>76</td>
+<td>testcases.NVRsTest@25359ed8</td></tr>
+<tr>
+<td title='testcases.NVRsTest.AddNVRManuallyCheckStatusTest()'><b>AddNVRManuallyCheckStatusTest</b><br>Test class: testcases.NVRsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at testcases.NVRsTest.AddNVRManuallyCheckStatusTest(NVRsTest.java:507)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1895143699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1895143699'><pre>java.lang.AssertionError: expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at testcases.NVRsTest.AddNVRManuallyCheckStatusTest(NVRsTest.java:507)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>70</td>
+<td>testcases.NVRsTest@25359ed8</td></tr>
+<tr>
 <td title='testcases.NVRsTest.AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest()'><b>AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest</b><br>Test class: testcases.NVRsTest</td>
-<td><div><pre>java.lang.AssertionError: expected [V] but found [Offline]
+<td><div><pre>java.lang.AssertionError: expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -111,8 +263,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1573751930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1573751930'><pre>java.lang.AssertionError: expected [V] but found [Offline]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1450500594", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1450500594'><pre>java.lang.AssertionError: expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -148,11 +300,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>72</td>
+<td>71</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.AddNVRManuallyWithSecuredPortTest()'><b>AddNVRManuallyWithSecuredPortTest</b><br>Test class: testcases.NVRsTest</td>
-<td><div><pre>java.lang.AssertionError: expected [Communication Failure] but found [Offline]
+<td><div><pre>java.lang.AssertionError: expected [Communication Failure] but found [Connecting...]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -187,8 +339,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace23880693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace23880693'><pre>java.lang.AssertionError: expected [Communication Failure] but found [Offline]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1770437551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1770437551'><pre>java.lang.AssertionError: expected [Communication Failure] but found [Connecting...]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -224,8 +376,204 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>201</td>
+<td>208</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
+<tr>
+<td title='testcases.NVRsTest.AddNVRWithSecuredPortTest()'><b>AddNVRWithSecuredPortTest</b><br>Test class: testcases.NVRsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at testcases.NVRsTest.AddNVRWithSecuredPortTest(NVRsTest.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace90045638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace90045638'><pre>java.lang.AssertionError: expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at testcases.NVRsTest.AddNVRWithSecuredPortTest(NVRsTest.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>129</td>
+<td>testcases.NVRsTest@25359ed8</td></tr>
+<tr>
+<td title='testcases.ToursElementsTest.AddNewTourAndCancelTest()'><b>AddNewTourAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;BORSE-PC&apos;, ip: &apos;172.20.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:46803/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: d6350fda-3250-4cd6-8831-478583fe6d06
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at Utilities.Page.ClickOnElement(Page.java:752)
+	at pageObjects.ToursPage.PressCancelButton(ToursPage.java:204)
+	at testcases.ToursElementsTest.AddNewTourAndCancelTest(ToursElementsTest.java:253)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace70695990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace70695990'><pre>org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;BORSE-PC&apos;, ip: &apos;172.20.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:46803/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: d6350fda-3250-4cd6-8831-478583fe6d06
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at Utilities.Page.ClickOnElement(Page.java:752)
+	at pageObjects.ToursPage.PressCancelButton(ToursPage.java:204)
+	at testcases.ToursElementsTest.AddNewTourAndCancelTest(ToursElementsTest.java:253)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ViewsTest.AddNewViewTest()'><b>AddNewViewTest</b><br>Test class: testcases.ViewsTest</td>
 <td><div><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
@@ -266,8 +614,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace917704874", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace917704874'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+</pre></div><a href='#' onClick='toggleBox("stack-trace1988664928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1988664928'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
 	at java.util.ArrayList.get(ArrayList.java:433)
 	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
@@ -306,7 +654,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>17</td>
+<td>15</td>
 <td>testcases.ViewsTest@6a396c1e</td></tr>
 <tr>
 <td title='testcases.ViewsTest.AddNewViewWithoutLayoutTest()'><b>AddNewViewWithoutLayoutTest</b><br>Test class: testcases.ViewsTest</td>
@@ -348,8 +696,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace239648666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace239648666'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+</pre></div><a href='#' onClick='toggleBox("stack-trace178575564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace178575564'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
 	at java.util.ArrayList.get(ArrayList.java:433)
 	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
@@ -422,8 +770,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1130346421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1130346421'><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace576894497", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace576894497'><pre>java.lang.NullPointerException
 	at testcases.WebPagesElementsTest.AddNewWebPageExitAndSaveTest(WebPagesElementsTest.java:171)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -454,8 +802,84 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
+<td>1</td>
 <td>testcases.WebPagesElementsTest@21a947fe</td></tr>
+<tr>
+<td title='testcases.GroupsHierarchyTest.AddSubGroupTest()'><b>AddSubGroupTest</b><br>Test class: testcases.GroupsHierarchyTest</td>
+<td><div><pre>java.lang.AssertionError: expected [3] but found [0]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at testcases.GroupsHierarchyTest.AddSubGroupTest(GroupsHierarchyTest.java:828)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace26357357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26357357'><pre>java.lang.AssertionError: expected [3] but found [0]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at testcases.GroupsHierarchyTest.AddSubGroupTest(GroupsHierarchyTest.java:828)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>22</td>
+<td>testcases.GroupsHierarchyTest@1445d7f</td></tr>
 <tr>
 <td title='testcases.NVRsTest.ChangeIPAdressAndCheckStatusTest()'><b>ChangeIPAdressAndCheckStatusTest</b><br>Test class: testcases.NVRsTest</td>
 <td><div><pre>java.lang.AssertionError: expected [172.20.1.46IP] but found [IP]
@@ -493,8 +917,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1924227192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1924227192'><pre>java.lang.AssertionError: expected [172.20.1.46IP] but found [IP]
+</pre></div><a href='#' onClick='toggleBox("stack-trace752011518", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace752011518'><pre>java.lang.AssertionError: expected [172.20.1.46IP] but found [IP]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -530,11 +954,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>9</td>
+<td>186</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangeIPAdressExitCancelUnsavedChangesTest()'><b>ChangeIPAdressExitCancelUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
-<td><div><pre>java.lang.AssertionError: expected [172.20.1.46IP74] but found [IP74]
+<td><div><pre>java.lang.AssertionError: expected [172.20.1.46IP23] but found [IP23]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -569,8 +993,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace932885627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace932885627'><pre>java.lang.AssertionError: expected [172.20.1.46IP74] but found [IP74]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1420810053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1420810053'><pre>java.lang.AssertionError: expected [172.20.1.46IP23] but found [IP23]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -606,81 +1030,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>188</td>
-<td>testcases.NVRsElementsTest@5606c0b</td></tr>
-<tr>
-<td title='testcases.NVRsElementsTest.ChangeIPAdressExitPressDontSaveUnsavedChangesTest()'><b>ChangeIPAdressExitPressDontSaveUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:956)
-	at testcases.NVRsElementsTest.ChangeIPAdressExitPressDontSaveUnsavedChangesTest(NVRsElementsTest.java:393)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1545327692", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1545327692'><pre>java.lang.NullPointerException
-	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:956)
-	at testcases.NVRsElementsTest.ChangeIPAdressExitPressDontSaveUnsavedChangesTest(NVRsElementsTest.java:393)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>87</td>
+<td>180</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangeIPAdressExitPressSaveUnsavedChangesTest()'><b>ChangeIPAdressExitPressSaveUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td><div><pre>java.lang.NullPointerException
-	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:956)
-	at testcases.NVRsElementsTest.ChangeIPAdressExitPressSaveUnsavedChangesTest(NVRsElementsTest.java:448)
+	at testcases.NVRsElementsTest.ChangeIPAdressExitPressSaveUnsavedChangesTest(NVRsElementsTest.java:472)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -709,10 +1064,9 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace669053685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace669053685'><pre>java.lang.NullPointerException
-	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:956)
-	at testcases.NVRsElementsTest.ChangeIPAdressExitPressSaveUnsavedChangesTest(NVRsElementsTest.java:448)
+</pre></div><a href='#' onClick='toggleBox("stack-trace347808407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace347808407'><pre>java.lang.NullPointerException
+	at testcases.NVRsElementsTest.ChangeIPAdressExitPressSaveUnsavedChangesTest(NVRsElementsTest.java:472)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -742,34 +1096,16 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>88</td>
+<td>232</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
-<td title='testcases.NVRsElementsTest.ChangePortExitPressDontSaveUnsavedChangesTest()'><b>ChangePortExitPressDontSaveUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
-<td><div><pre>org.openqa.selenium.JavascriptException: JavaScript error (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
-System info: host: &apos;BORSE-PC&apos;, ip: &apos;172.20.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41429/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:537)
-	at Utilities.Page.JavaScriptClick(Page.java:757)
-	at pageObjects.NVRsPage.AddDiscoveredNVRs(NVRsPage.java:934)
-	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:955)
-	at testcases.NVRsElementsTest.ChangePortExitPressDontSaveUnsavedChangesTest(NVRsElementsTest.java:616)
+<td title='testcases.ViewsElementsTest.ChangeLayoutAndPressCancelTest()'><b>ChangeLayoutAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
+<td><div><pre>java.lang.AssertionError: did not expect to find [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at org.testng.Assert.assertFalse(Assert.java:75)
+	at testcases.ViewsElementsTest.ChangeLayoutAndPressCancelTest(ViewsElementsTest.java:1320)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -798,31 +1134,13 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1689458432", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1689458432'><pre>org.openqa.selenium.JavascriptException: JavaScript error (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
-System info: host: &apos;BORSE-PC&apos;, ip: &apos;172.20.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41429/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:537)
-	at Utilities.Page.JavaScriptClick(Page.java:757)
-	at pageObjects.NVRsPage.AddDiscoveredNVRs(NVRsPage.java:934)
-	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:955)
-	at testcases.NVRsElementsTest.ChangePortExitPressDontSaveUnsavedChangesTest(NVRsElementsTest.java:616)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1391119179", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1391119179'><pre>java.lang.AssertionError: did not expect to find [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at org.testng.Assert.assertFalse(Assert.java:75)
+	at testcases.ViewsElementsTest.ChangeLayoutAndPressCancelTest(ViewsElementsTest.java:1320)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -852,11 +1170,277 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>88</td>
-<td>testcases.NVRsElementsTest@5606c0b</td></tr>
+<td>15</td>
+<td>testcases.ViewsElementsTest@10b48321</td></tr>
+<tr>
+<td title='testcases.ViewsElementsTest.ChangeLayoutExitAndPressCancelTest()'><b>ChangeLayoutExitAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [36] but found [6]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at testcases.ViewsElementsTest.ChangeLayoutExitAndPressCancelTest(ViewsElementsTest.java:1403)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1346197173", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1346197173'><pre>java.lang.AssertionError: expected [36] but found [6]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at testcases.ViewsElementsTest.ChangeLayoutExitAndPressCancelTest(ViewsElementsTest.java:1403)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>31</td>
+<td>testcases.ViewsElementsTest@10b48321</td></tr>
+<tr>
+<td title='testcases.ViewsElementsTest.ChangeLayoutExitAndPressSaveTest()'><b>ChangeLayoutExitAndPressSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [1] but found [4]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at testcases.ViewsElementsTest.ChangeLayoutExitAndPressSaveTest(ViewsElementsTest.java:1560)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1372137902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1372137902'><pre>java.lang.AssertionError: expected [1] but found [4]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at testcases.ViewsElementsTest.ChangeLayoutExitAndPressSaveTest(ViewsElementsTest.java:1560)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>39</td>
+<td>testcases.ViewsElementsTest@10b48321</td></tr>
+<tr>
+<td title='testcases.WebPagesTest.ChangeNameTest()'><b>ChangeNameTest</b><br>Test class: testcases.WebPagesTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //div[@class=&apos;ui-grid-cell-contents ng-binding ng-scope&apos;][contains(text(), &apos;NewName8974&apos;)] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;BORSE-PC&apos;, ip: &apos;172.20.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40308/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 4063e7e4-e024-4be4-a97e-f087a8d7dbd8
+*** Element info: {Using=xpath, value=//div[@class=&apos;ui-grid-cell-contents ng-binding ng-scope&apos;][contains(text(), &apos;NewName8974&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor35.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at pageObjects.WebPagesPage.ClickOnWebPageByName(WebPagesPage.java:180)
+	at testcases.WebPagesTest.ChangeNameTest(WebPagesTest.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace530410619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace530410619'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //div[@class=&apos;ui-grid-cell-contents ng-binding ng-scope&apos;][contains(text(), &apos;NewName8974&apos;)] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;BORSE-PC&apos;, ip: &apos;172.20.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40308/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 4063e7e4-e024-4be4-a97e-f087a8d7dbd8
+*** Element info: {Using=xpath, value=//div[@class=&apos;ui-grid-cell-contents ng-binding ng-scope&apos;][contains(text(), &apos;NewName8974&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor35.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at pageObjects.WebPagesPage.ClickOnWebPageByName(WebPagesPage.java:180)
+	at testcases.WebPagesTest.ChangeNameTest(WebPagesTest.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>33</td>
+<td>testcases.WebPagesTest@314c508a</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangePortPressCancelTest()'><b>ChangePortPressCancelTest</b><br>Test class: testcases.NVRsElementsTest</td>
-<td><div><pre>java.lang.AssertionError: expected [80] but found [255]
+<td><div><pre>java.lang.AssertionError: expected [80] but found [288]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -891,8 +1475,8 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace223000346", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace223000346'><pre>java.lang.AssertionError: expected [80] but found [255]
+</pre></div><a href='#' onClick='toggleBox("stack-trace814245389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace814245389'><pre>java.lang.AssertionError: expected [80] but found [288]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -928,13 +1512,17 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>19</td>
+<td>21</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsTest.ChangeSecuredAndCheckStatusTest()'><b>ChangeSecuredAndCheckStatusTest</b><br>Test class: testcases.NVRsTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:956)
-	at testcases.NVRsTest.ChangeSecuredAndCheckStatusTest(NVRsTest.java:1484)
+<td><div><pre>java.lang.AssertionError: expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at testcases.NVRsTest.ChangeSecuredAndCheckStatusTest(NVRsTest.java:1533)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -963,10 +1551,14 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace424944647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace424944647'><pre>java.lang.NullPointerException
-	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:956)
-	at testcases.NVRsTest.ChangeSecuredAndCheckStatusTest(NVRsTest.java:1484)
+</pre></div><a href='#' onClick='toggleBox("stack-trace471004142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace471004142'><pre>java.lang.AssertionError: expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at testcases.NVRsTest.ChangeSecuredAndCheckStatusTest(NVRsTest.java:1533)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -996,7 +1588,7 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>48</td>
+<td>256</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangeUserNameExitPressSaveUnsavedChangesTest()'><b>ChangeUserNameExitPressSaveUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
@@ -1035,8 +1627,8 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace817490653", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace817490653'><pre>java.lang.AssertionError: expected [UserName] but found [ADMIN]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1416097444", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1416097444'><pre>java.lang.AssertionError: expected [UserName] but found [ADMIN]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -1072,13 +1664,17 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>224</td>
+<td>231</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
-<td title='testcases.NVRsTest.ChangeUserNameToInvalidAndCheckStatusTest()'><b>ChangeUserNameToInvalidAndCheckStatusTest</b><br>Test class: testcases.NVRsTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:956)
-	at testcases.NVRsTest.ChangeUserNameToInvalidAndCheckStatusTest(NVRsTest.java:1997)
+<td title='testcases.ToursElementsTest.ChangeViewTimeExitAndSaveTest()'><b>ChangeViewTimeExitAndSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [81917] but found [8191]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at testcases.ToursElementsTest.ChangeViewTimeExitAndSaveTest(ToursElementsTest.java:1549)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1107,10 +1703,14 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1856589162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1856589162'><pre>java.lang.NullPointerException
-	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:956)
-	at testcases.NVRsTest.ChangeUserNameToInvalidAndCheckStatusTest(NVRsTest.java:1997)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1014824123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1014824123'><pre>java.lang.AssertionError: expected [81917] but found [8191]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at testcases.ToursElementsTest.ChangeViewTimeExitAndSaveTest(ToursElementsTest.java:1549)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1140,11 +1740,11 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>48</td>
-<td>testcases.NVRsTest@25359ed8</td></tr>
+<td>29</td>
+<td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursTest.ChangeViewTimeTest()'><b>ChangeViewTimeTest</b><br>Test class: testcases.ToursTest</td>
-<td><div><pre>java.lang.AssertionError: expected [66184] but found [6618]
+<td><div><pre>java.lang.AssertionError: expected [68109] but found [6810]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -1179,8 +1779,8 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1791589252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1791589252'><pre>java.lang.AssertionError: expected [66184] but found [6618]
+</pre></div><a href='#' onClick='toggleBox("stack-trace2008907751", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2008907751'><pre>java.lang.AssertionError: expected [68109] but found [6810]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -1216,7 +1816,7 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>14</td>
+<td>12</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.CheckPropertiesAfterChangeIPAdressTest()'><b>CheckPropertiesAfterChangeIPAdressTest</b><br>Test class: testcases.NVRsElementsTest</td>
@@ -1255,8 +1855,8 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace873168630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace873168630'><pre>java.lang.AssertionError: expected [] but found [172.20.1.42 Name]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1653859230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1653859230'><pre>java.lang.AssertionError: expected [] but found [172.20.1.42 Name]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -1292,17 +1892,17 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>51</td>
+<td>54</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.CheckPropertiesAfterChangePasswordTest()'><b>CheckPropertiesAfterChangePasswordTest</b><br>Test class: testcases.NVRsElementsTest</td>
-<td><div><pre>java.lang.AssertionError: expected [172.20.1.46text] but found [172.20.1.42]
+<td><div><pre>java.lang.AssertionError: expected [UserName] but found [ADMIN]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
 	at org.testng.Assert.assertEquals(Assert.java:585)
-	at testcases.NVRsElementsTest.CheckPropertiesAfterChangePasswordTest(NVRsElementsTest.java:1176)
+	at testcases.NVRsElementsTest.CheckPropertiesAfterChangePasswordTest(NVRsElementsTest.java:1175)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1331,14 +1931,14 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2079278380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2079278380'><pre>java.lang.AssertionError: expected [172.20.1.46text] but found [172.20.1.42]
+</pre></div><a href='#' onClick='toggleBox("stack-trace794949943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace794949943'><pre>java.lang.AssertionError: expected [UserName] but found [ADMIN]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
 	at org.testng.Assert.assertEquals(Assert.java:585)
-	at testcases.NVRsElementsTest.CheckPropertiesAfterChangePasswordTest(NVRsElementsTest.java:1176)
+	at testcases.NVRsElementsTest.CheckPropertiesAfterChangePasswordTest(NVRsElementsTest.java:1175)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1368,7 +1968,7 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>54</td>
+<td>55</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.CheckPropertiesAfterChangeUserNameTest()'><b>CheckPropertiesAfterChangeUserNameTest</b><br>Test class: testcases.NVRsElementsTest</td>
@@ -1407,8 +2007,8 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace81269359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace81269359'><pre>java.lang.AssertionError: expected [172.20.1.46] but found [172.20.1.42 Name]
+</pre></div><a href='#' onClick='toggleBox("stack-trace380494131", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace380494131'><pre>java.lang.AssertionError: expected [172.20.1.46] but found [172.20.1.42 Name]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -1444,8 +2044,84 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>52</td>
+<td>54</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
+<tr>
+<td title='testcases.ViewsElementsTest.ClearViewAndPressCancelTest()'><b>ClearViewAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [2] but found [0]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at testcases.ViewsElementsTest.ClearViewAndPressCancelTest(ViewsElementsTest.java:1107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1634411546", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1634411546'><pre>java.lang.AssertionError: expected [2] but found [0]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at testcases.ViewsElementsTest.ClearViewAndPressCancelTest(ViewsElementsTest.java:1107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.DecreasePortExitCancelUnsavedChangesTest()'><b>DecreasePortExitCancelUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
@@ -1482,8 +2158,8 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace960004592", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace960004592'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace354268551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace354268551'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.failNotEquals(Assert.java:969)
 	at org.testng.Assert.assertTrue(Assert.java:43)
@@ -1518,13 +2194,16 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>10</td>
+<td>11</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
-<td title='testcases.NVRsElementsTest.IncreasePortAndPressCancel()'><b>IncreasePortAndPressCancel</b><br>Test class: testcases.NVRsElementsTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:956)
-	at testcases.NVRsElementsTest.IncreasePortAndPressCancel(NVRsElementsTest.java:760)
+<td title='testcases.NVRsTest.FilterDiscoveredNVRsTest()'><b>FilterDiscoveredNVRsTest</b><br>Test class: testcases.NVRsTest</td>
+<td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at testcases.NVRsTest.FilterDiscoveredNVRsTest(NVRsTest.java:285)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1553,10 +2232,13 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1047873000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1047873000'><pre>java.lang.NullPointerException
-	at pageObjects.NVRsPage.IfNVRIsNotExistAddIt(NVRsPage.java:956)
-	at testcases.NVRsElementsTest.IncreasePortAndPressCancel(NVRsElementsTest.java:760)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1807634633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1807634633'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at testcases.NVRsTest.FilterDiscoveredNVRsTest(NVRsTest.java:285)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1586,7 +2268,89 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>25</td>
+<td>19</td>
+<td>testcases.NVRsTest@25359ed8</td></tr>
+<tr>
+<td title='testcases.NVRsElementsTest.IncreasePortAndPressCancel()'><b>IncreasePortAndPressCancel</b><br>Test class: testcases.NVRsElementsTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain &quot;false&quot;. Current value: &quot;null&quot; (tried for 15 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;BORSE-PC&apos;, ip: &apos;172.20.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:38110/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 668c70db-3b20-4d68-aafc-9388b5359558
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageObjects.NVRsPage.CancelChangesButton(NVRsPage.java:432)
+	at testcases.NVRsElementsTest.IncreasePortAndPressCancel(NVRsElementsTest.java:776)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1605128733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1605128733'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain &quot;false&quot;. Current value: &quot;null&quot; (tried for 15 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;BORSE-PC&apos;, ip: &apos;172.20.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:38110/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 668c70db-3b20-4d68-aafc-9388b5359558
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageObjects.NVRsPage.CancelChangesButton(NVRsPage.java:432)
+	at testcases.NVRsElementsTest.IncreasePortAndPressCancel(NVRsElementsTest.java:776)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>130</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.IncreasePortExitPressDontSaveUnsavedChangesTest()'><b>IncreasePortExitPressDontSaveUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
@@ -1624,8 +2388,8 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1609754699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1609754699'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace985032587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace985032587'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.failNotEquals(Assert.java:969)
 	at org.testng.Assert.assertTrue(Assert.java:43)
@@ -1660,90 +2424,8 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>189</td>
+<td>184</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
-<tr>
-<td title='testcases.NVRsTest.MultipleNVRsAdditingTest()'><b>MultipleNVRsAdditingTest</b><br>Test class: testcases.NVRsTest</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-	at com.sun.proxy.$Proxy15.get(Unknown Source)
-	at pageObjects.NVRsPage.ScrollToDeviceByIndex(NVRsPage.java:978)
-	at testcases.NVRsTest.MultipleNVRsAdditingTest(NVRsTest.java:337)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1446676917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1446676917'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-	at com.sun.proxy.$Proxy15.get(Unknown Source)
-	at pageObjects.NVRsPage.ScrollToDeviceByIndex(NVRsPage.java:978)
-	at testcases.NVRsTest.MultipleNVRsAdditingTest(NVRsTest.java:337)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>65</td>
-<td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.GroupsHierarchyTest.RenameGroupAndCheckInMonitoringTest()'><b>RenameGroupAndCheckInMonitoringTest</b><br>Test class: testcases.GroupsHierarchyTest</td>
 <td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
@@ -1780,8 +2462,8 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1898167916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1898167916'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace337039263", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace337039263'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.failNotEquals(Assert.java:969)
 	at org.testng.Assert.assertTrue(Assert.java:43)
@@ -1816,7 +2498,7 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>49</td>
+<td>47</td>
 <td>testcases.GroupsHierarchyTest@1445d7f</td></tr>
 <tr>
 <td title='testcases.ViewsTest.ResourceFilterTest()'><b>ResourceFilterTest</b><br>Test class: testcases.ViewsTest</td>
@@ -1858,8 +2540,8 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace17808347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace17808347'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+</pre></div><a href='#' onClick='toggleBox("stack-trace987015126", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace987015126'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
 	at java.util.ArrayList.get(ArrayList.java:433)
 	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
@@ -1901,6 +2583,80 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <td>11</td>
 <td>testcases.ViewsTest@6a396c1e</td></tr>
 <tr>
+<td title='testcases.NVRsTest.SwitchStorageDefinitionsTest()'><b>SwitchStorageDefinitionsTest</b><br>Test class: testcases.NVRsTest</td>
+<td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at testcases.NVRsTest.SwitchStorageDefinitionsTest(NVRsTest.java:1833)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1842463725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1842463725'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at testcases.NVRsTest.SwitchStorageDefinitionsTest(NVRsTest.java:1833)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>testcases.NVRsTest@25359ed8</td></tr>
+<tr>
 <td title='testcases.NVRsElementsTest.uDecreasePortExitPressSaveUnsavedChangesTest()'><b>uDecreasePortExitPressSaveUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
@@ -1936,8 +2692,8 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1295820487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1295820487'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1217434045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1217434045'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.failNotEquals(Assert.java:969)
 	at org.testng.Assert.assertTrue(Assert.java:43)
@@ -1972,7 +2728,7 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>180</td>
+<td>187</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -1985,92 +2741,72 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.NVRsTest.AddAlreadyUsedNVRManuallyTest()'><b>AddAlreadyUsedNVRManuallyTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>14</td>
+<td>15</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.GroupsHierarchyTest.AddGroupAndCheckInMonitoringTest()'><b>AddGroupAndCheckInMonitoringTest</b><br>Test class: testcases.GroupsHierarchyTest</td>
 <td></td>
-<td>70</td>
+<td>64</td>
 <td>testcases.GroupsHierarchyTest@1445d7f</td></tr>
-<tr>
-<td title='testcases.NVRsTest.AddNVRAndCheckStatusVTest()'><b>AddNVRAndCheckStatusVTest</b><br>Test class: testcases.NVRsTest</td>
-<td></td>
-<td>45</td>
-<td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.AddNVRAndPressApplyTest()'><b>AddNVRAndPressApplyTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>42</td>
+<td>36</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.AddNVRManuallyAndPressApplyTest()'><b>AddNVRManuallyAndPressApplyTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>38</td>
+<td>33</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.AddNVRManuallyAndPressCloseTest()'><b>AddNVRManuallyAndPressCloseTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>19</td>
+<td>16</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.AddNVRManuallyAndSwitchONSecuredTest()'><b>AddNVRManuallyAndSwitchONSecuredTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>53</td>
+<td>47</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
-<tr>
-<td title='testcases.NVRsTest.AddNVRManuallyCheckStatusTest()'><b>AddNVRManuallyCheckStatusTest</b><br>Test class: testcases.NVRsTest</td>
-<td></td>
-<td>34</td>
-<td>testcases.NVRsTest@25359ed8</td></tr>
-<tr>
-<td title='testcases.NVRsTest.AddNVRWithSecuredPortTest()'><b>AddNVRWithSecuredPortTest</b><br>Test class: testcases.NVRsTest</td>
-<td></td>
-<td>126</td>
-<td>testcases.NVRsTest@25359ed8</td></tr>
-<tr>
-<td title='testcases.ToursElementsTest.AddNewTourAndCancelTest()'><b>AddNewTourAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
-<td></td>
-<td>12</td>
-<td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.AddNewTourExitAndCancelTest()'><b>AddNewTourExitAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>24</td>
+<td>28</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.AddNewTourExitAndDoNotSaveTest()'><b>AddNewTourExitAndDoNotSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>43</td>
+<td>39</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.AddNewTourExitAndSaveTest()'><b>AddNewTourExitAndSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>40</td>
+<td>35</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursTest.AddNewTourTest()'><b>AddNewTourTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>10</td>
+<td>12</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.ToursTest.AddNewTourWithAllParametersTest()'><b>AddNewTourWithAllParametersTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>58</td>
+<td>55</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.AddNewTourWithoutViewAndCancelTest()'><b>AddNewTourWithoutViewAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>7</td>
+<td>3</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.AddNewTourWithoutViewExitAndCancelTest()'><b>AddNewTourWithoutViewExitAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>18</td>
+<td>17</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.AddNewTourWithoutViewExitAndDoNotSaveTest()'><b>AddNewTourWithoutViewExitAndDoNotSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>35</td>
+<td>24</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.AddNewTourWithoutViewExitAndSaveTest()'><b>AddNewTourWithoutViewExitAndSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
@@ -2085,27 +2821,27 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.ViewsElementsTest.AddNewViewExitAndPressCancelTest()'><b>AddNewViewExitAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>27</td>
+<td>21</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.AddNewViewExitAndPressDoNotSaveTest()'><b>AddNewViewExitAndPressDoNotSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>31</td>
+<td>29</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.AddNewViewExitAndPressSaveTest()'><b>AddNewViewExitAndPressSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>32</td>
+<td>29</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.AddNewViewWithLayoutExitAndCancelTest()'><b>AddNewViewWithLayoutExitAndCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>20</td>
+<td>19</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.AddNewViewWithLayoutExitAndDoNotSaveTest()'><b>AddNewViewWithLayoutExitAndDoNotSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>26</td>
+<td>25</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.AddNewViewWithLayoutExitAndSaveTest()'><b>AddNewViewWithLayoutExitAndSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
@@ -2115,232 +2851,217 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.ViewsElementsTest.AddNewViewWithoutLayoutAndExitAndCancelTest()'><b>AddNewViewWithoutLayoutAndExitAndCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>20</td>
+<td>17</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.AddNewViewWithoutLayoutAndExitAndDoNotSaveTest()'><b>AddNewViewWithoutLayoutAndExitAndDoNotSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>28</td>
+<td>24</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.AddNewViewWithoutLayoutAndExitAndSaveTest()'><b>AddNewViewWithoutLayoutAndExitAndSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>19</td>
+<td>17</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.WebPagesTest.AddNewWebPageTest()'><b>AddNewWebPageTest</b><br>Test class: testcases.WebPagesTest</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>testcases.WebPagesTest@314c508a</td></tr>
-<tr>
-<td title='testcases.GroupsHierarchyTest.AddSubGroupTest()'><b>AddSubGroupTest</b><br>Test class: testcases.GroupsHierarchyTest</td>
-<td></td>
-<td>44</td>
-<td>testcases.GroupsHierarchyTest@1445d7f</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.AddViewAndCancelTest()'><b>AddViewAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
-<td></td>
-<td>20</td>
-<td>testcases.ToursElementsTest@80ec1f8</td></tr>
-<tr>
-<td title='testcases.ToursElementsTest.AddViewExitAndCancelTest()'><b>AddViewExitAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
-<td></td>
-<td>26</td>
-<td>testcases.ToursElementsTest@80ec1f8</td></tr>
-<tr>
-<td title='testcases.ToursElementsTest.AddViewExitAndDoNotSaveTest()'><b>AddViewExitAndDoNotSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
-<td></td>
-<td>61</td>
-<td>testcases.ToursElementsTest@80ec1f8</td></tr>
-<tr>
-<td title='testcases.ToursElementsTest.AddViewExitAndSaveTest()'><b>AddViewExitAndSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
-<td></td>
-<td>59</td>
-<td>testcases.ToursElementsTest@80ec1f8</td></tr>
-<tr>
-<td title='testcases.ToursTest.AddViewTest()'><b>AddViewTest</b><br>Test class: testcases.ToursTest</td>
-<td></td>
-<td>79</td>
-<td>testcases.ToursTest@12405818</td></tr>
-<tr>
-<td title='testcases.ViewsTest.CancelDeletingViewByButton()'><b>CancelDeletingViewByButton</b><br>Test class: testcases.ViewsTest</td>
-<td></td>
-<td>37</td>
-<td>testcases.ViewsTest@6a396c1e</td></tr>
-<tr>
-<td title='testcases.NVRsTest.CancelRemovalNVRsByButtonTest()'><b>CancelRemovalNVRsByButtonTest</b><br>Test class: testcases.NVRsTest</td>
-<td></td>
-<td>13</td>
-<td>testcases.NVRsTest@25359ed8</td></tr>
-<tr>
-<td title='testcases.NVRsTest.CancelRemovalNVRsByIconTest()'><b>CancelRemovalNVRsByIconTest</b><br>Test class: testcases.NVRsTest</td>
-<td></td>
-<td>9</td>
-<td>testcases.NVRsTest@25359ed8</td></tr>
-<tr>
-<td title='testcases.ViewsTest.CancelRemovingViewByIconTest()'><b>CancelRemovingViewByIconTest</b><br>Test class: testcases.ViewsTest</td>
-<td></td>
-<td>36</td>
-<td>testcases.ViewsTest@6a396c1e</td></tr>
-<tr>
-<td title='testcases.WebPagesTest.CancelWebPageRemovingByButtonTest()'><b>CancelWebPageRemovingByButtonTest</b><br>Test class: testcases.WebPagesTest</td>
-<td></td>
-<td>51</td>
-<td>testcases.WebPagesTest@314c508a</td></tr>
-<tr>
-<td title='testcases.WebPagesTest.CancelWebPageRemovingByIconTest()'><b>CancelWebPageRemovingByIconTest</b><br>Test class: testcases.WebPagesTest</td>
-<td></td>
-<td>34</td>
-<td>testcases.WebPagesTest@314c508a</td></tr>
-<tr>
-<td title='testcases.NVRsElementsTest.ChangeIPAdressPressCancelExitTest()'><b>ChangeIPAdressPressCancelExitTest</b><br>Test class: testcases.NVRsElementsTest</td>
-<td></td>
-<td>28</td>
-<td>testcases.NVRsElementsTest@5606c0b</td></tr>
-<tr>
-<td title='testcases.ViewsElementsTest.ChangeLayoutAndPressCancelTest()'><b>ChangeLayoutAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
-<td></td>
-<td>5</td>
-<td>testcases.ViewsElementsTest@10b48321</td></tr>
-<tr>
-<td title='testcases.ViewsElementsTest.ChangeLayoutExitAndPressCancelTest()'><b>ChangeLayoutExitAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
-<td></td>
-<td>5</td>
-<td>testcases.ViewsElementsTest@10b48321</td></tr>
-<tr>
-<td title='testcases.ViewsElementsTest.ChangeLayoutExitAndPressDontSaveTest()'><b>ChangeLayoutExitAndPressDontSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
-<td></td>
-<td>5</td>
-<td>testcases.ViewsElementsTest@10b48321</td></tr>
-<tr>
-<td title='testcases.ViewsElementsTest.ChangeLayoutExitAndPressSaveTest()'><b>ChangeLayoutExitAndPressSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
-<td></td>
-<td>5</td>
-<td>testcases.ViewsElementsTest@10b48321</td></tr>
-<tr>
-<td title='testcases.ViewsTest.ChangeLayoutTest()'><b>ChangeLayoutTest</b><br>Test class: testcases.ViewsTest</td>
-<td></td>
-<td>86</td>
-<td>testcases.ViewsTest@6a396c1e</td></tr>
-<tr>
-<td title='testcases.ToursElementsTest.ChangeNameAndCancelTest()'><b>ChangeNameAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
 <td>7</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
-<td title='testcases.ViewsElementsTest.ChangeNameAndPressCancelTest()'><b>ChangeNameAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
+<td title='testcases.ToursElementsTest.AddViewExitAndCancelTest()'><b>AddViewExitAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
+<td></td>
+<td>23</td>
+<td>testcases.ToursElementsTest@80ec1f8</td></tr>
+<tr>
+<td title='testcases.ToursElementsTest.AddViewExitAndDoNotSaveTest()'><b>AddViewExitAndDoNotSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
+<td></td>
+<td>32</td>
+<td>testcases.ToursElementsTest@80ec1f8</td></tr>
+<tr>
+<td title='testcases.ToursElementsTest.AddViewExitAndSaveTest()'><b>AddViewExitAndSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
+<td></td>
+<td>37</td>
+<td>testcases.ToursElementsTest@80ec1f8</td></tr>
+<tr>
+<td title='testcases.ToursTest.AddViewTest()'><b>AddViewTest</b><br>Test class: testcases.ToursTest</td>
+<td></td>
+<td>31</td>
+<td>testcases.ToursTest@12405818</td></tr>
+<tr>
+<td title='testcases.ViewsTest.CancelDeletingViewByButton()'><b>CancelDeletingViewByButton</b><br>Test class: testcases.ViewsTest</td>
+<td></td>
+<td>29</td>
+<td>testcases.ViewsTest@6a396c1e</td></tr>
+<tr>
+<td title='testcases.NVRsTest.CancelRemovalNVRsByButtonTest()'><b>CancelRemovalNVRsByButtonTest</b><br>Test class: testcases.NVRsTest</td>
+<td></td>
+<td>14</td>
+<td>testcases.NVRsTest@25359ed8</td></tr>
+<tr>
+<td title='testcases.NVRsTest.CancelRemovalNVRsByIconTest()'><b>CancelRemovalNVRsByIconTest</b><br>Test class: testcases.NVRsTest</td>
+<td></td>
+<td>10</td>
+<td>testcases.NVRsTest@25359ed8</td></tr>
+<tr>
+<td title='testcases.ViewsTest.CancelRemovingViewByIconTest()'><b>CancelRemovingViewByIconTest</b><br>Test class: testcases.ViewsTest</td>
+<td></td>
+<td>33</td>
+<td>testcases.ViewsTest@6a396c1e</td></tr>
+<tr>
+<td title='testcases.WebPagesTest.CancelWebPageRemovingByButtonTest()'><b>CancelWebPageRemovingByButtonTest</b><br>Test class: testcases.WebPagesTest</td>
+<td></td>
+<td>30</td>
+<td>testcases.WebPagesTest@314c508a</td></tr>
+<tr>
+<td title='testcases.WebPagesTest.CancelWebPageRemovingByIconTest()'><b>CancelWebPageRemovingByIconTest</b><br>Test class: testcases.WebPagesTest</td>
+<td></td>
+<td>32</td>
+<td>testcases.WebPagesTest@314c508a</td></tr>
+<tr>
+<td title='testcases.NVRsElementsTest.ChangeIPAdressExitPressDontSaveUnsavedChangesTest()'><b>ChangeIPAdressExitPressDontSaveUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
+<td></td>
+<td>69</td>
+<td>testcases.NVRsElementsTest@5606c0b</td></tr>
+<tr>
+<td title='testcases.NVRsElementsTest.ChangeIPAdressPressCancelExitTest()'><b>ChangeIPAdressPressCancelExitTest</b><br>Test class: testcases.NVRsElementsTest</td>
+<td></td>
+<td>183</td>
+<td>testcases.NVRsElementsTest@5606c0b</td></tr>
+<tr>
+<td title='testcases.ViewsElementsTest.ChangeLayoutExitAndPressDontSaveTest()'><b>ChangeLayoutExitAndPressDontSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
+<td></td>
+<td>39</td>
+<td>testcases.ViewsElementsTest@10b48321</td></tr>
+<tr>
+<td title='testcases.ViewsTest.ChangeLayoutTest()'><b>ChangeLayoutTest</b><br>Test class: testcases.ViewsTest</td>
+<td></td>
+<td>85</td>
+<td>testcases.ViewsTest@6a396c1e</td></tr>
+<tr>
+<td title='testcases.ToursElementsTest.ChangeNameAndCancelTest()'><b>ChangeNameAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
 <td>5</td>
+<td>testcases.ToursElementsTest@80ec1f8</td></tr>
+<tr>
+<td title='testcases.ViewsElementsTest.ChangeNameAndPressCancelTest()'><b>ChangeNameAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
+<td></td>
+<td>8</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeNameExitAndCancelTest()'><b>ChangeNameExitAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>21</td>
+<td>19</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeNameExitAndDoNotSaveTest()'><b>ChangeNameExitAndDoNotSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>48</td>
+<td>31</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ChangeNameExitAndPressCancelTest()'><b>ChangeNameExitAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>21</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ChangeNameExitAndPressDoNotSaveTest()'><b>ChangeNameExitAndPressDoNotSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>26</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ChangeNameExitAndPressSaveTest()'><b>ChangeNameExitAndPressSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>24</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeNameExitAndSaveTest()'><b>ChangeNameExitAndSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>39</td>
+<td>27</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangeNameExitCancelUnsavedChangesExitCancelTest()'><b>ChangeNameExitCancelUnsavedChangesExitCancelTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>23</td>
+<td>24</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangeNameExitPressDontSaveUnsavedChangesTest()'><b>ChangeNameExitPressDontSaveUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>75</td>
+<td>67</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangeNameExitPressSaveUnsavedChangesTest()'><b>ChangeNameExitPressSaveUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>287</td>
+<td>251</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangeNamePressCancelTest()'><b>ChangeNamePressCancelTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>10</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsTest.ChangeNameTest()'><b>ChangeNameTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>26</td>
+<td>23</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.ToursTest.ChangeNameTest()'><b>ChangeNameTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>58</td>
+<td>29</td>
 <td>testcases.ToursTest@12405818</td></tr>
-<tr>
-<td title='testcases.WebPagesTest.ChangeNameTest()'><b>ChangeNameTest</b><br>Test class: testcases.WebPagesTest</td>
-<td></td>
-<td>37</td>
-<td>testcases.WebPagesTest@314c508a</td></tr>
 <tr>
 <td title='testcases.ViewsTest.ChangeNameTest()'><b>ChangeNameTest</b><br>Test class: testcases.ViewsTest</td>
 <td></td>
-<td>75</td>
+<td>76</td>
 <td>testcases.ViewsTest@6a396c1e</td></tr>
 <tr>
 <td title='testcases.ToursTest.ChangeOrderForViewTest()'><b>ChangeOrderForViewTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>11</td>
+<td>5</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.NVRsTest.ChangePasswordToInvalidAndCheckStatusTest()'><b>ChangePasswordToInvalidAndCheckStatusTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>242</td>
+<td>196</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.ChangePortAndCheckStatusTest()'><b>ChangePortAndCheckStatusTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>161</td>
+<td>158</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangePortExitCancelUnsavedChangesTest()'><b>ChangePortExitCancelUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>67</td>
+<td>28</td>
+<td>testcases.NVRsElementsTest@5606c0b</td></tr>
+<tr>
+<td title='testcases.NVRsElementsTest.ChangePortExitPressDontSaveUnsavedChangesTest()'><b>ChangePortExitPressDontSaveUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
+<td></td>
+<td>237</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangePortExitPressSaveUnsavedChangesTest()'><b>ChangePortExitPressSaveUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>214</td>
+<td>235</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.WebPagesTest.ChangeRefreshTimeStatusTest()'><b>ChangeRefreshTimeStatusTest</b><br>Test class: testcases.WebPagesTest</td>
 <td></td>
-<td>92</td>
+<td>23</td>
 <td>testcases.WebPagesTest@314c508a</td></tr>
 <tr>
 <td title='testcases.WebPagesTest.ChangeRefreshTimeValueBySpinnerTest()'><b>ChangeRefreshTimeValueBySpinnerTest</b><br>Test class: testcases.WebPagesTest</td>
 <td></td>
-<td>70</td>
+<td>79</td>
 <td>testcases.WebPagesTest@314c508a</td></tr>
 <tr>
 <td title='testcases.WebPagesTest.ChangeRefreshTimeValueTest()'><b>ChangeRefreshTimeValueTest</b><br>Test class: testcases.WebPagesTest</td>
 <td></td>
-<td>34</td>
+<td>31</td>
 <td>testcases.WebPagesTest@314c508a</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeRemarksAndCancelTest()'><b>ChangeRemarksAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
@@ -2350,177 +3071,177 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.ViewsElementsTest.ChangeRemarksAndPressCancelTest()'><b>ChangeRemarksAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>7</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeRemarksExitAndCancelTest()'><b>ChangeRemarksExitAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>22</td>
+<td>20</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeRemarksExitAndDoNotSaveTest()'><b>ChangeRemarksExitAndDoNotSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>41</td>
+<td>27</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ChangeRemarksExitAndPressCancelTest()'><b>ChangeRemarksExitAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>19</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ChangeRemarksExitAndPressDoNotSaveTest()'><b>ChangeRemarksExitAndPressDoNotSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>27</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ChangeRemarksExitAndPressSaveTest()'><b>ChangeRemarksExitAndPressSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>27</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeRemarksExitAndSaveTest()'><b>ChangeRemarksExitAndSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>38</td>
+<td>31</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursTest.ChangeRemarksTest()'><b>ChangeRemarksTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>37</td>
+<td>24</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.WebPagesTest.ChangeRemarksTest()'><b>ChangeRemarksTest</b><br>Test class: testcases.WebPagesTest</td>
 <td></td>
-<td>32</td>
+<td>31</td>
 <td>testcases.WebPagesTest@314c508a</td></tr>
 <tr>
 <td title='testcases.ViewsTest.ChangeRemarksTest()'><b>ChangeRemarksTest</b><br>Test class: testcases.ViewsTest</td>
 <td></td>
-<td>73</td>
+<td>75</td>
 <td>testcases.ViewsTest@6a396c1e</td></tr>
 <tr>
 <td title='testcases.WebPagesTest.ChangeURLTest()'><b>ChangeURLTest</b><br>Test class: testcases.WebPagesTest</td>
 <td></td>
-<td>34</td>
+<td>28</td>
 <td>testcases.WebPagesTest@314c508a</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangeUserNameAndPressCancel()'><b>ChangeUserNameAndPressCancel</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>182</td>
+<td>184</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangeUserNameExitCancelUnsavedChangesTest()'><b>ChangeUserNameExitCancelUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>225</td>
+<td>224</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.ChangeUserNameExitPressDontSaveUnsavedChangesTest()'><b>ChangeUserNameExitPressDontSaveUnsavedChangesTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>231</td>
+<td>236</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
+<tr>
+<td title='testcases.NVRsTest.ChangeUserNameToInvalidAndCheckStatusTest()'><b>ChangeUserNameToInvalidAndCheckStatusTest</b><br>Test class: testcases.NVRsTest</td>
+<td></td>
+<td>202</td>
+<td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeViewTimeAndCancelTest()'><b>ChangeViewTimeAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>7</td>
+<td>5</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeViewTimeBySpinnersAndCancelTest()'><b>ChangeViewTimeBySpinnersAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>36</td>
+<td>10</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeViewTimeBySpinnersExitAndCancelTest()'><b>ChangeViewTimeBySpinnersExitAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>51</td>
+<td>40</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeViewTimeBySpinnersExitAndDoNotSaveTest()'><b>ChangeViewTimeBySpinnersExitAndDoNotSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>89</td>
+<td>48</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeViewTimeBySpinnersExitAndSaveTest()'><b>ChangeViewTimeBySpinnersExitAndSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>60</td>
+<td>45</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursTest.ChangeViewTimeBySpinnersTest()'><b>ChangeViewTimeBySpinnersTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>58</td>
+<td>55</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeViewTimeExitAndCancelTest()'><b>ChangeViewTimeExitAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>23</td>
+<td>21</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeViewTimeExitAndDoNotSaveTest()'><b>ChangeViewTimeExitAndDoNotSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>40</td>
-<td>testcases.ToursElementsTest@80ec1f8</td></tr>
-<tr>
-<td title='testcases.ToursElementsTest.ChangeViewTimeExitAndSaveTest()'><b>ChangeViewTimeExitAndSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
-<td></td>
-<td>38</td>
+<td>29</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursTest.ChangeViewTimeToLessThanMinValueTest()'><b>ChangeViewTimeToLessThanMinValueTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>13</td>
+<td>5</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.ToursTest.ChangeViewTimeToMoreThanMaxValueTest()'><b>ChangeViewTimeToMoreThanMaxValueTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>10</td>
+<td>6</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeVisibilityStatusAndCancelTest()'><b>ChangeVisibilityStatusAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>6</td>
+<td>4</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ChangeVisibilityStatusAndPressCancelTest()'><b>ChangeVisibilityStatusAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>7</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeVisibilityStatusExitAndCancelTest()'><b>ChangeVisibilityStatusExitAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>22</td>
+<td>20</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeVisibilityStatusExitAndDoNotSaveTest()'><b>ChangeVisibilityStatusExitAndDoNotSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>43</td>
+<td>25</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ChangeVisibilityStatusExitAndPressCancelTest()'><b>ChangeVisibilityStatusExitAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>19</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ChangeVisibilityStatusExitAndPressDoNotSaveTest()'><b>ChangeVisibilityStatusExitAndPressDoNotSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>25</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ChangeVisibilityStatusExitAndPressSaveTest()'><b>ChangeVisibilityStatusExitAndPressSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>24</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.ChangeVisibilityStatusExitAndSaveTest()'><b>ChangeVisibilityStatusExitAndSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>46</td>
+<td>28</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursTest.ChangeVisibilityStatusTest()'><b>ChangeVisibilityStatusTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>44</td>
+<td>34</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.WebPagesTest.ChangeVisibilityStatusTest()'><b>ChangeVisibilityStatusTest</b><br>Test class: testcases.WebPagesTest</td>
 <td></td>
-<td>42</td>
+<td>31</td>
 <td>testcases.WebPagesTest@314c508a</td></tr>
 <tr>
 <td title='testcases.ViewsTest.ChangeVisibilityStatusTest()'><b>ChangeVisibilityStatusTest</b><br>Test class: testcases.ViewsTest</td>
@@ -2530,37 +3251,32 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.NVRsElementsTest.CheckPropertiesAfterChangeNameTest()'><b>CheckPropertiesAfterChangeNameTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>51</td>
+<td>52</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.CheckPropertiesAfterChangePortTest()'><b>CheckPropertiesAfterChangePortTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>62</td>
+<td>69</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.ViewsTest.ClearViewAndDragResourceTest()'><b>ClearViewAndDragResourceTest</b><br>Test class: testcases.ViewsTest</td>
 <td></td>
-<td>73</td>
+<td>76</td>
 <td>testcases.ViewsTest@6a396c1e</td></tr>
-<tr>
-<td title='testcases.ViewsElementsTest.ClearViewAndPressCancelTest()'><b>ClearViewAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
-<td></td>
-<td>5</td>
-<td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ClearViewExitAndPressCancelTest()'><b>ClearViewExitAndPressCancelTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>32</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ClearViewExitAndPressDoNotSaveTest()'><b>ClearViewExitAndPressDoNotSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>32</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsElementsTest.ClearViewExitAndPressSaveTest()'><b>ClearViewExitAndPressSaveTest</b><br>Test class: testcases.ViewsElementsTest</td>
 <td></td>
-<td>5</td>
+<td>14</td>
 <td>testcases.ViewsElementsTest@10b48321</td></tr>
 <tr>
 <td title='testcases.ViewsTest.ClearViewTest()'><b>ClearViewTest</b><br>Test class: testcases.ViewsTest</td>
@@ -2570,32 +3286,32 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.ToursElementsTest.DeleteAllViewsAndCancelTest()'><b>DeleteAllViewsAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>11</td>
+<td>5</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.DeleteAllViewsExitAndCancelTest()'><b>DeleteAllViewsExitAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>21</td>
+<td>23</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.DeleteAllViewsExitAndDoNotSaveTest()'><b>DeleteAllViewsExitAndDoNotSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>29</td>
+<td>22</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.DeleteAllViewsExitAndSaveTest()'><b>DeleteAllViewsExitAndSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>3</td>
+<td>4</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursTest.DeleteAllViewsTest()'><b>DeleteAllViewsTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>1</td>
+<td>2</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.GroupsHierarchyTest.DeleteGroupAndCheckInMonitoringTest()'><b>DeleteGroupAndCheckInMonitoringTest</b><br>Test class: testcases.GroupsHierarchyTest</td>
 <td></td>
-<td>87</td>
+<td>79</td>
 <td>testcases.GroupsHierarchyTest@1445d7f</td></tr>
 <tr>
 <td title='testcases.GroupsHierarchyTest.DeleteGroupAndPressNoTest()'><b>DeleteGroupAndPressNoTest</b><br>Test class: testcases.GroupsHierarchyTest</td>
@@ -2605,7 +3321,7 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.NVRsTest.DeleteOneNVRClickOnAnotherNVRAndCheckPropertiesPanelTest()'><b>DeleteOneNVRClickOnAnotherNVRAndCheckPropertiesPanelTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>23</td>
+<td>24</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.GroupsHierarchyTest.DeleteResourceByButtonAndCancelRemovingTest()'><b>DeleteResourceByButtonAndCancelRemovingTest</b><br>Test class: testcases.GroupsHierarchyTest</td>
@@ -2620,88 +3336,83 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.ToursTest.DeleteTourByButtonAndPressNoTest()'><b>DeleteTourByButtonAndPressNoTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>41</td>
+<td>22</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.ToursTest.DeleteTourByButtonTest()'><b>DeleteTourByButtonTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>40</td>
+<td>31</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.ToursTest.DeleteTourByIconAndPressNoTest()'><b>DeleteTourByIconAndPressNoTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>22</td>
+<td>17</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.ToursTest.DeleteTourByIconTest()'><b>DeleteTourByIconTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>30</td>
+<td>29</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.WebPagesTest.DeleteURLTest()'><b>DeleteURLTest</b><br>Test class: testcases.WebPagesTest</td>
 <td></td>
-<td>10</td>
+<td>9</td>
 <td>testcases.WebPagesTest@314c508a</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.DeleteViewAndCancelTest()'><b>DeleteViewAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>5</td>
+<td>3</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ViewsTest.DeleteViewByButtonTest()'><b>DeleteViewByButtonTest</b><br>Test class: testcases.ViewsTest</td>
 <td></td>
-<td>44</td>
+<td>43</td>
 <td>testcases.ViewsTest@6a396c1e</td></tr>
 <tr>
 <td title='testcases.ViewsTest.DeleteViewByIconTest()'><b>DeleteViewByIconTest</b><br>Test class: testcases.ViewsTest</td>
 <td></td>
-<td>51</td>
+<td>42</td>
 <td>testcases.ViewsTest@6a396c1e</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.DeleteViewExitAndCancelTest()'><b>DeleteViewExitAndCancelTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>0</td>
+<td>17</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.DeleteViewExitAndDoNotSaveTest()'><b>DeleteViewExitAndDoNotSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>29</td>
+<td>20</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursElementsTest.DeleteViewExitAndSaveTest()'><b>DeleteViewExitAndSaveTest</b><br>Test class: testcases.ToursElementsTest</td>
 <td></td>
-<td>2</td>
+<td>23</td>
 <td>testcases.ToursElementsTest@80ec1f8</td></tr>
 <tr>
 <td title='testcases.ToursTest.DeleteViewFromViewsPageTest()'><b>DeleteViewFromViewsPageTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>59</td>
+<td>55</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.ToursTest.DeleteViewTest()'><b>DeleteViewTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>4</td>
+<td>5</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.WebPagesTest.DeleteWebPageByButtonTest()'><b>DeleteWebPageByButtonTest</b><br>Test class: testcases.WebPagesTest</td>
 <td></td>
-<td>78</td>
+<td>49</td>
 <td>testcases.WebPagesTest@314c508a</td></tr>
 <tr>
 <td title='testcases.WebPagesTest.DeleteWebPageByIconTest()'><b>DeleteWebPageByIconTest</b><br>Test class: testcases.WebPagesTest</td>
 <td></td>
-<td>12</td>
+<td>51</td>
 <td>testcases.WebPagesTest@314c508a</td></tr>
 <tr>
 <td title='testcases.GroupsHierarchyTest.DragResourceToGroupTest()'><b>DragResourceToGroupTest</b><br>Test class: testcases.GroupsHierarchyTest</td>
 <td></td>
-<td>51</td>
+<td>49</td>
 <td>testcases.GroupsHierarchyTest@1445d7f</td></tr>
-<tr>
-<td title='testcases.NVRsTest.FilterDiscoveredNVRsTest()'><b>FilterDiscoveredNVRsTest</b><br>Test class: testcases.NVRsTest</td>
-<td></td>
-<td>19</td>
-<td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.FilterNVRsTest()'><b>FilterNVRsTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
@@ -2715,12 +3426,12 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.ToursTest.FilterViewsTest()'><b>FilterViewsTest</b><br>Test class: testcases.ToursTest</td>
 <td></td>
-<td>3</td>
+<td>4</td>
 <td>testcases.ToursTest@12405818</td></tr>
 <tr>
 <td title='testcases.NVRsTest.InputInvalidIPAdressInAddNVRManualyTest()'><b>InputInvalidIPAdressInAddNVRManualyTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>19</td>
+<td>21</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.InputInvalidPasswordInAddNVRManualyTest()'><b>InputInvalidPasswordInAddNVRManualyTest</b><br>Test class: testcases.NVRsTest</td>
@@ -2735,7 +3446,12 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.NVRsTest.InputInvalidUserNameInAddNVRManualyTest()'><b>InputInvalidUserNameInAddNVRManualyTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>40</td>
+<td>38</td>
+<td>testcases.NVRsTest@25359ed8</td></tr>
+<tr>
+<td title='testcases.NVRsTest.MultipleNVRsAdditingTest()'><b>MultipleNVRsAdditingTest</b><br>Test class: testcases.NVRsTest</td>
+<td></td>
+<td>77</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.ToursTest.NewTourWithEmptyViewTest()'><b>NewTourWithEmptyViewTest</b><br>Test class: testcases.ToursTest</td>
@@ -2745,12 +3461,12 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.NVRsTest.RemoveNVRsByButtonTest()'><b>RemoveNVRsByButtonTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>26</td>
+<td>30</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.RemoveNVRsByIconTest()'><b>RemoveNVRsByIconTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>20</td>
+<td>21</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.GroupsHierarchyTest.RenameGroupAndClickCancelIconTest()'><b>RenameGroupAndClickCancelIconTest</b><br>Test class: testcases.GroupsHierarchyTest</td>
@@ -2760,32 +3476,32 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.GroupsHierarchyTest.ResourcesFilterTest()'><b>ResourcesFilterTest</b><br>Test class: testcases.GroupsHierarchyTest</td>
 <td></td>
-<td>4</td>
+<td>3</td>
 <td>testcases.GroupsHierarchyTest@1445d7f</td></tr>
 <tr>
 <td title='testcases.NVRsTest.SelectNVRandPressCancelTest()'><b>SelectNVRandPressCancelTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>23</td>
+<td>22</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.SortingDiscoveredNVRsTest()'><b>SortingDiscoveredNVRsTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>21</td>
+<td>23</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.SortingNVRsByIPAdressTest()'><b>SortingNVRsByIPAdressTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>184</td>
+<td>141</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.SortingNVRsByNameTest()'><b>SortingNVRsByNameTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>6</td>
+<td>10</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.SortingNVRsByVersionTest()'><b>SortingNVRsByVersionTest</b><br>Test class: testcases.NVRsTest</td>
 <td></td>
-<td>6</td>
+<td>9</td>
 <td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.NVRsTest.SwitchOffStorageDefinitionsAndPressNoTest()'><b>SwitchOffStorageDefinitionsAndPressNoTest</b><br>Test class: testcases.NVRsTest</td>
@@ -2795,42 +3511,37 @@ Session ID: f123c5b0-d12d-4331-8970-883a116d7db6
 <tr>
 <td title='testcases.NVRsElementsTest.SwitchStorageDefinitionsAndPressCancelTest()'><b>SwitchStorageDefinitionsAndPressCancelTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>17</td>
+<td>25</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.SwitchStorageDefinitionsExitAndPressCancelTest()'><b>SwitchStorageDefinitionsExitAndPressCancelTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>35</td>
+<td>41</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.SwitchStorageDefinitionsExitAndPressDontSaveButtonTest()'><b>SwitchStorageDefinitionsExitAndPressDontSaveButtonTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>60</td>
+<td>63</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
 <tr>
 <td title='testcases.NVRsElementsTest.SwitchStorageDefinitionsExitAndPressSaveButtonTest()'><b>SwitchStorageDefinitionsExitAndPressSaveButtonTest</b><br>Test class: testcases.NVRsElementsTest</td>
 <td></td>
-<td>62</td>
+<td>64</td>
 <td>testcases.NVRsElementsTest@5606c0b</td></tr>
-<tr>
-<td title='testcases.NVRsTest.SwitchStorageDefinitionsTest()'><b>SwitchStorageDefinitionsTest</b><br>Test class: testcases.NVRsTest</td>
-<td></td>
-<td>31</td>
-<td>testcases.NVRsTest@25359ed8</td></tr>
 <tr>
 <td title='testcases.ViewsTest.ViewsFilterTest()'><b>ViewsFilterTest</b><br>Test class: testcases.ViewsTest</td>
 <td></td>
-<td>3</td>
+<td>2</td>
 <td>testcases.ViewsTest@6a396c1e</td></tr>
 <tr>
 <td title='testcases.WebPagesTest.WebPagesFilterTest()'><b>WebPagesFilterTest</b><br>Test class: testcases.WebPagesTest</td>
 <td></td>
-<td>13</td>
+<td>4</td>
 <td>testcases.WebPagesTest@314c508a</td></tr>
 <tr>
 <td title='testcases.MonitoringView.addViewTest()'><b>addViewTest</b><br>Test class: testcases.MonitoringView</td>
 <td></td>
-<td>25</td>
+<td>24</td>
 <td>testcases.MonitoringView@6c3f5566</td></tr>
 </table><p>
 </body>

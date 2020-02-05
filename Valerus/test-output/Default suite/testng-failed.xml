@@ -13,6 +13,16 @@
           <include name="AddNewWebPageExitAndSaveTest"/>
         </methods>
       </class> <!-- testcases.WebPagesElementsTest -->
+      <class name="testcases.WebPagesTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="GoToWebPagesPage"/>
+          <include name="ChangeNameTest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcases.WebPagesTest -->
       <class name="testcases.NVRsElementsTest">
         <methods>
           <include name="ChangeIPAdressExitPressSaveUnsavedChangesTest"/>
@@ -21,8 +31,6 @@
           <include name="IncreasePortExitPressDontSaveUnsavedChangesTest"/>
           <include name="ChangeUserNameExitPressSaveUnsavedChangesTest"/>
           <include name="uDecreasePortExitPressSaveUnsavedChangesTest"/>
-          <include name="ChangePortExitPressDontSaveUnsavedChangesTest"/>
-          <include name="ChangeIPAdressExitPressDontSaveUnsavedChangesTest"/>
           <include name="afterMethod"/>
           <include name="startReport"/>
           <include name="endReport"/>
@@ -35,18 +43,32 @@
           <include name="gotoNVRPage"/>
         </methods>
       </class> <!-- testcases.NVRsElementsTest -->
-      <class name="testcases.NVRsTest">
+      <class name="testcases.ToursElementsTest">
         <methods>
-          <include name="ChangeIPAdressAndCheckStatusTest"/>
+          <include name="AddNewTourAndCancelTest"/>
           <include name="endReport"/>
-          <include name="gotoNVRPage"/>
-          <include name="ChangeUserNameToInvalidAndCheckStatusTest"/>
-          <include name="AddNVRManuallyWithSecuredPortTest"/>
-          <include name="MultipleNVRsAdditingTest"/>
+          <include name="startReport"/>
           <include name="setup"/>
           <include name="afterMethod"/>
-          <include name="ChangeSecuredAndCheckStatusTest"/>
+          <include name="ChangeViewTimeExitAndSaveTest"/>
+          <include name="GoToToursPage"/>
+        </methods>
+      </class> <!-- testcases.ToursElementsTest -->
+      <class name="testcases.NVRsTest">
+        <methods>
+          <include name="AddNVRWithSecuredPortTest"/>
+          <include name="SwitchStorageDefinitionsTest"/>
+          <include name="AddNVRManuallyCheckStatusTest"/>
+          <include name="AddNVRManuallyWithSecuredPortTest"/>
+          <include name="setup"/>
           <include name="AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest"/>
+          <include name="ChangeIPAdressAndCheckStatusTest"/>
+          <include name="endReport"/>
+          <include name="AddNVRAndCheckStatusVTest"/>
+          <include name="gotoNVRPage"/>
+          <include name="afterMethod"/>
+          <include name="ChangeSecuredAndCheckStatusTest"/>
+          <include name="FilterDiscoveredNVRsTest"/>
           <include name="startReport"/>
         </methods>
       </class> <!-- testcases.NVRsTest -->
@@ -78,10 +100,24 @@
           <include name="endReport"/>
           <include name="afterMethod"/>
           <include name="setup"/>
+          <include name="AddSubGroupTest"/>
           <include name="RenameGroupAndCheckInMonitoringTest"/>
           <include name="GoToGroupsHierarchyPage"/>
         </methods>
       </class> <!-- testcases.GroupsHierarchyTest -->
+      <class name="testcases.ViewsElementsTest">
+        <methods>
+          <include name="ChangeLayoutAndPressCancelTest"/>
+          <include name="ChangeLayoutExitAndPressCancelTest"/>
+          <include name="ChangeLayoutExitAndPressSaveTest"/>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="GoToViewPage"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="ClearViewAndPressCancelTest"/>
+        </methods>
+      </class> <!-- testcases.ViewsElementsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
