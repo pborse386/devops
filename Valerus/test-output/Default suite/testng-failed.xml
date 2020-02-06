@@ -13,28 +13,16 @@
           <include name="AddNewWebPageExitAndSaveTest"/>
         </methods>
       </class> <!-- testcases.WebPagesElementsTest -->
-      <class name="testcases.WebPagesTest">
-        <methods>
-          <include name="endReport"/>
-          <include name="startReport"/>
-          <include name="GoToWebPagesPage"/>
-          <include name="ChangeNameTest"/>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- testcases.WebPagesTest -->
       <class name="testcases.NVRsElementsTest">
         <methods>
           <include name="ChangeIPAdressExitPressSaveUnsavedChangesTest"/>
           <include name="setup"/>
           <include name="CheckPropertiesAfterChangeUserNameTest"/>
           <include name="IncreasePortExitPressDontSaveUnsavedChangesTest"/>
-          <include name="ChangeUserNameExitPressSaveUnsavedChangesTest"/>
           <include name="uDecreasePortExitPressSaveUnsavedChangesTest"/>
           <include name="afterMethod"/>
           <include name="startReport"/>
           <include name="endReport"/>
-          <include name="CheckPropertiesAfterChangePasswordTest"/>
           <include name="CheckPropertiesAfterChangeIPAdressTest"/>
           <include name="ChangePortPressCancelTest"/>
           <include name="DecreasePortExitCancelUnsavedChangesTest"/>
@@ -43,23 +31,13 @@
           <include name="gotoNVRPage"/>
         </methods>
       </class> <!-- testcases.NVRsElementsTest -->
-      <class name="testcases.ToursElementsTest">
-        <methods>
-          <include name="AddNewTourAndCancelTest"/>
-          <include name="endReport"/>
-          <include name="startReport"/>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="ChangeViewTimeExitAndSaveTest"/>
-          <include name="GoToToursPage"/>
-        </methods>
-      </class> <!-- testcases.ToursElementsTest -->
       <class name="testcases.NVRsTest">
         <methods>
           <include name="AddNVRWithSecuredPortTest"/>
-          <include name="SwitchStorageDefinitionsTest"/>
+          <include name="ChangePortAndCheckStatusTest"/>
           <include name="AddNVRManuallyCheckStatusTest"/>
           <include name="AddNVRManuallyWithSecuredPortTest"/>
+          <include name="MultipleNVRsAdditingTest"/>
           <include name="setup"/>
           <include name="AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest"/>
           <include name="ChangeIPAdressAndCheckStatusTest"/>
@@ -84,13 +62,11 @@
       </class> <!-- testcases.ToursTest -->
       <class name="testcases.ViewsTest">
         <methods>
-          <include name="AddNewViewWithoutLayoutTest"/>
+          <include name="ChangeNameTest"/>
           <include name="afterMethod"/>
           <include name="setup"/>
-          <include name="AddNewViewTest"/>
           <include name="startReport"/>
           <include name="endReport"/>
-          <include name="ResourceFilterTest"/>
           <include name="GoToViewPage"/>
         </methods>
       </class> <!-- testcases.ViewsTest -->
@@ -100,7 +76,6 @@
           <include name="endReport"/>
           <include name="afterMethod"/>
           <include name="setup"/>
-          <include name="AddSubGroupTest"/>
           <include name="RenameGroupAndCheckInMonitoringTest"/>
           <include name="GoToGroupsHierarchyPage"/>
         </methods>
@@ -108,7 +83,6 @@
       <class name="testcases.ViewsElementsTest">
         <methods>
           <include name="ChangeLayoutAndPressCancelTest"/>
-          <include name="ChangeLayoutExitAndPressCancelTest"/>
           <include name="ChangeLayoutExitAndPressSaveTest"/>
           <include name="endReport"/>
           <include name="startReport"/>
