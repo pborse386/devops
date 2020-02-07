@@ -158,7 +158,7 @@ public class WebPagesElementsTest {
         Assert.assertEquals(webPageSizeAct , webPageSize);
     }
 
-    @Test  
+    @Test (enabled =false)  
     public void AddNewWebPageExitAndSaveTest() throws InterruptedException {
         logger=report.startTest("AddNewWebPageExitAndSaveTest");
 

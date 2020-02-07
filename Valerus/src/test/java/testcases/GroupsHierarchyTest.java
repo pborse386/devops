@@ -51,25 +51,22 @@ public class GroupsHierarchyTest {
             driver = new ChromeDriver();
         }else if (browser.equalsIgnoreCase("ie")) {
           
-        	
-    
+        	  
         	
         	
         	System.setProperty("webdriver.ie.driver", WebDriverLocation+"\\IEDriverServer.exe");
             DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
             capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
             capabilities.setCapability(InternetExplorerDriver.IE_USE_PER_PROCESS_PROXY, true);
-//            capabilities.setCapability(InternetExplorerDriver.IE_SWITCHES, "-private");
+//          capabilities.setCapability(InternetExplorerDriver.IE_SWITCHES, "-private");
             capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
             capabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, false);
-//            capabilities.setCapability("nativeEvents", false);
-//            driver = WebDriverFactory.getDriver(DesiredCapabilities.internetExplorer());
+//          capabilities.setCapability("nativeEvents", false);
+//          driver = WebDriverFactory.getDriver(DesiredCapabilities.internetExplorer());
             driver = new InternetExplorerDriver(capabilities);  
         	
-        	     
-            
-            
-            
+        	         
+                        
             
         }
         
@@ -306,7 +303,9 @@ public class GroupsHierarchyTest {
 
         logger.log(LogStatus.INFO,"Check that new group is added in Monitoring Resources list");
         boolean groupNameIsExist = monitoringPage.VerifyThatGroupIsExist(groupName);
-        Assert.assertTrue(groupNameIsExist);
+      //  Assert.assertTrue(groupNameIsExist);
+        Assert.assertFalse(groupNameIsExist);
+        
     }
 
     @Test

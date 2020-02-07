@@ -3,64 +3,28 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [Default suite]]]">
   <test thread-count="5" name="Default test(failed)(failed)(failed)">
     <classes>
-      <class name="testcases.GroupsHierarchyTest">
-        <methods>
-          <include name="startReport"/>
-          <include name="endReport"/>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="RenameGroupAndCheckInMonitoringTest"/>
-          <include name="GoToGroupsHierarchyPage"/>
-        </methods>
-      </class> <!-- testcases.GroupsHierarchyTest -->
-      <class name="testcases.ViewsElementsTest">
-        <methods>
-          <include name="ChangeLayoutAndPressCancelTest"/>
-          <include name="endReport"/>
-          <include name="startReport"/>
-          <include name="GoToViewPage"/>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- testcases.ViewsElementsTest -->
-      <class name="testcases.WebPagesElementsTest">
-        <methods>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="startReport"/>
-          <include name="endReport"/>
-          <include name="GoToGroupsHierarchyPage"/>
-          <include name="AddNewWebPageExitAndSaveTest"/>
-        </methods>
-      </class> <!-- testcases.WebPagesElementsTest -->
       <class name="testcases.NVRsTest">
         <methods>
           <include name="ChangeIPAdressAndCheckStatusTest"/>
-          <include name="AddNVRWithSecuredPortTest"/>
           <include name="endReport"/>
           <include name="AddNVRAndCheckStatusVTest"/>
           <include name="gotoNVRPage"/>
-          <include name="AddNVRManuallyCheckStatusTest"/>
           <include name="AddNVRManuallyWithSecuredPortTest"/>
-          <include name="setup"/>
           <include name="afterMethod"/>
+          <include name="setup"/>
           <include name="ChangeSecuredAndCheckStatusTest"/>
-          <include name="AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest"/>
           <include name="startReport"/>
         </methods>
       </class> <!-- testcases.NVRsTest -->
       <class name="testcases.NVRsElementsTest">
         <methods>
-          <include name="ChangeIPAdressExitPressSaveUnsavedChangesTest"/>
-          <include name="setup"/>
           <include name="afterMethod"/>
+          <include name="setup"/>
           <include name="IncreasePortExitPressDontSaveUnsavedChangesTest"/>
           <include name="startReport"/>
           <include name="endReport"/>
-          <include name="uDecreasePortExitPressSaveUnsavedChangesTest"/>
           <include name="DecreasePortExitCancelUnsavedChangesTest"/>
           <include name="ChangeIPAdressExitCancelUnsavedChangesTest"/>
-          <include name="IncreasePortAndPressCancel"/>
           <include name="gotoNVRPage"/>
         </methods>
       </class> <!-- testcases.NVRsElementsTest -->

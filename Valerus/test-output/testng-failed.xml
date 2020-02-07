@@ -3,63 +3,52 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.WebPagesElementsTest">
-        <methods>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="startReport"/>
-          <include name="endReport"/>
-          <include name="GoToGroupsHierarchyPage"/>
-          <include name="AddNewWebPageExitAndSaveTest"/>
-        </methods>
-      </class> <!-- testcases.WebPagesElementsTest -->
       <class name="testcases.NVRsElementsTest">
         <methods>
-          <include name="ChangeIPAdressExitPressSaveUnsavedChangesTest"/>
           <include name="setup"/>
           <include name="CheckPropertiesAfterChangeUserNameTest"/>
           <include name="IncreasePortExitPressDontSaveUnsavedChangesTest"/>
-          <include name="uDecreasePortExitPressSaveUnsavedChangesTest"/>
+          <include name="ChangeUserNameExitPressSaveUnsavedChangesTest"/>
+          <include name="DecreasePortExitPressSaveUnsavedChangesTest"/>
           <include name="afterMethod"/>
           <include name="startReport"/>
           <include name="endReport"/>
+          <include name="CheckPropertiesAfterChangePasswordTest"/>
           <include name="CheckPropertiesAfterChangeIPAdressTest"/>
           <include name="ChangePortPressCancelTest"/>
           <include name="DecreasePortExitCancelUnsavedChangesTest"/>
+          <include name="ChangeNameExitCancelUnsavedChangesExitCancelTest"/>
           <include name="ChangeIPAdressExitCancelUnsavedChangesTest"/>
-          <include name="IncreasePortAndPressCancel"/>
+          <include name="SwitchStorageDefinitionsExitAndPressSaveButtonTest"/>
           <include name="gotoNVRPage"/>
         </methods>
       </class> <!-- testcases.NVRsElementsTest -->
-      <class name="testcases.NVRsTest">
+      <class name="testcases.ToursElementsTest">
         <methods>
-          <include name="AddNVRWithSecuredPortTest"/>
-          <include name="ChangePortAndCheckStatusTest"/>
-          <include name="AddNVRManuallyCheckStatusTest"/>
-          <include name="AddNVRManuallyWithSecuredPortTest"/>
-          <include name="MultipleNVRsAdditingTest"/>
-          <include name="setup"/>
-          <include name="AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest"/>
-          <include name="ChangeIPAdressAndCheckStatusTest"/>
           <include name="endReport"/>
-          <include name="AddNVRAndCheckStatusVTest"/>
-          <include name="gotoNVRPage"/>
-          <include name="afterMethod"/>
-          <include name="ChangeSecuredAndCheckStatusTest"/>
-          <include name="FilterDiscoveredNVRsTest"/>
           <include name="startReport"/>
-        </methods>
-      </class> <!-- testcases.NVRsTest -->
-      <class name="testcases.ToursTest">
-        <methods>
-          <include name="ChangeViewTimeTest"/>
-          <include name="endReport"/>
           <include name="setup"/>
           <include name="afterMethod"/>
           <include name="GoToToursPage"/>
+          <include name="ChangeViewTimeBySpinnersExitAndSaveTest"/>
+        </methods>
+      </class> <!-- testcases.ToursElementsTest -->
+      <class name="testcases.NVRsTest">
+        <methods>
+          <include name="ChangeIPAdressAndCheckStatusTest"/>
+          <include name="SortingNVRsByNameTest"/>
+          <include name="SwitchStorageDefinitionsTest"/>
+          <include name="endReport"/>
+          <include name="gotoNVRPage"/>
+          <include name="AddNVRManuallyWithSecuredPortTest"/>
+          <include name="SwitchOffStorageDefinitionsAndPressNoTest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="ChangeSecuredAndCheckStatusTest"/>
+          <include name="SortingNVRsByIPAdressTest"/>
           <include name="startReport"/>
         </methods>
-      </class> <!-- testcases.ToursTest -->
+      </class> <!-- testcases.NVRsTest -->
       <class name="testcases.ViewsTest">
         <methods>
           <include name="ChangeNameTest"/>
@@ -76,6 +65,7 @@
           <include name="endReport"/>
           <include name="afterMethod"/>
           <include name="setup"/>
+          <include name="DeleteGroupAndPressNoTest"/>
           <include name="RenameGroupAndCheckInMonitoringTest"/>
           <include name="GoToGroupsHierarchyPage"/>
         </methods>
@@ -83,9 +73,10 @@
       <class name="testcases.ViewsElementsTest">
         <methods>
           <include name="ChangeLayoutAndPressCancelTest"/>
-          <include name="ChangeLayoutExitAndPressSaveTest"/>
+          <include name="ChangeLayoutExitAndPressCancelTest"/>
           <include name="endReport"/>
           <include name="startReport"/>
+          <include name="AddNewViewWithLayoutExitAndSaveTest"/>
           <include name="GoToViewPage"/>
           <include name="setup"/>
           <include name="afterMethod"/>

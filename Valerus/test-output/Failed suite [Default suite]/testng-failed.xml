@@ -3,32 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
   <test thread-count="5" name="Default test(failed)(failed)">
     <classes>
-      <class name="testcases.ViewsElementsTest">
-        <methods>
-          <include name="ChangeLayoutAndPressCancelTest"/>
-          <include name="endReport"/>
-          <include name="startReport"/>
-          <include name="GoToViewPage"/>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- testcases.ViewsElementsTest -->
-      <class name="testcases.NVRsTest">
-        <methods>
-          <include name="ChangeIPAdressAndCheckStatusTest"/>
-          <include name="AddNVRWithSecuredPortTest"/>
-          <include name="endReport"/>
-          <include name="AddNVRAndCheckStatusVTest"/>
-          <include name="gotoNVRPage"/>
-          <include name="AddNVRManuallyCheckStatusTest"/>
-          <include name="AddNVRManuallyWithSecuredPortTest"/>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="ChangeSecuredAndCheckStatusTest"/>
-          <include name="AddNVRManuallyWithSecuredPortAndSwitchONSecuredTest"/>
-          <include name="startReport"/>
-        </methods>
-      </class> <!-- testcases.NVRsTest -->
       <class name="testcases.WebPagesElementsTest">
         <methods>
           <include name="setup"/>
@@ -39,6 +13,19 @@
           <include name="AddNewWebPageExitAndSaveTest"/>
         </methods>
       </class> <!-- testcases.WebPagesElementsTest -->
+      <class name="testcases.NVRsTest">
+        <methods>
+          <include name="ChangeIPAdressAndCheckStatusTest"/>
+          <include name="endReport"/>
+          <include name="AddNVRAndCheckStatusVTest"/>
+          <include name="gotoNVRPage"/>
+          <include name="AddNVRManuallyWithSecuredPortTest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="ChangeSecuredAndCheckStatusTest"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- testcases.NVRsTest -->
       <class name="testcases.NVRsElementsTest">
         <methods>
           <include name="ChangeIPAdressExitPressSaveUnsavedChangesTest"/>
@@ -64,16 +51,6 @@
           <include name="GoToGroupsHierarchyPage"/>
         </methods>
       </class> <!-- testcases.GroupsHierarchyTest -->
-      <class name="testcases.ViewsTest">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="AddNewViewTest"/>
-          <include name="startReport"/>
-          <include name="endReport"/>
-          <include name="GoToViewPage"/>
-        </methods>
-      </class> <!-- testcases.ViewsTest -->
     </classes>
   </test> <!-- Default test(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Default suite]] -->

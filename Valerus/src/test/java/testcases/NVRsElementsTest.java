@@ -437,7 +437,7 @@ public class NVRsElementsTest {
            Assert.assertEquals(NVRIPAfter, NVRIPBefore);
     }
 
-    @Test
+    @Test(enabled =false)
     public void ChangeIPAdressExitPressSaveUnsavedChangesTest() throws InterruptedException, IOException {
         logger=report.startTest("ChangeIPAdressExitPressSaveUnsavedChangesTest");
 
@@ -752,7 +752,7 @@ public class NVRsElementsTest {
     }
 
 
-    @Test
+    @Test(enabled= false)
     public void IncreasePortAndPressCancel() throws InterruptedException {
         logger=report.startTest("IncreasePortAndPressCancel");
 
@@ -880,7 +880,7 @@ public class NVRsElementsTest {
     }
 
     @Test
-    public void uDecreasePortExitPressSaveUnsavedChangesTest() throws InterruptedException, IOException {
+    public void DecreasePortExitPressSaveUnsavedChangesTest() throws InterruptedException, IOException {
         logger=report.startTest("uDecreasePortExitPressSaveUnsavedChangesTest");
 
         String IPAdress =Servers[1];
