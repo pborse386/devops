@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
+  <test thread-count="5" name="Default test(failed)(failed)">
     <classes>
+      <class name="testcases.GroupsHierarchyTest">
+        <methods>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="DeleteGroupAndPressNoTest"/>
+          <include name="GoToGroupsHierarchyPage"/>
+        </methods>
+      </class> <!-- testcases.GroupsHierarchyTest -->
       <class name="testcases.NVRsElementsTest">
         <methods>
           <include name="setup"/>
@@ -15,28 +25,15 @@
           <include name="endReport"/>
           <include name="CheckPropertiesAfterChangePasswordTest"/>
           <include name="CheckPropertiesAfterChangeIPAdressTest"/>
-          <include name="ChangePortPressCancelTest"/>
           <include name="DecreasePortExitCancelUnsavedChangesTest"/>
-          <include name="ChangeNameExitCancelUnsavedChangesExitCancelTest"/>
           <include name="ChangeIPAdressExitCancelUnsavedChangesTest"/>
           <include name="SwitchStorageDefinitionsExitAndPressSaveButtonTest"/>
           <include name="gotoNVRPage"/>
         </methods>
       </class> <!-- testcases.NVRsElementsTest -->
-      <class name="testcases.ToursElementsTest">
-        <methods>
-          <include name="endReport"/>
-          <include name="startReport"/>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="GoToToursPage"/>
-          <include name="ChangeViewTimeBySpinnersExitAndSaveTest"/>
-        </methods>
-      </class> <!-- testcases.ToursElementsTest -->
       <class name="testcases.NVRsTest">
         <methods>
           <include name="ChangeIPAdressAndCheckStatusTest"/>
-          <include name="SortingNVRsByNameTest"/>
           <include name="SwitchStorageDefinitionsTest"/>
           <include name="endReport"/>
           <include name="gotoNVRPage"/>
@@ -45,10 +42,19 @@
           <include name="setup"/>
           <include name="afterMethod"/>
           <include name="ChangeSecuredAndCheckStatusTest"/>
-          <include name="SortingNVRsByIPAdressTest"/>
           <include name="startReport"/>
         </methods>
       </class> <!-- testcases.NVRsTest -->
+      <class name="testcases.ViewsElementsTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="AddNewViewWithLayoutExitAndSaveTest"/>
+          <include name="GoToViewPage"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcases.ViewsElementsTest -->
       <class name="testcases.ViewsTest">
         <methods>
           <include name="ChangeNameTest"/>
@@ -59,30 +65,6 @@
           <include name="GoToViewPage"/>
         </methods>
       </class> <!-- testcases.ViewsTest -->
-      <class name="testcases.GroupsHierarchyTest">
-        <methods>
-          <include name="startReport"/>
-          <include name="endReport"/>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="DeleteGroupAndPressNoTest"/>
-          <include name="RenameGroupAndCheckInMonitoringTest"/>
-          <include name="GoToGroupsHierarchyPage"/>
-        </methods>
-      </class> <!-- testcases.GroupsHierarchyTest -->
-      <class name="testcases.ViewsElementsTest">
-        <methods>
-          <include name="ChangeLayoutAndPressCancelTest"/>
-          <include name="ChangeLayoutExitAndPressCancelTest"/>
-          <include name="endReport"/>
-          <include name="startReport"/>
-          <include name="AddNewViewWithLayoutExitAndSaveTest"/>
-          <include name="GoToViewPage"/>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="ClearViewAndPressCancelTest"/>
-        </methods>
-      </class> <!-- testcases.ViewsElementsTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->
