@@ -11,9 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-/**
- * Created by nastya on 9/4/2017.
- */
+
 public class ToursPage extends Page {
 //    @FindBy(id = "config-menu-network_entities-tours")
     @FindBy(xpath = "//*[@id='config-menu-network_entities-tours' or @title='Tours']")

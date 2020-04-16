@@ -3,31 +3,105 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [Default suite]]]">
   <test thread-count="5" name="Default test(failed)(failed)(failed)">
     <classes>
-      <class name="testcases.NVRsTest">
+      <class name="testcases.VideoRecordingTest">
         <methods>
-          <include name="ChangeIPAdressAndCheckStatusTest"/>
+          <include name="GoToVideoChannelsPage"/>
           <include name="endReport"/>
-          <include name="AddNVRAndCheckStatusVTest"/>
-          <include name="gotoNVRPage"/>
-          <include name="AddNVRManuallyWithSecuredPortTest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="NewMonthlyScheduleTest"/>
+          <include name="startReport"/>
+          <include name="NewWeeklyScheduleTest"/>
+          <include name="CreateNewScheduleNeverRepeatTest"/>
+          <include name="GetVideoChannelPropertiesAndApplyToOtherChannelTest"/>
+        </methods>
+      </class> <!-- testcases.VideoRecordingTest -->
+      <class name="testcases.AudioChannelsTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="ChangeLimitRetentionValueTest"/>
+          <include name="startReport"/>
+          <include name="SelectScheduleTest"/>
+          <include name="GetAudioChannelPropertiesAndApplyToOtherChannelTest"/>
+          <include name="GoToAudioChannelsPage"/>
           <include name="afterMethod"/>
           <include name="setup"/>
-          <include name="ChangeSecuredAndCheckStatusTest"/>
-          <include name="startReport"/>
+          <include name="SelectAllDevicesInSpecifyEventsTest"/>
+          <include name="AddAudioResourcesInVideoChannelTest"/>
+          <include name="ChangePreEventTimeTest"/>
+          <include name="ChangeNameAndSaveTest"/>
         </methods>
-      </class> <!-- testcases.NVRsTest -->
+      </class> <!-- testcases.AudioChannelsTest -->
+      <class name="testcases.ToursElementsTest">
+        <methods>
+          <include name="AddNewTourAndCancelTest"/>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="AddNewTourExitAndCancelTest"/>
+          <include name="GoToToursPage"/>
+        </methods>
+      </class> <!-- testcases.ToursElementsTest -->
+      <class name="testcases.VideoPictureSettingsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="ChangeContrastAndPressSaveTest"/>
+          <include name="ChangeSharpnessAndPressSaveTest"/>
+          <include name="startReport"/>
+          <include name="GoToVideoChannelsPage"/>
+          <include name="ChangeBrightnessAndPressSaveTest"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- testcases.VideoPictureSettingsTest -->
+      <class name="testcases.VideoChannelPropertiesElementTest">
+        <methods>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="GoToVideoChannelPage"/>
+          <include name="ChangeNameExitPressDontSaveUnsavedChangesTest"/>
+          <include name="SwitchVisibilityTest"/>
+          <include name="ChangeNameAndSaveTest"/>
+          <include name="ChangeNamePressCancelExitTest"/>
+        </methods>
+      </class> <!-- testcases.VideoChannelPropertiesElementTest -->
+      <class name="testcases.AudioChannelsElementsTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="ChangeNameExitAndPressSaveTest"/>
+          <include name="GoToAudioChannelsPage"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcases.AudioChannelsElementsTest -->
       <class name="testcases.NVRsElementsTest">
         <methods>
-          <include name="afterMethod"/>
           <include name="setup"/>
+          <include name="afterMethod"/>
           <include name="IncreasePortExitPressDontSaveUnsavedChangesTest"/>
           <include name="startReport"/>
           <include name="endReport"/>
           <include name="DecreasePortExitCancelUnsavedChangesTest"/>
           <include name="ChangeIPAdressExitCancelUnsavedChangesTest"/>
+          <include name="DecreasePortExitPressSaveUnsavedChangesTest"/>
           <include name="gotoNVRPage"/>
         </methods>
       </class> <!-- testcases.NVRsElementsTest -->
+      <class name="testcases.NVRsTest">
+        <methods>
+          <include name="ChangeIPAdressAndCheckStatusTest"/>
+          <include name="endReport"/>
+          <include name="gotoNVRPage"/>
+          <include name="AddNVRManuallyWithSecuredPortTest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- testcases.NVRsTest -->
     </classes>
   </test> <!-- Default test(failed)(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Failed suite [Default suite]]] -->

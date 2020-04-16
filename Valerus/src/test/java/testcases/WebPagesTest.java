@@ -98,14 +98,14 @@ public class WebPagesTest {
          webPagesPage.GoToWebPagesPageFromLanding();
     	
     	
-        driver.navigate().to("http://" + Servers[0]);
+      /*  driver.navigate().to("http://" + Servers[0]);
         try{
             driver.switchTo().alert().accept();
         }catch(Exception a){}
 
         webPagesPage.WaitUntilLoadingBlockAppears();
         webPagesPage.WaitUntilLoadingBlockDisappears();
-        webPagesPage.GoToWebPagesPage();
+        webPagesPage.GoToWebPagesPage();*/
     }
 
     @Test  

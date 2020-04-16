@@ -15,6 +15,9 @@ import java.util.List;
 public class GroupsHierarchyPage extends Page {
     @FindBy(id = "config-menu-network_entities-hierarchy_groups")
     WebElement groupsHierarchyButton;
+    
+    @FindBy(xpath="//*[@id=\"config-menu-network_entities-hierarchy_groups\"]/span")
+    WebElement groupsHierarchyButton1;
 
     @FindBy(xpath = "//span[@class='item-text ng-binding'][@title='Groups Hierarchy']")
     WebElement groupsHierarchyButtonLandingPage;
@@ -133,7 +136,7 @@ public class GroupsHierarchyPage extends Page {
     public void ClickOnGroupsHierarchyButton1() throws InterruptedException {
     	
     	Thread.sleep(500);
-    	JavaScriptClick(groupsHierarchyButton);
+    	JavaScriptClick(groupsHierarchyButton1);
     	Thread.sleep(500);
     }
     

@@ -77,12 +77,12 @@ public class ToursTest {
         report=new ExtentReports(System.getProperty("user.dir") +"/test-output/Tours/ToursReport.html", true);
     }
 
-    @BeforeMethod(alwaysRun = true)
-    public void GoToToursPage() throws InterruptedException, IOException {
-       String WebDriverLocation = System.getenv("WebDriver");
+        @BeforeMethod(alwaysRun = true)
+        public void GoToToursPage() throws InterruptedException, IOException {
+        String WebDriverLocation = System.getenv("WebDriver");
 
-       System.setProperty("webdriver.ie.driver", WebDriverLocation+"\\IEDriverServer.exe");
-      DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+        System.setProperty("webdriver.ie.driver", WebDriverLocation+"\\IEDriverServer.exe");
+        DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
         capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
         capabilities.setCapability(InternetExplorerDriver.IE_USE_PER_PROCESS_PROXY, true);
         capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);

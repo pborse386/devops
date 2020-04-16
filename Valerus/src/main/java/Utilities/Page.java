@@ -20,8 +20,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-
-
 public abstract class Page {
     @FindBy(id = "txtLogin")
     WebElement userNameField;
@@ -75,6 +73,9 @@ public abstract class Page {
 
     @FindBy(xpath = "//div[@class = 'modal-footer-confirm']/button[contains(text(), 'Cancel')]")
     WebElement cancelUnsavedChangesButton;
+    
+    @FindBy(xpath = "//*[@id=\"vms-configurationScreen\"]/div[2]/button[3]")
+    WebElement cancelUnsavedChangesButton1;
 
     //Specify Events window
     @FindBy(xpath = "//div[@role='columnheader']/div[@role='button']/span[contains(text(), 'Name')]")
@@ -253,7 +254,7 @@ public abstract class Page {
     }
 
     public void GoToConfigurationPage() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(500);
         WaitUntilDialogIsNotLocated();
         waitUntilElementIsClickable(configurationButton);
         driver.manage().timeouts().implicitlyWait(4000, TimeUnit.MILLISECONDS);
@@ -304,7 +305,7 @@ public abstract class Page {
 
     public void GoToMonitoringPage(){
         waitUntilElementIsLoaded(monitoringButton);
-        monitoringButton.click();
+        JavaScriptClick(monitoringButton);
     }
 
     public boolean MonitoringPageIsLoaded(){
@@ -329,7 +330,7 @@ public abstract class Page {
     public void PressCancelButton() throws InterruptedException {
         Thread.sleep(1000);
         waitUntilElementIsClickable(cancelButton);
-        cancelButton.click();
+        JavaScriptClick(cancelButton);
         Thread.sleep(1000);
     }
 
@@ -339,7 +340,7 @@ public abstract class Page {
         waitUntilIsLoadedCustomTime(saveUnsavedChangesButton);
         waitUntilElementIsLoaded(saveUnsavedChangesButton);
         waitUntilElementIsClickable(saveUnsavedChangesButton);
-        saveUnsavedChangesButton.click();
+        JavaScriptClick(saveUnsavedChangesButton);
         WaitUntilDialogIsNotLocated();
         Thread.sleep(1000);
     }
@@ -348,7 +349,7 @@ public abstract class Page {
         WaitUntilDialogIsLocated();
         driver.switchTo().window(driver.getWindowHandle());
         waitUntilElementIsLoaded(doNotSaveUnsavedChangesButton);
-        doNotSaveUnsavedChangesButton.click();
+        JavaScriptClick(doNotSaveUnsavedChangesButton);
         WaitUntilDialogIsNotLocated();
         Thread.sleep(1000);
     }
@@ -357,7 +358,7 @@ public abstract class Page {
         WaitUntilDialogIsLocated();
         driver.switchTo().window(driver.getWindowHandle());
         waitUntilElementIsLoaded(cancelUnsavedChangesButton);
-        cancelUnsavedChangesButton.click();
+        JavaScriptClick(cancelUnsavedChangesButton);
         WaitUntilDialogIsNotLocated();
         Thread.sleep(1000);
     }

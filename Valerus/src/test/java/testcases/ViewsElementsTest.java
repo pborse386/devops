@@ -162,7 +162,7 @@ public class ViewsElementsTest {
         Assert.assertEquals(viewsCountAfterRefresh, viewsCount);
     }
 
-    @Test//bug 9475 Save button is enabled when layout isn't selected
+    @Test
     public void AddNewViewWithoutLayoutAndExitAndSaveTest() throws Exception {
         logger=report.startTest("AddNewViewWithoutLayoutAndExitAndSaveTest");
 

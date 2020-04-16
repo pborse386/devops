@@ -62,7 +62,7 @@ public class NVRsElementsTest {
         capabilities.setCapability(InternetExplorerDriver.IE_USE_PER_PROCESS_PROXY, true);
         capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
         capabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, false);
-         driver = new InternetExplorerDriver(capabilities); 
+        driver = new InternetExplorerDriver(capabilities); 
         
         
         
@@ -171,7 +171,7 @@ public class NVRsElementsTest {
         String NVRNameBefore = nvRsPage.GetNVRName(IPAdress);
         nvRsPage.ChangeName(NameNVRsText);
 
-           logger.log(LogStatus.INFO,"Check that Cancel button is enable after name changes");
+          logger.log(LogStatus.INFO,"Check that Cancel button is enable after name changes");
            Assert.assertTrue(nvRsPage.CancelButtonIsEnable());
 
            logger.log(LogStatus.INFO,"Check that Save button is enable after name changes");
@@ -203,7 +203,7 @@ public class NVRsElementsTest {
         Thread.sleep(1000);
 
         logger.log(LogStatus.INFO,"Check that change isn't saved after refresh");
-           Assert.assertEquals(NVRNameAfter, NVRNameBefore);
+        Assert.assertEquals(NVRNameAfter, NVRNameBefore);
     }
 
     @Test

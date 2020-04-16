@@ -706,7 +706,7 @@ public class ViewsTest {
 //
 //            logger.log(LogStatus.INFO,"Check that layout change is saved after refresh ");
 //            int fullViewSizeRefreshed = viewsPage.GetFullViewsSize();
-//             Assert.assertEquals(fullViewSizeRefreshed, fullViewSize);
+//            Assert.assertEquals(fullViewSizeRefreshed, fullViewSize);
             }
         }
     }

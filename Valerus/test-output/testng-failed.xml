@@ -3,68 +3,31 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
   <test thread-count="5" name="Default test(failed)(failed)">
     <classes>
-      <class name="testcases.GroupsHierarchyTest">
+      <class name="testcases.SchedulesTests">
         <methods>
-          <include name="startReport"/>
-          <include name="endReport"/>
+          <include name="ChangeStartTimeTest"/>
+          <include name="AddNewScheduleTest"/>
+          <include name="ChangeDurationBySpinnersTest"/>
+          <include name="ChangeEndTimeBySpinnerTest"/>
+          <include name="ChangeMonthlyCountOfDayTest"/>
           <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="DeleteGroupAndPressNoTest"/>
-          <include name="GoToGroupsHierarchyPage"/>
-        </methods>
-      </class> <!-- testcases.GroupsHierarchyTest -->
-      <class name="testcases.NVRsElementsTest">
-        <methods>
-          <include name="setup"/>
-          <include name="CheckPropertiesAfterChangeUserNameTest"/>
-          <include name="IncreasePortExitPressDontSaveUnsavedChangesTest"/>
-          <include name="ChangeUserNameExitPressSaveUnsavedChangesTest"/>
-          <include name="DecreasePortExitPressSaveUnsavedChangesTest"/>
-          <include name="afterMethod"/>
-          <include name="startReport"/>
-          <include name="endReport"/>
-          <include name="CheckPropertiesAfterChangePasswordTest"/>
-          <include name="CheckPropertiesAfterChangeIPAdressTest"/>
-          <include name="DecreasePortExitCancelUnsavedChangesTest"/>
-          <include name="ChangeIPAdressExitCancelUnsavedChangesTest"/>
-          <include name="SwitchStorageDefinitionsExitAndPressSaveButtonTest"/>
-          <include name="gotoNVRPage"/>
-        </methods>
-      </class> <!-- testcases.NVRsElementsTest -->
-      <class name="testcases.NVRsTest">
-        <methods>
-          <include name="ChangeIPAdressAndCheckStatusTest"/>
-          <include name="SwitchStorageDefinitionsTest"/>
-          <include name="endReport"/>
-          <include name="gotoNVRPage"/>
-          <include name="AddNVRManuallyWithSecuredPortTest"/>
-          <include name="SwitchOffStorageDefinitionsAndPressNoTest"/>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="ChangeSecuredAndCheckStatusTest"/>
-          <include name="startReport"/>
-        </methods>
-      </class> <!-- testcases.NVRsTest -->
-      <class name="testcases.ViewsElementsTest">
-        <methods>
+          <include name="DeleteScheduleByButtonTest"/>
+          <include name="DeleteScheduleByIconTest"/>
           <include name="endReport"/>
           <include name="startReport"/>
-          <include name="AddNewViewWithLayoutExitAndSaveTest"/>
-          <include name="GoToViewPage"/>
+          <include name="ChangeDurationTest"/>
+          <include name="ChangeStartTimeBySpinnerTest"/>
+          <include name="AddNewScheduleWithAllParametersTest"/>
+          <include name="ChangeStartDateInNeverModeTest"/>
+          <include name="GoToSchedulesPage"/>
           <include name="setup"/>
-          <include name="afterMethod"/>
+          <include name="AddNewScheduleAndCheckInRulesTest"/>
+          <include name="ChangeDayOfMonthInYearlyTest"/>
+          <include name="ChangeDescriptionTest"/>
+          <include name="ChangeEndDateInNeverModeTest"/>
+          <include name="ChangeEndTimeTest"/>
         </methods>
-      </class> <!-- testcases.ViewsElementsTest -->
-      <class name="testcases.ViewsTest">
-        <methods>
-          <include name="ChangeNameTest"/>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="startReport"/>
-          <include name="endReport"/>
-          <include name="GoToViewPage"/>
-        </methods>
-      </class> <!-- testcases.ViewsTest -->
+      </class> <!-- testcases.SchedulesTests -->
     </classes>
   </test> <!-- Default test(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Default suite]] -->

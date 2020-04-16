@@ -11,9 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-/**
- * Created by nastya on 5/15/2017.
- */
+
 public class AudioChannelsPage extends Page {
 
     @FindBy(id = "config-menu-network_entities-audioIn_channels")
@@ -209,7 +207,7 @@ public class AudioChannelsPage extends Page {
 
     public void ClickAudioChannelButtonLandingPage() throws InterruptedException {
        waitUntilIsLoadedCustomTime(audioChannelsButtonLandingPage);
-       audioChannelsButtonLandingPage.click();
+       JavaScriptClick(audioChannelsButtonLandingPage);
     }
 
     public void InputIntoNameField(String name){

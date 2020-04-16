@@ -55,7 +55,7 @@ public class NVRsTest {
        capabilities.setCapability(InternetExplorerDriver.IE_USE_PER_PROCESS_PROXY, true);
        capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
        capabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, false);
-        driver = new InternetExplorerDriver(capabilities); 
+       driver = new InternetExplorerDriver(capabilities); 
                       
              
 
@@ -84,8 +84,6 @@ public class NVRsTest {
     }
     
       
-    
-    
     
        
     
@@ -286,7 +284,7 @@ public class NVRsTest {
         }
      }
 
-    @Test(priority=0)
+    @Test(priority=1)
     public void MultipleNVRsAdditingTest() throws InterruptedException {
         logger=report.startTest("MultipleNVRsAdditingTest");
 
@@ -739,7 +737,7 @@ public class NVRsTest {
             nvRsPage.ConfirmRemoveNVRsByButton();
             Thread.sleep(5000);
             logger.log(LogStatus.INFO,"NVR" + IPAdress+" is deleted");
-//            nvRsPage.WaitUntilRemovedNVRWillBeAddedToDiscoveredNVRsList();
+//          nvRsPage.WaitUntilRemovedNVRWillBeAddedToDiscoveredNVRsList();
         }
 
         int random =nvRsPage.GetRandomDigit(0,100);
@@ -1328,7 +1326,7 @@ public class NVRsTest {
         logger=report.startTest("ChangeIPAdressAndCheckStatusTest");
         String IPAdress = Servers[1];
 
-        String IPAdressText =  "IP";
+        String IPAdressText =   IPAdress +"IP";
         logger.log(LogStatus.INFO,"Changing NVR IP Address from " + IPAdress + " to "+IPAdressText + " and press 'Save' on the 'Unsaved changes' window");
         nvRsPage.IfStatusIsNotVThanDeleteNVR(IPAdress);
         nvRsPage.IfNVRIsNotExistAddIt(IPAdress);
@@ -2106,7 +2104,7 @@ public class NVRsTest {
         Assert.assertEquals(statusAfterRefresh, "Server Unauthorized");
     }
 
-    @Test(enabled = false) //B 8048
+    @Test(enabled = false)
     public void DeleteOneNVRAndCheckPropertiesPanelTest() throws InterruptedException {
         logger=report.startTest("DeleteOneNVRAndCheckPropertiesPanelTest");
 
@@ -2130,7 +2128,7 @@ public class NVRsTest {
         Assert.assertFalse(IPAddressFromProperties.contains(IPAdress2));
     }
 
-    @Test //Bug 8049 Properties Panel is empty after removing NVRs and clicking on the next NVR. It is happens if only two nvrs are added
+    @Test
     public void DeleteOneNVRClickOnAnotherNVRAndCheckPropertiesPanelTest() throws InterruptedException {
         logger=report.startTest("DeleteOneNVRClickOnAnotherNVRAndCheckPropertiesPanelTest");
 

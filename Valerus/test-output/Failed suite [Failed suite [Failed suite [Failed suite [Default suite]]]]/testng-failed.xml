@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Default suite]]]]]">
+  <test thread-count="5" name="Default test(failed)(failed)(failed)(failed)(failed)">
+    <classes>
+      <class name="testcases.VideoRecordingTest">
+        <methods>
+          <include name="GoToVideoChannelsPage"/>
+          <include name="CreateNewScheduleAndPressCancelTest"/>
+          <include name="ChangeRecordingModeTest"/>
+          <include name="CreateNewYearlyScheduleTest"/>
+          <include name="setup"/>
+          <include name="SwitchRecordingToggleTest"/>
+          <include name="SelectScheduleTest"/>
+          <include name="NewYearlySchedule"/>
+          <include name="SelectEventAndChangeParametersEventTest"/>
+          <include name="SelectContinuousAndEventOptionAndChangeParametersTest"/>
+          <include name="endReport"/>
+          <include name="afterMethod"/>
+          <include name="ChangeLimitRetentionValueTest"/>
+          <include name="NewMonthlyScheduleTest"/>
+          <include name="startReport"/>
+          <include name="NewWeeklyScheduleTest"/>
+          <include name="NewMonthlyCheckDayScheduleTest"/>
+          <include name="CreateNewScheduleNeverRepeatTest"/>
+          <include name="GetVideoChannelPropertiesAndApplyToOtherChannelTest"/>
+        </methods>
+      </class> <!-- testcases.VideoRecordingTest -->
+      <class name="testcases.GroupsHierarchyTest">
+        <methods>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="DeleteGroupAndPressNoTest"/>
+          <include name="GoToGroupsHierarchyPage"/>
+        </methods>
+      </class> <!-- testcases.GroupsHierarchyTest -->
+      <class name="testcases.NVRsTest">
+        <methods>
+          <include name="ChangeIPAdressAndCheckStatusTest"/>
+          <include name="endReport"/>
+          <include name="gotoNVRPage"/>
+          <include name="AddNVRManuallyWithSecuredPortTest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- testcases.NVRsTest -->
+      <class name="testcases.VideoPictureSettingsTest">
+        <methods>
+          <include name="ChangeExposureModeToManualAndChangeExposureTimeTest"/>
+          <include name="ChangeColorSaturationAndPressSaveTest"/>
+          <include name="ChangeDayNightFilterModeTest"/>
+          <include name="setup"/>
+          <include name="ChangeSharpnessAndPressSaveTest"/>
+          <include name="GetVideoChannelPictureSetiingsAndApplyToOtherChannelTest"/>
+          <include name="GoToVideoChannelsPage"/>
+          <include name="ChangeBacklightCompensationModeTest"/>
+          <include name="ChangeExposureModeToAutoTest"/>
+          <include name="afterMethod"/>
+          <include name="ChangeContrastAndPressSaveTest"/>
+          <include name="ChangeExposureModeToManualAndChangeGainTest"/>
+          <include name="startReport"/>
+          <include name="ChangeBrightnessAndPressSaveTest"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- testcases.VideoPictureSettingsTest -->
+      <class name="testcases.NVRsElementsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="IncreasePortExitPressDontSaveUnsavedChangesTest"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="DecreasePortExitCancelUnsavedChangesTest"/>
+          <include name="ChangeIPAdressExitCancelUnsavedChangesTest"/>
+          <include name="DecreasePortExitPressSaveUnsavedChangesTest"/>
+          <include name="gotoNVRPage"/>
+        </methods>
+      </class> <!-- testcases.NVRsElementsTest -->
+      <class name="testcases.VideoChannelPropertiesElementTest">
+        <methods>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="AddAudioChannelsTest"/>
+          <include name="GoToVideoChannelPage"/>
+          <include name="ChangeNameExitPressDontSaveUnsavedChangesTest"/>
+          <include name="ChangeVisibleStatusExitPressSaveUnsavedChangesTest"/>
+          <include name="SwitchVisibilityTest"/>
+          <include name="MultipleSelectAudioChannelsTest"/>
+          <include name="ChangeNameAndSaveTest"/>
+          <include name="ChangeNamePressCancelExitTest"/>
+        </methods>
+      </class> <!-- testcases.VideoChannelPropertiesElementTest -->
+      <class name="testcases.AudioChannelsElementsTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="SelectTwoEventsDeleteExitAndPressCancelTest"/>
+          <include name="SelectScheduleAndPressSaveTest"/>
+          <include name="SwitchRecordingToggleExitAndPressSaveTest"/>
+          <include name="CreateNewSchedulePlanExitAndPressCancelTest"/>
+          <include name="SelectRecordingModeExitAndPressSaveTest"/>
+          <include name="setup"/>
+          <include name="SwitchRecordingToggleExitAndPressCancelTest"/>
+          <include name="SwitchRecordingToggleExitAndPressDonotSaveTest"/>
+          <include name="SwitchLimitRetentionToggleExitAndPressCancelTest"/>
+          <include name="GoToAudioChannelsPage"/>
+          <include name="ChangeProtocolExitAndPressSaveTest"/>
+          <include name="afterMethod"/>
+          <include name="SelectTwoEventsDeleteExitAndPressSaveTest"/>
+        </methods>
+      </class> <!-- testcases.AudioChannelsElementsTest -->
+      <class name="testcases.AudioChannelsTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="ChangeLimitRetentionValueTest"/>
+          <include name="startReport"/>
+          <include name="GetAudioChannelPropertiesAndApplyToOtherChannelTest"/>
+          <include name="afterMethod"/>
+          <include name="SelectAllDevicesInSpecifyEventsTest"/>
+          <include name="SelectAnyEventsInspecifyEventsTest"/>
+          <include name="ChangePostEventTimeTest"/>
+          <include name="GoToAudioChannelsPage"/>
+          <include name="setup"/>
+          <include name="AddAudioResourcesInVideoChannelTest"/>
+          <include name="ChangePreEventTimeTest"/>
+          <include name="ChangeNameAndSaveTest"/>
+        </methods>
+      </class> <!-- testcases.AudioChannelsTest -->
+      <class name="testcases.ToursElementsTest">
+        <methods>
+          <include name="AddNewTourAndCancelTest"/>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="GoToToursPage"/>
+          <include name="AddNewTourExitAndSaveTest"/>
+        </methods>
+      </class> <!-- testcases.ToursElementsTest -->
+    </classes>
+  </test> <!-- Default test(failed)(failed)(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Default suite]]]]] -->

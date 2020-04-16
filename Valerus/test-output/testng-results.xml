@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="17" ignored="146" total="172" passed="9">
+<testng-results skipped="0" failed="16" ignored="27" total="44" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Failed suite [Default suite]" duration-ms="3592620" started-at="2020-02-07T11:56:07 IST" finished-at="2020-02-07T12:56:00 IST">
+  <suite name="Failed suite [Default suite]" duration-ms="1887194" started-at="2020-04-10T13:40:08 IST" finished-at="2020-04-10T14:11:36 IST">
     <groups>
     </groups>
-    <test name="Default test(failed)" duration-ms="3592620" started-at="2020-02-07T11:56:07 IST" finished-at="2020-02-07T12:56:00 IST">
-      <class name="testcases.NVRsTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="startReport" is-config="true" duration-ms="2" started-at="2020-02-07T11:56:07 IST" finished-at="2020-02-07T11:56:07 IST">
+    <test name="Default test(failed)" duration-ms="1887194" started-at="2020-04-10T13:40:08 IST" finished-at="2020-04-10T14:11:36 IST">
+      <class name="testcases.SchedulesTests">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.SchedulesTests@101df177]" name="startReport" is-config="true" duration-ms="91" started-at="2020-04-10T13:40:08 IST" finished-at="2020-04-10T13:40:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="setup" is-config="true" duration-ms="0" started-at="2020-02-07T12:24:11 IST" finished-at="2020-02-07T12:24:11 IST">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testcases.SchedulesTests@101df177]" name="setup" is-config="true" duration-ms="3" started-at="2020-04-10T13:40:08 IST" finished-at="2020-04-10T13:40:08 IST">
           <params>
             <param index="0">
               <value>
@@ -22,23 +22,84 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="gotoNVRPage" is-config="true" duration-ms="52829" started-at="2020-02-07T12:24:11 IST" finished-at="2020-02-07T12:25:04 IST">
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="106821" started-at="2020-04-10T13:40:08 IST" finished-at="2020-04-10T13:41:55 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="AddNVRManuallyWithSecuredPortTest()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="AddNVRManuallyWithSecuredPortTest" duration-ms="198726" started-at="2020-02-07T12:25:04 IST" finished-at="2020-02-07T12:28:23 IST">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="ChangeStartTimeTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="ChangeStartTimeTest" duration-ms="13235" started-at="2020-04-10T13:41:55 IST" finished-at="2020-04-10T13:42:09 IST">
+          <exception class="java.lang.NumberFormatException">
             <message>
-              <![CDATA[expected [2] but found [1]]]>
+              <![CDATA[For input string: "54 PM"]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [2] but found [1]
+              <![CDATA[java.lang.NumberFormatException: For input string: "54 PM"
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:580)
+at java.lang.Integer.parseInt(Integer.java:615)
+at pageObjects.SchedulesPage.GetEndTimeMinutes(SchedulesPage.java:589)
+at testcases.SchedulesTests.ChangeStartTimeTest(SchedulesTests.java:682)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChangeStartTimeTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="920" started-at="2020-04-10T13:42:09 IST" finished-at="2020-04-10T13:42:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ChangeStartTimeTest status=FAILURE method=SchedulesTests.ChangeStartTimeTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="91496" started-at="2020-04-10T13:42:09 IST" finished-at="2020-04-10T13:43:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="AddNewScheduleTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="AddNewScheduleTest" duration-ms="5901" started-at="2020-04-10T13:43:41 IST" finished-at="2020-04-10T13:43:47 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [34] but found [33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [34] but found [33]
 at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:839)
 at org.testng.Assert.assertEquals(Assert.java:849)
-at testcases.NVRsTest.AddNVRManuallyWithSecuredPortTest(NVRsTest.java:808)
+at testcases.SchedulesTests.AddNewScheduleTest(SchedulesTests.java:134)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -72,35 +133,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddNVRManuallyWithSecuredPortTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="afterMethod" is-config="true" duration-ms="4702" started-at="2020-02-07T12:28:23 IST" finished-at="2020-02-07T12:28:28 IST">
+        </test-method> <!-- AddNewScheduleTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="803" started-at="2020-04-10T13:43:47 IST" finished-at="2020-04-10T13:43:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddNVRManuallyWithSecuredPortTest status=FAILURE method=NVRsTest.AddNVRManuallyWithSecuredPortTest()[pri:0, instance:testcases.NVRsTest@7181ae3f] output={null}]]]>
+                <![CDATA[[TestResult name=AddNewScheduleTest status=FAILURE method=SchedulesTests.AddNewScheduleTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="gotoNVRPage" is-config="true" duration-ms="49368" started-at="2020-02-07T12:28:28 IST" finished-at="2020-02-07T12:29:17 IST">
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="90301" started-at="2020-04-10T13:43:48 IST" finished-at="2020-04-10T13:45:18 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="ChangeIPAdressAndCheckStatusTest()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="ChangeIPAdressAndCheckStatusTest" duration-ms="7791" started-at="2020-02-07T12:29:17 IST" finished-at="2020-02-07T12:29:25 IST">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="ChangeDurationBySpinnersTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="ChangeDurationBySpinnersTest" duration-ms="107557" started-at="2020-04-10T13:45:18 IST" finished-at="2020-04-10T13:47:05 IST">
+          <exception class="java.lang.NumberFormatException">
             <message>
-              <![CDATA[expected [172.20.1.46IP] but found [IP]]]>
+              <![CDATA[For input string: "34 PM"]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [172.20.1.46IP] but found [IP]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at testcases.NVRsTest.ChangeIPAdressAndCheckStatusTest(NVRsTest.java:1356)
+              <![CDATA[java.lang.NumberFormatException: For input string: "34 PM"
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:580)
+at java.lang.Integer.parseInt(Integer.java:615)
+at pageObjects.SchedulesPage.GetEndTimeMinutes(SchedulesPage.java:589)
+at testcases.SchedulesTests.ChangeDurationBySpinnersTest(SchedulesTests.java:1284)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,38 +191,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChangeIPAdressAndCheckStatusTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="afterMethod" is-config="true" duration-ms="628" started-at="2020-02-07T12:29:25 IST" finished-at="2020-02-07T12:29:25 IST">
+        </test-method> <!-- ChangeDurationBySpinnersTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="813" started-at="2020-04-10T13:47:05 IST" finished-at="2020-04-10T13:47:06 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ChangeIPAdressAndCheckStatusTest status=FAILURE method=NVRsTest.ChangeIPAdressAndCheckStatusTest()[pri:0, instance:testcases.NVRsTest@7181ae3f] output={null}]]]>
+                <![CDATA[[TestResult name=ChangeDurationBySpinnersTest status=FAILURE method=SchedulesTests.ChangeDurationBySpinnersTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="gotoNVRPage" is-config="true" duration-ms="49976" started-at="2020-02-07T12:29:25 IST" finished-at="2020-02-07T12:30:15 IST">
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="90492" started-at="2020-04-10T13:47:06 IST" finished-at="2020-04-10T13:48:37 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="ChangeSecuredAndCheckStatusTest()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="ChangeSecuredAndCheckStatusTest" duration-ms="223378" started-at="2020-02-07T12:30:15 IST" finished-at="2020-02-07T12:33:59 IST">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="ChangeEndTimeBySpinnerTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="ChangeEndTimeBySpinnerTest" duration-ms="1636" started-at="2020-04-10T13:48:37 IST" finished-at="2020-04-10T13:48:38 IST">
+          <exception class="java.lang.NumberFormatException">
             <message>
-              <![CDATA[expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]]]>
+              <![CDATA[For input string: "49 AM"]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [V] but found [NVR cannot be synced. Its system unique id belongs to another NVR.]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at testcases.NVRsTest.ChangeSecuredAndCheckStatusTest(NVRsTest.java:1533)
+              <![CDATA[java.lang.NumberFormatException: For input string: "49 AM"
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:580)
+at java.lang.Integer.parseInt(Integer.java:615)
+at pageObjects.SchedulesPage.GetEndTimeMinutes(SchedulesPage.java:589)
+at testcases.SchedulesTests.ChangeEndTimeBySpinnerTest(SchedulesTests.java:1024)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -193,247 +252,57 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChangeSecuredAndCheckStatusTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="afterMethod" is-config="true" duration-ms="841" started-at="2020-02-07T12:33:59 IST" finished-at="2020-02-07T12:34:00 IST">
+        </test-method> <!-- ChangeEndTimeBySpinnerTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="1106" started-at="2020-04-10T13:48:38 IST" finished-at="2020-04-10T13:48:40 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ChangeSecuredAndCheckStatusTest status=FAILURE method=NVRsTest.ChangeSecuredAndCheckStatusTest()[pri:0, instance:testcases.NVRsTest@7181ae3f] output={null}]]]>
+                <![CDATA[[TestResult name=ChangeEndTimeBySpinnerTest status=FAILURE method=SchedulesTests.ChangeEndTimeBySpinnerTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="gotoNVRPage" is-config="true" duration-ms="49610" started-at="2020-02-07T12:34:00 IST" finished-at="2020-02-07T12:34:49 IST">
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="91963" started-at="2020-04-10T13:48:40 IST" finished-at="2020-04-10T13:50:11 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="PASS" signature="SortingNVRsByIPAdressTest()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="SortingNVRsByIPAdressTest" duration-ms="73413" started-at="2020-02-07T12:34:49 IST" finished-at="2020-02-07T12:36:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SortingNVRsByIPAdressTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="afterMethod" is-config="true" duration-ms="790" started-at="2020-02-07T12:36:03 IST" finished-at="2020-02-07T12:36:03 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SortingNVRsByIPAdressTest status=SUCCESS method=NVRsTest.SortingNVRsByIPAdressTest()[pri:0, instance:testcases.NVRsTest@7181ae3f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="gotoNVRPage" is-config="true" duration-ms="65530" started-at="2020-02-07T12:36:03 IST" finished-at="2020-02-07T12:37:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="PASS" signature="SortingNVRsByNameTest()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="SortingNVRsByNameTest" duration-ms="5013" started-at="2020-02-07T12:37:09 IST" finished-at="2020-02-07T12:37:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SortingNVRsByNameTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="afterMethod" is-config="true" duration-ms="530" started-at="2020-02-07T12:37:14 IST" finished-at="2020-02-07T12:37:14 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SortingNVRsByNameTest status=SUCCESS method=NVRsTest.SortingNVRsByNameTest()[pri:0, instance:testcases.NVRsTest@7181ae3f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="gotoNVRPage" is-config="true" duration-ms="50460" started-at="2020-02-07T12:37:14 IST" finished-at="2020-02-07T12:38:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="SwitchOffStorageDefinitionsAndPressNoTest()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="SwitchOffStorageDefinitionsAndPressNoTest" duration-ms="18531" started-at="2020-02-07T12:38:05 IST" finished-at="2020-02-07T12:38:23 IST">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="ChangeMonthlyCountOfDayTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="ChangeMonthlyCountOfDayTest" duration-ms="16335" started-at="2020-04-10T13:50:11 IST" finished-at="2020-04-10T13:50:28 IST">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[did not expect to find [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at testcases.NVRsTest.SwitchOffStorageDefinitionsAndPressNoTest(NVRsTest.java:1775)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SwitchOffStorageDefinitionsAndPressNoTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="afterMethod" is-config="true" duration-ms="728" started-at="2020-02-07T12:38:23 IST" finished-at="2020-02-07T12:38:24 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SwitchOffStorageDefinitionsAndPressNoTest status=FAILURE method=NVRsTest.SwitchOffStorageDefinitionsAndPressNoTest()[pri:0, instance:testcases.NVRsTest@7181ae3f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="gotoNVRPage" is-config="true" duration-ms="49741" started-at="2020-02-07T12:38:24 IST" finished-at="2020-02-07T12:39:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="SwitchStorageDefinitionsTest()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="SwitchStorageDefinitionsTest" duration-ms="7080" started-at="2020-02-07T12:39:14 IST" finished-at="2020-02-07T12:39:21 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[did not expect to find [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect to find [false] but found [true]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertFalse(Assert.java:65)
-at org.testng.Assert.assertFalse(Assert.java:75)
-at testcases.NVRsTest.SwitchStorageDefinitionsTest(NVRsTest.java:1837)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SwitchStorageDefinitionsTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="afterMethod" is-config="true" duration-ms="707" started-at="2020-02-07T12:39:21 IST" finished-at="2020-02-07T12:39:22 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SwitchStorageDefinitionsTest status=FAILURE method=NVRsTest.SwitchStorageDefinitionsTest()[pri:0, instance:testcases.NVRsTest@7181ae3f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:testcases.NVRsTest@7181ae3f]" name="endReport" is-config="true" duration-ms="84" started-at="2020-02-07T12:39:22 IST" finished-at="2020-02-07T12:39:22 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- testcases.NVRsTest -->
-      <class name="testcases.GroupsHierarchyTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.GroupsHierarchyTest@6e2c9341]" name="startReport" is-config="true" duration-ms="102" started-at="2020-02-07T11:56:07 IST" finished-at="2020-02-07T11:56:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testcases.GroupsHierarchyTest@6e2c9341]" name="setup" is-config="true" duration-ms="1" started-at="2020-02-07T12:41:42 IST" finished-at="2020-02-07T12:41:42 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ie]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="GoToGroupsHierarchyPage()[pri:0, instance:testcases.GroupsHierarchyTest@6e2c9341]" name="GoToGroupsHierarchyPage" is-config="true" duration-ms="99667" started-at="2020-02-07T12:41:42 IST" finished-at="2020-02-07T12:43:22 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GoToGroupsHierarchyPage -->
-        <test-method status="FAIL" signature="DeleteGroupAndPressNoTest()[pri:0, instance:testcases.GroupsHierarchyTest@6e2c9341]" name="DeleteGroupAndPressNoTest" duration-ms="25377" started-at="2020-02-07T12:43:22 IST" finished-at="2020-02-07T12:43:47 IST">
-          <exception class="org.openqa.selenium.InvalidElementStateException">
-            <message>
-              <![CDATA[Element must not be hidden, disabled or read-only (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[Element cannot be interacted with via the keyboard because it is not focusable
 Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'BORSE-PC', ip: '172.20.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'BORSE-PC', ip: '172.20.1.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:38138/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 9af8d48d-9719-402c-be4f-927485f178a5]]>
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:4509/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e1290b53-ff3b-4a14-b8fa-981ab63b0500]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidElementStateException: Element must not be hidden, disabled or read-only (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element cannot be interacted with via the keyboard because it is not focusable
 Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'BORSE-PC', ip: '172.20.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'BORSE-PC', ip: '172.20.1.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:38138/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 9af8d48d-9719-402c-be4f-927485f178a5
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:4509/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e1290b53-ff3b-4a14-b8fa-981ab63b0500
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy14.clear(Unknown Source)
-at Utilities.Page.setElementText(Page.java:476)
-at pageObjects.MonitoringPage.FilterField(MonitoringPage.java:101)
-at testcases.GroupsHierarchyTest.DeleteGroupAndPressNoTest(GroupsHierarchyTest.java:496)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+at Utilities.Page.setElementText(Page.java:478)
+at pageObjects.SchedulesPage.InputInDaysField(SchedulesPage.java:677)
+at testcases.SchedulesTests.ChangeMonthlyCountOfDayTest(SchedulesTests.java:1534)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -464,96 +333,318 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteGroupAndPressNoTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.GroupsHierarchyTest@6e2c9341]" name="afterMethod" is-config="true" duration-ms="708" started-at="2020-02-07T12:43:47 IST" finished-at="2020-02-07T12:43:48 IST">
+        </test-method> <!-- ChangeMonthlyCountOfDayTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="1117" started-at="2020-04-10T13:50:28 IST" finished-at="2020-04-10T13:50:29 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteGroupAndPressNoTest status=FAILURE method=GroupsHierarchyTest.DeleteGroupAndPressNoTest()[pri:0, instance:testcases.GroupsHierarchyTest@6e2c9341] output={null}]]]>
+                <![CDATA[[TestResult name=ChangeMonthlyCountOfDayTest status=FAILURE method=SchedulesTests.ChangeMonthlyCountOfDayTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="GoToGroupsHierarchyPage()[pri:0, instance:testcases.GroupsHierarchyTest@6e2c9341]" name="GoToGroupsHierarchyPage" is-config="true" duration-ms="97494" started-at="2020-02-07T12:43:48 IST" finished-at="2020-02-07T12:45:25 IST">
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="91846" started-at="2020-04-10T13:50:29 IST" finished-at="2020-04-10T13:52:01 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GoToGroupsHierarchyPage -->
-        <test-method status="PASS" signature="RenameGroupAndCheckInMonitoringTest()[pri:0, instance:testcases.GroupsHierarchyTest@6e2c9341]" name="RenameGroupAndCheckInMonitoringTest" duration-ms="45173" started-at="2020-02-07T12:45:25 IST" finished-at="2020-02-07T12:46:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RenameGroupAndCheckInMonitoringTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.GroupsHierarchyTest@6e2c9341]" name="afterMethod" is-config="true" duration-ms="971" started-at="2020-02-07T12:46:10 IST" finished-at="2020-02-07T12:46:11 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RenameGroupAndCheckInMonitoringTest status=SUCCESS method=GroupsHierarchyTest.RenameGroupAndCheckInMonitoringTest()[pri:0, instance:testcases.GroupsHierarchyTest@6e2c9341] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:testcases.GroupsHierarchyTest@6e2c9341]" name="endReport" is-config="true" duration-ms="100" started-at="2020-02-07T12:46:11 IST" finished-at="2020-02-07T12:46:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- testcases.GroupsHierarchyTest -->
-      <class name="testcases.ViewsTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.ViewsTest@46238e3f]" name="startReport" is-config="true" duration-ms="1" started-at="2020-02-07T11:56:07 IST" finished-at="2020-02-07T11:56:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testcases.ViewsTest@46238e3f]" name="setup" is-config="true" duration-ms="0" started-at="2020-02-07T12:39:22 IST" finished-at="2020-02-07T12:39:22 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ie]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="GoToViewPage()[pri:0, instance:testcases.ViewsTest@46238e3f]" name="GoToViewPage" is-config="true" duration-ms="97495" started-at="2020-02-07T12:39:22 IST" finished-at="2020-02-07T12:40:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GoToViewPage -->
-        <test-method status="FAIL" signature="ChangeNameTest()[pri:0, instance:testcases.ViewsTest@46238e3f]" name="ChangeNameTest" duration-ms="42138" started-at="2020-02-07T12:40:59 IST" finished-at="2020-02-07T12:41:41 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="DeleteScheduleByButtonTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="DeleteScheduleByButtonTest" duration-ms="17498" started-at="2020-04-10T13:52:01 IST" finished-at="2020-04-10T13:52:18 IST">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unable to find element with xpath == //div[@class='ui-grid-canvas']//div[@title='new view name54682'] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'BORSE-PC', ip: '172.20.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:19608/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 9fced23e-fc72-4b6a-b557-8590702af11f
-*** Element info: {Using=xpath, value=//div[@class='ui-grid-canvas']//div[@title='new view name54682']}]]>
+              <![CDATA[expected [32] but found [33]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //div[@class='ui-grid-canvas']//div[@title='new view name54682'] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[java.lang.AssertionError: expected [32] but found [33]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at org.testng.Assert.assertEquals(Assert.java:849)
+at testcases.SchedulesTests.DeleteScheduleByButtonTest(SchedulesTests.java:326)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteScheduleByButtonTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="995" started-at="2020-04-10T13:52:18 IST" finished-at="2020-04-10T13:52:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteScheduleByButtonTest status=FAILURE method=SchedulesTests.DeleteScheduleByButtonTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="90145" started-at="2020-04-10T13:52:19 IST" finished-at="2020-04-10T13:53:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="DeleteScheduleByIconTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="DeleteScheduleByIconTest" duration-ms="17341" started-at="2020-04-10T13:53:49 IST" finished-at="2020-04-10T13:54:07 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [32] but found [33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [32] but found [33]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at org.testng.Assert.assertEquals(Assert.java:849)
+at testcases.SchedulesTests.DeleteScheduleByIconTest(SchedulesTests.java:263)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteScheduleByIconTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="1096" started-at="2020-04-10T13:54:07 IST" finished-at="2020-04-10T13:54:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteScheduleByIconTest status=FAILURE method=SchedulesTests.DeleteScheduleByIconTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="90985" started-at="2020-04-10T13:54:08 IST" finished-at="2020-04-10T13:55:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="ChangeDurationTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="ChangeDurationTest" duration-ms="8919" started-at="2020-04-10T13:55:39 IST" finished-at="2020-04-10T13:55:48 IST">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "39 AM"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "39 AM"
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:580)
+at java.lang.Integer.parseInt(Integer.java:615)
+at pageObjects.SchedulesPage.GetEndTimeMinutes(SchedulesPage.java:589)
+at testcases.SchedulesTests.ChangeDurationTest(SchedulesTests.java:1171)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChangeDurationTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="1015" started-at="2020-04-10T13:55:48 IST" finished-at="2020-04-10T13:55:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ChangeDurationTest status=FAILURE method=SchedulesTests.ChangeDurationTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="90746" started-at="2020-04-10T13:55:49 IST" finished-at="2020-04-10T13:57:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="ChangeStartTimeBySpinnerTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="ChangeStartTimeBySpinnerTest" duration-ms="1852" started-at="2020-04-10T13:57:20 IST" finished-at="2020-04-10T13:57:21 IST">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "52 AM"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "52 AM"
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:580)
+at java.lang.Integer.parseInt(Integer.java:615)
+at pageObjects.SchedulesPage.GetStartTimeMinutes(SchedulesPage.java:604)
+at testcases.SchedulesTests.ChangeStartTimeBySpinnerTest(SchedulesTests.java:776)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChangeStartTimeBySpinnerTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="911" started-at="2020-04-10T13:57:21 IST" finished-at="2020-04-10T13:57:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ChangeStartTimeBySpinnerTest status=FAILURE method=SchedulesTests.ChangeStartTimeBySpinnerTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="90623" started-at="2020-04-10T13:57:22 IST" finished-at="2020-04-10T13:58:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="PASS" signature="ChangeNameTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="ChangeNameTest" duration-ms="31209" started-at="2020-04-10T13:58:53 IST" finished-at="2020-04-10T13:59:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChangeNameTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="732" started-at="2020-04-10T13:59:24 IST" finished-at="2020-04-10T13:59:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ChangeNameTest status=SUCCESS method=SchedulesTests.ChangeNameTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="92414" started-at="2020-04-10T13:59:25 IST" finished-at="2020-04-10T14:00:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="AddNewScheduleWithAllParametersTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="AddNewScheduleWithAllParametersTest" duration-ms="10678" started-at="2020-04-10T14:00:57 IST" finished-at="2020-04-10T14:01:08 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with xpath == //div[@class='fullSize padding-left-right-15 bottom-separator-builder']/div[@class='configuration-ditails-form']//span[contains(text(),'Description')]/../..//input
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'BORSE-PC', ip: '172.20.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'BORSE-PC', ip: '172.20.1.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:19608/, nativeEvents: true, requireWindowFocus: false}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 9fced23e-fc72-4b6a-b557-8590702af11f
-*** Element info: {Using=xpath, value=//div[@class='ui-grid-canvas']//div[@title='new view name54682']}
-at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:8165/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0f01be61-f059-4a53-9a17-0363b33f484c
+*** Element info: {Using=xpath, value=//div[@class='fullSize padding-left-right-15 bottom-separator-builder']/div[@class='configuration-ditails-form']//span[contains(text(),'Description')]/../..//input}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //div[@class='fullSize padding-left-right-15 bottom-separator-builder']/div[@class='configuration-ditails-form']//span[contains(text(),'Description')]/../..//input
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'BORSE-PC', ip: '172.20.1.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:8165/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0f01be61-f059-4a53-9a17-0363b33f484c
+*** Element info: {Using=xpath, value=//div[@class='fullSize padding-left-right-15 bottom-separator-builder']/div[@class='configuration-ditails-form']//span[contains(text(),'Description')]/../..//input}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
@@ -561,8 +652,12 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-at pageObjects.ViewsPage.ClickOnViewByName(ViewsPage.java:378)
-at testcases.ViewsTest.ChangeNameTest(ViewsTest.java:283)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.clear(Unknown Source)
+at Utilities.Page.setElementText(Page.java:477)
+at pageObjects.SchedulesPage.InputInDescriptionField(SchedulesPage.java:448)
+at testcases.SchedulesTests.AddNewScheduleWithAllParametersTest(SchedulesTests.java:160)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -596,650 +691,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChangeNameTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.ViewsTest@46238e3f]" name="afterMethod" is-config="true" duration-ms="620" started-at="2020-02-07T12:41:41 IST" finished-at="2020-02-07T12:41:42 IST">
+        </test-method> <!-- AddNewScheduleWithAllParametersTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="1119" started-at="2020-04-10T14:01:08 IST" finished-at="2020-04-10T14:01:09 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ChangeNameTest status=FAILURE method=ViewsTest.ChangeNameTest()[pri:0, instance:testcases.ViewsTest@46238e3f] output={null}]]]>
+                <![CDATA[[TestResult name=AddNewScheduleWithAllParametersTest status=FAILURE method=SchedulesTests.AddNewScheduleWithAllParametersTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:testcases.ViewsTest@46238e3f]" name="endReport" is-config="true" duration-ms="48" started-at="2020-02-07T12:41:42 IST" finished-at="2020-02-07T12:41:42 IST">
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="90509" started-at="2020-04-10T14:01:09 IST" finished-at="2020-04-10T14:02:40 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- testcases.ViewsTest -->
-      <class name="testcases.NVRsElementsTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="startReport" is-config="true" duration-ms="2" started-at="2020-02-07T11:56:07 IST" finished-at="2020-02-07T11:56:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="setup" is-config="true" duration-ms="4" started-at="2020-02-07T11:56:07 IST" finished-at="2020-02-07T11:56:07 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ie]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="gotoNVRPage" is-config="true" duration-ms="62533" started-at="2020-02-07T11:56:07 IST" finished-at="2020-02-07T11:57:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="ChangeIPAdressExitCancelUnsavedChangesTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="ChangeIPAdressExitCancelUnsavedChangesTest" duration-ms="169772" started-at="2020-02-07T11:57:10 IST" finished-at="2020-02-07T11:59:59 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [172.20.1.46IP93] but found [IP93]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [172.20.1.46IP93] but found [IP93]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at testcases.NVRsElementsTest.ChangeIPAdressExitCancelUnsavedChangesTest(NVRsElementsTest.java:377)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeIPAdressExitCancelUnsavedChangesTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="afterMethod" is-config="true" duration-ms="907" started-at="2020-02-07T11:59:59 IST" finished-at="2020-02-07T12:00:00 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ChangeIPAdressExitCancelUnsavedChangesTest status=FAILURE method=NVRsElementsTest.ChangeIPAdressExitCancelUnsavedChangesTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="gotoNVRPage" is-config="true" duration-ms="66730" started-at="2020-02-07T12:00:00 IST" finished-at="2020-02-07T12:01:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="PASS" signature="ChangePortPressCancelTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="ChangePortPressCancelTest" duration-ms="18599" started-at="2020-02-07T12:01:07 IST" finished-at="2020-02-07T12:01:26 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangePortPressCancelTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="afterMethod" is-config="true" duration-ms="533" started-at="2020-02-07T12:01:26 IST" finished-at="2020-02-07T12:01:26 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ChangePortPressCancelTest status=SUCCESS method=NVRsElementsTest.ChangePortPressCancelTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="gotoNVRPage" is-config="true" duration-ms="50662" started-at="2020-02-07T12:01:26 IST" finished-at="2020-02-07T12:02:17 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="ChangeUserNameExitPressSaveUnsavedChangesTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="ChangeUserNameExitPressSaveUnsavedChangesTest" duration-ms="213525" started-at="2020-02-07T12:02:17 IST" finished-at="2020-02-07T12:05:50 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [UserName] but found [ADMIN]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [UserName] but found [ADMIN]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at testcases.NVRsElementsTest.ChangeUserNameExitPressSaveUnsavedChangesTest(NVRsElementsTest.java:1083)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeUserNameExitPressSaveUnsavedChangesTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="afterMethod" is-config="true" duration-ms="658" started-at="2020-02-07T12:05:50 IST" finished-at="2020-02-07T12:05:51 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ChangeUserNameExitPressSaveUnsavedChangesTest status=FAILURE method=NVRsElementsTest.ChangeUserNameExitPressSaveUnsavedChangesTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="gotoNVRPage" is-config="true" duration-ms="50396" started-at="2020-02-07T12:05:51 IST" finished-at="2020-02-07T12:06:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="CheckPropertiesAfterChangeIPAdressTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="CheckPropertiesAfterChangeIPAdressTest" duration-ms="45378" started-at="2020-02-07T12:06:41 IST" finished-at="2020-02-07T12:07:27 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [] but found [NVR]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [] but found [NVR]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at testcases.NVRsElementsTest.CheckPropertiesAfterChangeIPAdressTest(NVRsElementsTest.java:522)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckPropertiesAfterChangeIPAdressTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="afterMethod" is-config="true" duration-ms="643" started-at="2020-02-07T12:07:27 IST" finished-at="2020-02-07T12:07:27 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckPropertiesAfterChangeIPAdressTest status=FAILURE method=NVRsElementsTest.CheckPropertiesAfterChangeIPAdressTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="gotoNVRPage" is-config="true" duration-ms="51193" started-at="2020-02-07T12:07:27 IST" finished-at="2020-02-07T12:08:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="CheckPropertiesAfterChangePasswordTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="CheckPropertiesAfterChangePasswordTest" duration-ms="51261" started-at="2020-02-07T12:08:19 IST" finished-at="2020-02-07T12:09:10 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [UserName] but found [ADMIN]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [UserName] but found [ADMIN]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at testcases.NVRsElementsTest.CheckPropertiesAfterChangePasswordTest(NVRsElementsTest.java:1175)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckPropertiesAfterChangePasswordTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="afterMethod" is-config="true" duration-ms="791" started-at="2020-02-07T12:09:10 IST" finished-at="2020-02-07T12:09:11 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckPropertiesAfterChangePasswordTest status=FAILURE method=NVRsElementsTest.CheckPropertiesAfterChangePasswordTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="gotoNVRPage" is-config="true" duration-ms="50261" started-at="2020-02-07T12:09:11 IST" finished-at="2020-02-07T12:10:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="CheckPropertiesAfterChangeUserNameTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="CheckPropertiesAfterChangeUserNameTest" duration-ms="47158" started-at="2020-02-07T12:10:01 IST" finished-at="2020-02-07T12:10:48 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [] but found [NVR]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [] but found [NVR]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at testcases.NVRsElementsTest.CheckPropertiesAfterChangeUserNameTest(NVRsElementsTest.java:1126)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckPropertiesAfterChangeUserNameTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="afterMethod" is-config="true" duration-ms="727" started-at="2020-02-07T12:10:48 IST" finished-at="2020-02-07T12:10:49 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckPropertiesAfterChangeUserNameTest status=FAILURE method=NVRsElementsTest.CheckPropertiesAfterChangeUserNameTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="gotoNVRPage" is-config="true" duration-ms="52872" started-at="2020-02-07T12:10:49 IST" finished-at="2020-02-07T12:11:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="DecreasePortExitCancelUnsavedChangesTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="DecreasePortExitCancelUnsavedChangesTest" duration-ms="9267" started-at="2020-02-07T12:11:42 IST" finished-at="2020-02-07T12:11:51 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[did not expect to find [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at testcases.NVRsElementsTest.DecreasePortExitCancelUnsavedChangesTest(NVRsElementsTest.java:811)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DecreasePortExitCancelUnsavedChangesTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="afterMethod" is-config="true" duration-ms="924" started-at="2020-02-07T12:11:51 IST" finished-at="2020-02-07T12:11:52 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DecreasePortExitCancelUnsavedChangesTest status=FAILURE method=NVRsElementsTest.DecreasePortExitCancelUnsavedChangesTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="gotoNVRPage" is-config="true" duration-ms="49933" started-at="2020-02-07T12:11:52 IST" finished-at="2020-02-07T12:12:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="DecreasePortExitPressSaveUnsavedChangesTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="DecreasePortExitPressSaveUnsavedChangesTest" duration-ms="172246" started-at="2020-02-07T12:12:42 IST" finished-at="2020-02-07T12:15:34 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[did not expect to find [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at testcases.NVRsElementsTest.DecreasePortExitPressSaveUnsavedChangesTest(NVRsElementsTest.java:901)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DecreasePortExitPressSaveUnsavedChangesTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="afterMethod" is-config="true" duration-ms="1087" started-at="2020-02-07T12:15:34 IST" finished-at="2020-02-07T12:15:35 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DecreasePortExitPressSaveUnsavedChangesTest status=FAILURE method=NVRsElementsTest.DecreasePortExitPressSaveUnsavedChangesTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="gotoNVRPage" is-config="true" duration-ms="50476" started-at="2020-02-07T12:15:35 IST" finished-at="2020-02-07T12:16:26 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="IncreasePortExitPressDontSaveUnsavedChangesTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="IncreasePortExitPressDontSaveUnsavedChangesTest" duration-ms="181231" started-at="2020-02-07T12:16:26 IST" finished-at="2020-02-07T12:19:27 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[did not expect to find [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at testcases.NVRsElementsTest.IncreasePortExitPressDontSaveUnsavedChangesTest(NVRsElementsTest.java:851)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- IncreasePortExitPressDontSaveUnsavedChangesTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="afterMethod" is-config="true" duration-ms="1079" started-at="2020-02-07T12:19:27 IST" finished-at="2020-02-07T12:19:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=IncreasePortExitPressDontSaveUnsavedChangesTest status=FAILURE method=NVRsElementsTest.IncreasePortExitPressDontSaveUnsavedChangesTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="gotoNVRPage" is-config="true" duration-ms="55122" started-at="2020-02-07T12:19:28 IST" finished-at="2020-02-07T12:20:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="FAIL" signature="SwitchStorageDefinitionsExitAndPressSaveButtonTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="SwitchStorageDefinitionsExitAndPressSaveButtonTest" duration-ms="48691" started-at="2020-02-07T12:20:23 IST" finished-at="2020-02-07T12:21:12 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[did not expect to find [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at testcases.NVRsElementsTest.SwitchStorageDefinitionsExitAndPressSaveButtonTest(NVRsElementsTest.java:1578)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SwitchStorageDefinitionsExitAndPressSaveButtonTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="afterMethod" is-config="true" duration-ms="1221" started-at="2020-02-07T12:21:12 IST" finished-at="2020-02-07T12:21:13 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SwitchStorageDefinitionsExitAndPressSaveButtonTest status=FAILURE method=NVRsElementsTest.SwitchStorageDefinitionsExitAndPressSaveButtonTest()[pri:0, instance:testcases.NVRsElementsTest@33b37288] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="gotoNVRPage()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="gotoNVRPage" is-config="true" duration-ms="50874" started-at="2020-02-07T12:21:13 IST" finished-at="2020-02-07T12:22:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoNVRPage -->
-        <test-method status="PASS" signature="ChangeNameExitCancelUnsavedChangesExitCancelTest()[pri:1, instance:testcases.NVRsElementsTest@33b37288]" name="ChangeNameExitCancelUnsavedChangesExitCancelTest" duration-ms="22135" started-at="2020-02-07T12:22:04 IST" finished-at="2020-02-07T12:22:26 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeNameExitCancelUnsavedChangesExitCancelTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="afterMethod" is-config="true" duration-ms="642" started-at="2020-02-07T12:22:26 IST" finished-at="2020-02-07T12:22:27 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ChangeNameExitCancelUnsavedChangesExitCancelTest status=SUCCESS method=NVRsElementsTest.ChangeNameExitCancelUnsavedChangesExitCancelTest()[pri:1, instance:testcases.NVRsElementsTest@33b37288] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:testcases.NVRsElementsTest@33b37288]" name="endReport" is-config="true" duration-ms="325" started-at="2020-02-07T12:22:27 IST" finished-at="2020-02-07T12:22:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- testcases.NVRsElementsTest -->
-      <class name="testcases.ViewsElementsTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="startReport" is-config="true" duration-ms="2" started-at="2020-02-07T11:56:07 IST" finished-at="2020-02-07T11:56:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="setup" is-config="true" duration-ms="0" started-at="2020-02-07T12:46:12 IST" finished-at="2020-02-07T12:46:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="GoToViewPage()[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="GoToViewPage" is-config="true" duration-ms="100945" started-at="2020-02-07T12:46:12 IST" finished-at="2020-02-07T12:47:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GoToViewPage -->
-        <test-method status="FAIL" signature="AddNewViewWithLayoutExitAndSaveTest()[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="AddNewViewWithLayoutExitAndSaveTest" duration-ms="8996" started-at="2020-02-07T12:47:52 IST" finished-at="2020-02-07T12:48:01 IST">
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="ChangeStartDateInNeverModeTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="ChangeStartDateInNeverModeTest" duration-ms="22980" started-at="2020-04-10T14:02:40 IST" finished-at="2020-04-10T14:03:03 IST">
           <exception class="java.lang.IndexOutOfBoundsException">
             <message>
               <![CDATA[Index: 0, Size: 0]]>
@@ -1248,13 +716,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 at java.util.ArrayList.rangeCheck(ArrayList.java:657)
 at java.util.ArrayList.get(ArrayList.java:433)
-at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
 at com.sun.proxy.$Proxy15.get(Unknown Source)
-at pageObjects.ViewsPage.ClickOnLayoutByIndex(ViewsPage.java:279)
-at testcases.ViewsElementsTest.AddNewViewWithLayoutExitAndSaveTest(ViewsElementsTest.java:260)
+at pageObjects.SchedulesPage.ClickOnYearByIndex(SchedulesPage.java:813)
+at testcases.SchedulesTests.ChangeStartDateInNeverModeTest(SchedulesTests.java:2512)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1288,120 +756,378 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddNewViewWithLayoutExitAndSaveTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="afterMethod" is-config="true" duration-ms="696" started-at="2020-02-07T12:48:01 IST" finished-at="2020-02-07T12:48:02 IST">
+        </test-method> <!-- ChangeStartDateInNeverModeTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="1111" started-at="2020-04-10T14:03:03 IST" finished-at="2020-04-10T14:03:04 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddNewViewWithLayoutExitAndSaveTest status=FAILURE method=ViewsElementsTest.AddNewViewWithLayoutExitAndSaveTest()[pri:0, instance:testcases.ViewsElementsTest@32464a14] output={null}]]]>
+                <![CDATA[[TestResult name=ChangeStartDateInNeverModeTest status=FAILURE method=SchedulesTests.ChangeStartDateInNeverModeTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="GoToViewPage()[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="GoToViewPage" is-config="true" duration-ms="100438" started-at="2020-02-07T12:48:02 IST" finished-at="2020-02-07T12:49:43 IST">
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="90064" started-at="2020-04-10T14:03:04 IST" finished-at="2020-04-10T14:04:34 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GoToViewPage -->
-        <test-method status="PASS" signature="ChangeLayoutAndPressCancelTest()[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="ChangeLayoutAndPressCancelTest" duration-ms="23353" started-at="2020-02-07T12:49:43 IST" finished-at="2020-02-07T12:50:06 IST">
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="AddNewScheduleAndCheckInRulesTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="AddNewScheduleAndCheckInRulesTest" duration-ms="13402" started-at="2020-04-10T14:04:34 IST" finished-at="2020-04-10T14:04:47 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at testcases.SchedulesTests.AddNewScheduleAndCheckInRulesTest(SchedulesTests.java:2912)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChangeLayoutAndPressCancelTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="afterMethod" is-config="true" duration-ms="532" started-at="2020-02-07T12:50:06 IST" finished-at="2020-02-07T12:50:06 IST">
+        </test-method> <!-- AddNewScheduleAndCheckInRulesTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="793" started-at="2020-04-10T14:04:47 IST" finished-at="2020-04-10T14:04:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ChangeLayoutAndPressCancelTest status=SUCCESS method=ViewsElementsTest.ChangeLayoutAndPressCancelTest()[pri:0, instance:testcases.ViewsElementsTest@32464a14] output={null}]]]>
+                <![CDATA[[TestResult name=AddNewScheduleAndCheckInRulesTest status=FAILURE method=SchedulesTests.AddNewScheduleAndCheckInRulesTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="GoToViewPage()[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="GoToViewPage" is-config="true" duration-ms="99871" started-at="2020-02-07T12:50:06 IST" finished-at="2020-02-07T12:51:46 IST">
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="90385" started-at="2020-04-10T14:04:48 IST" finished-at="2020-04-10T14:06:18 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GoToViewPage -->
-        <test-method status="PASS" signature="ChangeLayoutExitAndPressCancelTest()[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="ChangeLayoutExitAndPressCancelTest" duration-ms="68415" started-at="2020-02-07T12:51:46 IST" finished-at="2020-02-07T12:52:55 IST">
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="ChangeDayOfMonthInYearlyTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="ChangeDayOfMonthInYearlyTest" duration-ms="16521" started-at="2020-04-10T14:06:18 IST" finished-at="2020-04-10T14:06:35 IST">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element cannot be interacted with via the keyboard because it is not focusable
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'BORSE-PC', ip: '172.20.1.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:30245/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3a393a17-63e8-44ed-8dfa-812d72b3ec66]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element cannot be interacted with via the keyboard because it is not focusable
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'BORSE-PC', ip: '172.20.1.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:30245/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3a393a17-63e8-44ed-8dfa-812d72b3ec66
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+at Utilities.Page.setElementText(Page.java:478)
+at pageObjects.SchedulesPage.InputInCountDaysInMonth(SchedulesPage.java:352)
+at testcases.SchedulesTests.ChangeDayOfMonthInYearlyTest(SchedulesTests.java:2349)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChangeLayoutExitAndPressCancelTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="afterMethod" is-config="true" duration-ms="730" started-at="2020-02-07T12:52:55 IST" finished-at="2020-02-07T12:52:56 IST">
+        </test-method> <!-- ChangeDayOfMonthInYearlyTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="1208" started-at="2020-04-10T14:06:35 IST" finished-at="2020-04-10T14:06:36 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ChangeLayoutExitAndPressCancelTest status=SUCCESS method=ViewsElementsTest.ChangeLayoutExitAndPressCancelTest()[pri:0, instance:testcases.ViewsElementsTest@32464a14] output={null}]]]>
+                <![CDATA[[TestResult name=ChangeDayOfMonthInYearlyTest status=FAILURE method=SchedulesTests.ChangeDayOfMonthInYearlyTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="GoToViewPage()[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="GoToViewPage" is-config="true" duration-ms="103839" started-at="2020-02-07T12:52:56 IST" finished-at="2020-02-07T12:54:39 IST">
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="90974" started-at="2020-04-10T14:06:36 IST" finished-at="2020-04-10T14:08:07 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GoToViewPage -->
-        <test-method status="PASS" signature="ClearViewAndPressCancelTest()[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="ClearViewAndPressCancelTest" duration-ms="79668" started-at="2020-02-07T12:54:39 IST" finished-at="2020-02-07T12:55:59 IST">
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="ChangeDescriptionTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="ChangeDescriptionTest" duration-ms="5161" started-at="2020-04-10T14:08:07 IST" finished-at="2020-04-10T14:08:12 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with xpath == //div[@class='fullSize padding-left-right-15 bottom-separator-builder']/div[@class='configuration-ditails-form']//span[contains(text(),'Description')]/../..//input
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'BORSE-PC', ip: '172.20.1.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:8225/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9efb18df-cfb5-4dd7-8b25-6b4a1770f7b5
+*** Element info: {Using=xpath, value=//div[@class='fullSize padding-left-right-15 bottom-separator-builder']/div[@class='configuration-ditails-form']//span[contains(text(),'Description')]/../..//input}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //div[@class='fullSize padding-left-right-15 bottom-separator-builder']/div[@class='configuration-ditails-form']//span[contains(text(),'Description')]/../..//input
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'BORSE-PC', ip: '172.20.1.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:8225/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9efb18df-cfb5-4dd7-8b25-6b4a1770f7b5
+*** Element info: {Using=xpath, value=//div[@class='fullSize padding-left-right-15 bottom-separator-builder']/div[@class='configuration-ditails-form']//span[contains(text(),'Description')]/../..//input}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.getAttribute(Unknown Source)
+at pageObjects.SchedulesPage.GetDescription(SchedulesPage.java:278)
+at testcases.SchedulesTests.ChangeDescriptionTest(SchedulesTests.java:420)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClearViewAndPressCancelTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="afterMethod" is-config="true" duration-ms="529" started-at="2020-02-07T12:55:59 IST" finished-at="2020-02-07T12:56:00 IST">
+        </test-method> <!-- ChangeDescriptionTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="817" started-at="2020-04-10T14:08:12 IST" finished-at="2020-04-10T14:08:13 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ClearViewAndPressCancelTest status=SUCCESS method=ViewsElementsTest.ClearViewAndPressCancelTest()[pri:0, instance:testcases.ViewsElementsTest@32464a14] output={null}]]]>
+                <![CDATA[[TestResult name=ChangeDescriptionTest status=FAILURE method=SchedulesTests.ChangeDescriptionTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:testcases.ViewsElementsTest@32464a14]" name="endReport" is-config="true" duration-ms="44" started-at="2020-02-07T12:56:00 IST" finished-at="2020-02-07T12:56:00 IST">
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="91272" started-at="2020-04-10T14:08:13 IST" finished-at="2020-04-10T14:09:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="ChangeEndDateInNeverModeTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="ChangeEndDateInNeverModeTest" duration-ms="11421" started-at="2020-04-10T14:09:44 IST" finished-at="2020-04-10T14:09:56 IST">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 0, Size: 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+at java.util.ArrayList.get(ArrayList.java:433)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+at com.sun.proxy.$Proxy15.get(Unknown Source)
+at pageObjects.SchedulesPage.ClickOnYearByIndex(SchedulesPage.java:813)
+at testcases.SchedulesTests.ChangeEndDateInNeverModeTest(SchedulesTests.java:2599)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChangeEndDateInNeverModeTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="913" started-at="2020-04-10T14:09:56 IST" finished-at="2020-04-10T14:09:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ChangeEndDateInNeverModeTest status=FAILURE method=SchedulesTests.ChangeEndDateInNeverModeTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="GoToSchedulesPage()[pri:0, instance:testcases.SchedulesTests@101df177]" name="GoToSchedulesPage" is-config="true" duration-ms="90206" started-at="2020-04-10T14:09:57 IST" finished-at="2020-04-10T14:11:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToSchedulesPage -->
+        <test-method status="FAIL" signature="ChangeEndTimeTest()[pri:0, instance:testcases.SchedulesTests@101df177]" name="ChangeEndTimeTest" duration-ms="7628" started-at="2020-04-10T14:11:27 IST" finished-at="2020-04-10T14:11:34 IST">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: -1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+at java.lang.String.substring(String.java:1967)
+at pageObjects.SchedulesPage.GetEndTimeHours(SchedulesPage.java:581)
+at testcases.SchedulesTests.ChangeEndTimeTest(SchedulesTests.java:920)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChangeEndTimeTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.SchedulesTests@101df177]" name="afterMethod" is-config="true" duration-ms="911" started-at="2020-04-10T14:11:34 IST" finished-at="2020-04-10T14:11:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ChangeEndTimeTest status=FAILURE method=SchedulesTests.ChangeEndTimeTest()[pri:0, instance:testcases.SchedulesTests@101df177] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:testcases.SchedulesTests@101df177]" name="endReport" is-config="true" duration-ms="170" started-at="2020-04-10T14:11:35 IST" finished-at="2020-04-10T14:11:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- testcases.ViewsElementsTest -->
-      <class name="testcases.ToursElementsTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.ToursElementsTest@77a57272]" name="startReport" is-config="true" duration-ms="1" started-at="2020-02-07T11:56:07 IST" finished-at="2020-02-07T11:56:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testcases.ToursElementsTest@77a57272]" name="setup" is-config="true" duration-ms="0" started-at="2020-02-07T12:22:27 IST" finished-at="2020-02-07T12:22:27 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ie]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="GoToToursPage()[pri:0, instance:testcases.ToursElementsTest@77a57272]" name="GoToToursPage" is-config="true" duration-ms="97347" started-at="2020-02-07T12:22:27 IST" finished-at="2020-02-07T12:24:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GoToToursPage -->
-        <test-method status="PASS" signature="ChangeViewTimeBySpinnersExitAndSaveTest()[pri:0, instance:testcases.ToursElementsTest@77a57272]" name="ChangeViewTimeBySpinnersExitAndSaveTest" duration-ms="6092" started-at="2020-02-07T12:24:04 IST" finished-at="2020-02-07T12:24:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeViewTimeBySpinnersExitAndSaveTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.ToursElementsTest@77a57272]" name="afterMethod" is-config="true" duration-ms="794" started-at="2020-02-07T12:24:10 IST" finished-at="2020-02-07T12:24:11 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ChangeViewTimeBySpinnersExitAndSaveTest status=SUCCESS method=ToursElementsTest.ChangeViewTimeBySpinnersExitAndSaveTest()[pri:0, instance:testcases.ToursElementsTest@77a57272] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:testcases.ToursElementsTest@77a57272]" name="endReport" is-config="true" duration-ms="51" started-at="2020-02-07T12:24:11 IST" finished-at="2020-02-07T12:24:11 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- testcases.ToursElementsTest -->
+      </class> <!-- testcases.SchedulesTests -->
     </test> <!-- Default test(failed) -->
   </suite> <!-- Failed suite [Default suite] -->
 </testng-results>

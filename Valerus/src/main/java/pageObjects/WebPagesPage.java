@@ -71,6 +71,9 @@ public class WebPagesPage extends Page {
 
     @FindBy(xpath = "//div[@class='bottom-separator-builder vms-bottom-btn-container ng-scope']/button[contains(text(), 'Save')]")
     WebElement saveButton;
+    
+    @FindBy(linkText = "Configuration")
+    WebElement configurationButton1;
 
     public WebPagesPage(WebDriver driver) {
         super(driver);
@@ -92,11 +95,17 @@ public class WebPagesPage extends Page {
     }
 
     public void GoToWebPagesPageFromLanding() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(100);
         GoToConfigurationPage();
-        Thread.sleep(1000);
+        Thread.sleep(100);
         ClickOnWebPagesButtonLandingPage();
     }
+    
+    
+    public void clickOnConfiguration() {
+    	configurationButton1.click();
+    }
+    
 
     public void ClickOnWebPagesButton() throws InterruptedException {
         boolean breakIt = true;
